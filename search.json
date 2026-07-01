@@ -1,0 +1,303 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Life Hacking for Educators",
+    "section": "",
+    "text": "Thursday, Aug 6\n8:30 AM - 10:20 AM\nSession # 1524\nOregon Convention Center Room: CC-107A"
+  },
+  {
+    "objectID": "index.html#talks",
+    "href": "index.html#talks",
+    "title": "Life Hacking for Educators",
+    "section": "Talks",
+    "text": "Talks\n\n\n\n\n\n\n\n\n\n\nAutomate all the things\n\n\n\nColin Rundel\n\n\n\n\n\n\n\n\n\n\n\n\n\nStop Repeating Yourself: Shared R Resources to Reduce Duplicated Prep\n\n\n\nAdam Loy\n\n\n\n\n\n\n\n\n\n\n\n\n\ngglm: A tool for teaching linear model diagnostics while adhering to the grammar of graphics\n\n\n\nGrayson White\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe LTS Document: Lab, Template and Solutions All in One\n\n\n\nWilliam Hopper\n\n\n\n\n\n\n\n\n\n\n\n\n\nLooking back and looking beyond\n\n\nDiscussion\n\n\n\nMine Çetinkaya-Rundel\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html#overview",
+    "href": "index.html#overview",
+    "title": "Life Hacking for Educators",
+    "section": "Overview",
+    "text": "Overview\nLife hacks help us streamline our lives and make us feel clever—a not insignificant source of joy in these difficult times. As educators, many of us are invigorated by the positive energy we get from our students, and enervated by the drudgery of administrative tasks, often made more manual and more painful by opaque software systems. In this session, we celebrate our most clever and useful tricks for minimizing the headaches we incur from learning management systems and other academic edifices (e.g., Moodle, Canvas, Workday, etc.)\nSession chair: Andrew Bray - Berkeley\nSession organizer: Ben Baumer - Smith College"
+  },
+  {
+    "objectID": "index.html#homepage",
+    "href": "index.html#homepage",
+    "title": "Life Hacking for Educators",
+    "section": "Homepage",
+    "text": "Homepage\nAll session materials can be viewed at https://beanumber.github.io/quarto-life-hacks-jsm26/. The GitHub repo that serves this site is at https://github.com/beanumber/quarto-life-hacks-jsm26/."
+  },
+  {
+    "objectID": "talks/4-lts/index.html",
+    "href": "talks/4-lts/index.html",
+    "title": "The LTS Document: Lab, Template and Solutions All in One",
+    "section": "",
+    "text": "Assigning low-stakes practice problems or “lab” activities during class is one strategy for incorporating active learning into a traditional lecture-oriented course. In a course that incorporates computation, instructors may find it useful to provide a document with detailed information and instructions (a “lab” document), a document with initial scaffolding for students to work within (a “template” document), and a document with example results (a “solutions” document). However, keeping content synchronized across these three documents, as well as the learning management system used to distribute these documents, introduces administrative overhead and mistakes. This talk demonstrates how to use an LTS document (a custom document format for the Quarto publishing system) to create each of these student-facing files simultaneously from one main instructor-facing file, and automatically deploy them to Moodle using an R package."
+  },
+  {
+    "objectID": "talks/4-lts/index.html#abstract",
+    "href": "talks/4-lts/index.html#abstract",
+    "title": "The LTS Document: Lab, Template and Solutions All in One",
+    "section": "",
+    "text": "Assigning low-stakes practice problems or “lab” activities during class is one strategy for incorporating active learning into a traditional lecture-oriented course. In a course that incorporates computation, instructors may find it useful to provide a document with detailed information and instructions (a “lab” document), a document with initial scaffolding for students to work within (a “template” document), and a document with example results (a “solutions” document). However, keeping content synchronized across these three documents, as well as the learning management system used to distribute these documents, introduces administrative overhead and mistakes. This talk demonstrates how to use an LTS document (a custom document format for the Quarto publishing system) to create each of these student-facing files simultaneously from one main instructor-facing file, and automatically deploy them to Moodle using an R package."
+  },
+  {
+    "objectID": "talks/4-lts/index.html#slides",
+    "href": "talks/4-lts/index.html#slides",
+    "title": "The LTS Document: Lab, Template and Solutions All in One",
+    "section": "Slides",
+    "text": "Slides\n\nSource code for slides\nFull screen slides"
+  },
+  {
+    "objectID": "talks/4-lts/index.html#speaker",
+    "href": "talks/4-lts/index.html#speaker",
+    "title": "The LTS Document: Lab, Template and Solutions All in One",
+    "section": "Speaker",
+    "text": "Speaker\n\nWill Hopper is…"
+  },
+  {
+    "objectID": "talks/5-discussion/index.html",
+    "href": "talks/5-discussion/index.html",
+    "title": "Looking back and looking beyond",
+    "section": "",
+    "text": "Source code for slides\nFull screen slides"
+  },
+  {
+    "objectID": "talks/5-discussion/index.html#slides",
+    "href": "talks/5-discussion/index.html#slides",
+    "title": "Looking back and looking beyond",
+    "section": "",
+    "text": "Source code for slides\nFull screen slides"
+  },
+  {
+    "objectID": "talks/5-discussion/index.html#speaker",
+    "href": "talks/5-discussion/index.html#speaker",
+    "title": "Looking back and looking beyond",
+    "section": "Speaker",
+    "text": "Speaker\n\nMine Çetinkaya-Rundel is Professor of the Practice at Duke University and Developer Educator at Posit. Mine’s work focuses on innovation in statistics and data science pedagogy, with an emphasis on computing, reproducible research, student-centered learning, and open-source education as well as pedagogical approaches for enhancing retention of women and under-represented minorities in STEM. Mine works on the OpenIntro project, whose mission is to make educational products that are free, transparent, and lower barriers to education. As part of this project she co-authored four open-source introductory statistics textbooks – latest is the 2nd edition of Introduction to Modern Statistics. She is also a co-author on R for Data Science, the creator and maintainer of Data Science in a Box, and she teaches popular data analysis and data science with R courses on Coursera. Mine is a Fellow of the ASA and Elected Member of the ISI as well as a Waller and Hogg award winner for teaching excellence. In 2024, she was elected as Vice President of the International Association for Statistical Education (IASE)."
+  },
+  {
+    "objectID": "talks/3-sry/index.html",
+    "href": "talks/3-sry/index.html",
+    "title": "gglm: A tool for teaching linear model diagnostics while adhering to the grammar of graphics",
+    "section": "",
+    "text": "In this talk, I’ll discuss the gglm R package, which allows for easy creation of linear model diagnostic plots using the grammar of the graphics and ggplot2. More specifically, gglm provides a consistent and intuitive syntax to produce residual diagnostic plots for a variety of model types. We’ll cover the basics of the package, along with motivation and use cases for a modern statistics, statistical learning, or data science classroom. We’ll compare gglm’s diagnostic plot solution to solutions provided by base R and others. We’ll then discuss features of the package that allow for more robust analysis of residuals than typical model diagnostic tools, including different model types (i.e., engines) and multivariate diagnostics. Finally, I’ll showcase a shiny dashboard that allows the user to upload data, build a statistical model, and produce diagnostics powered by gglm, aimed at introductory statistics courses that don’t cover programming, but still want to use real data."
+  },
+  {
+    "objectID": "talks/3-sry/index.html#abstract",
+    "href": "talks/3-sry/index.html#abstract",
+    "title": "gglm: A tool for teaching linear model diagnostics while adhering to the grammar of graphics",
+    "section": "",
+    "text": "In this talk, I’ll discuss the gglm R package, which allows for easy creation of linear model diagnostic plots using the grammar of the graphics and ggplot2. More specifically, gglm provides a consistent and intuitive syntax to produce residual diagnostic plots for a variety of model types. We’ll cover the basics of the package, along with motivation and use cases for a modern statistics, statistical learning, or data science classroom. We’ll compare gglm’s diagnostic plot solution to solutions provided by base R and others. We’ll then discuss features of the package that allow for more robust analysis of residuals than typical model diagnostic tools, including different model types (i.e., engines) and multivariate diagnostics. Finally, I’ll showcase a shiny dashboard that allows the user to upload data, build a statistical model, and produce diagnostics powered by gglm, aimed at introductory statistics courses that don’t cover programming, but still want to use real data."
+  },
+  {
+    "objectID": "talks/3-sry/index.html#slides",
+    "href": "talks/3-sry/index.html#slides",
+    "title": "gglm: A tool for teaching linear model diagnostics while adhering to the grammar of graphics",
+    "section": "Slides",
+    "text": "Slides\n\nSource code for slides\nFull screen slides"
+  },
+  {
+    "objectID": "talks/3-sry/index.html#speaker",
+    "href": "talks/3-sry/index.html#speaker",
+    "title": "gglm: A tool for teaching linear model diagnostics while adhering to the grammar of graphics",
+    "section": "Speaker",
+    "text": "Speaker\n\nGrayson White is a Visiting Assistant Professor of Statistics at Reed College. His research interests are in small area estimation, hierarchical Bayesian modeling, environmental statistics applied to forestry and natural resources problems, and statistical software development. More specifically, my research focuses on implementing model-based statistical methods for small area estimation of forest attributes, and developing methodologies for formal assessment of those estimators."
+  },
+  {
+    "objectID": "talks/5-discussion/discussion.html#one-stop-shop",
+    "href": "talks/5-discussion/discussion.html#one-stop-shop",
+    "title": "looking backand looking beyond",
+    "section": "one-stop shop",
+    "text": "one-stop shop\n\nbit.ly/quarto-possibilities"
+  },
+  {
+    "objectID": "talks/5-discussion/discussion.html#yes-dark-mode-is-a-possibility",
+    "href": "talks/5-discussion/discussion.html#yes-dark-mode-is-a-possibility",
+    "title": "looking backand looking beyond",
+    "section": "yes, dark mode is a possibility",
+    "text": "yes, dark mode is a possibility\n\n\n_quarto.yml\n\nformat:\n  html:\n    theme: \n      light: flatly\n      dark: darkly\n\n\n\nbut let’s get back to business…"
+  },
+  {
+    "objectID": "talks/5-discussion/discussion.html#use-quarto",
+    "href": "talks/5-discussion/discussion.html#use-quarto",
+    "title": "looking backand looking beyond",
+    "section": "use quarto",
+    "text": "use quarto\n\n Emil :: presentations with revealjs\n\n\nGetting started with a reproducible presentation that looks “good” is easy peasy  squeezy\nTooling is there and well-documented for going from good to “stunning” presentations\nBut it takes willingness to learn / get familiar with / copy-paste trial-and-error with web design tools"
+  },
+  {
+    "objectID": "talks/5-discussion/discussion.html#slides-with-code-output",
+    "href": "talks/5-discussion/discussion.html#slides-with-code-output",
+    "title": "looking backand looking beyond",
+    "section": "slides with code + output",
+    "text": "slides with code + output\n\n```{r}\n#| output-location: fragment\nplot(cars)\n```"
+  },
+  {
+    "objectID": "talks/5-discussion/discussion.html#slides-with-code-output-1",
+    "href": "talks/5-discussion/discussion.html#slides-with-code-output-1",
+    "title": "looking backand looking beyond",
+    "section": "slides with code + output",
+    "text": "slides with code + output\n\n\n```{r}\n#| output-location: column-fragment\nplot(cars)\n```"
+  },
+  {
+    "objectID": "talks/5-discussion/discussion.html#use-quarto-1",
+    "href": "talks/5-discussion/discussion.html#use-quarto-1",
+    "title": "looking backand looking beyond",
+    "section": "use quarto",
+    "text": "use quarto\n\n Charlotte :: websites\n\n\nDon’t start from scratch!\nTooling is there and well-documented for going from good to “stunning” websites, but it takes willingness to learn / get familiar with / copy-paste trial-and-error with web design tools – sound familiar?\nThere is no excuse for not having a personal (or otherwise) website made with Quarto"
+  },
+  {
+    "objectID": "talks/5-discussion/discussion.html#course-websites-search",
+    "href": "talks/5-discussion/discussion.html#course-websites-search",
+    "title": "looking backand looking beyond",
+    "section": "course websites + search",
+    "text": "course websites + search"
+  },
+  {
+    "objectID": "talks/5-discussion/discussion.html#student-project-websites",
+    "href": "talks/5-discussion/discussion.html#student-project-websites",
+    "title": "looking backand looking beyond",
+    "section": "student project websites",
+    "text": "student project websites\n\n\n\nfew .qmds\n_quarto.yml\n\n\n\nGitHub repo\nGitHub action\n\n\n\n\n\n.github/workflows/render-website.yaml\n\non:\n  push:\n    branches: main\n  workflow_dispatch:\n\nname: Render Website\n\njobs:\n  build-website:\n    runs-on: self-hosted\n    container:\n      image: ghcr.io/dukestatsci/r_gh_actions:latest\n    env:\n      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}\n    steps:\n      - uses: actions/checkout@v2\n\n      - name: Install packages\n        run: |\n          checklist::install_missing_pkgs()\n        shell: Rscript {0}\n        \n      - name: Render Quarto Project\n        run: |\n          quarto render &&\n          touch docs/.nojekyll\n      \n      - name: Deploy 🚀\n        uses: JamesIves/github-pages-deploy-action@v4\n        with:\n          clean: false\n          branch: gh-pages\n          folder: docs"
+  },
+  {
+    "objectID": "talks/5-discussion/discussion.html#et-voila",
+    "href": "talks/5-discussion/discussion.html#et-voila",
+    "title": "looking backand looking beyond",
+    "section": "et voila!",
+    "text": "et voila!"
+  },
+  {
+    "objectID": "talks/5-discussion/discussion.html#break-quarto",
+    "href": "talks/5-discussion/discussion.html#break-quarto",
+    "title": "looking backand looking beyond",
+    "section": "break quarto",
+    "text": "break quarto\n\n Colin :: parsermd / rundel.github.io/parsermd\n\n\n\n\nA Quarto document is ultimately a document you can break apart\nThe document is structured in a way that quarto leverages that you can get at with other tooling as well\nIn a teaching context, breaking apart a Quarto document can enable automated section-level feedback or more…"
+  },
+  {
+    "objectID": "talks/5-discussion/discussion.html#a-look-back-at-breaking-rmarkdown",
+    "href": "talks/5-discussion/discussion.html#a-look-back-at-breaking-rmarkdown",
+    "title": "looking backand looking beyond",
+    "section": "a look back at breaking rmarkdown",
+    "text": "a look back at breaking rmarkdown\n\nMake a template\n\n\n\ngen-template.R\n\nlibrary(magrittr)\nlibrary(readr)\n\nparsermd::parse_rmd(\"lab-06.Rmd\") %&gt;%\n  parsermd::as_tibble() %&gt;%\n  dplyr::filter(sec_h3 != \"Load packages\" & !is.na(sec_h3)) %&gt;%\n  parsermd::rmd_template(keep_content = TRUE, keep_headings = TRUE) %&gt;%\n  write_rds(here::here(\".github/workflows/template.rds\"))"
+  },
+  {
+    "objectID": "talks/5-discussion/discussion.html#a-look-back-at-break-rmarkdown",
+    "href": "talks/5-discussion/discussion.html#a-look-back-at-break-rmarkdown",
+    "title": "looking backand looking beyond",
+    "section": "a look back at break rmarkdown",
+    "text": "a look back at break rmarkdown\n\nCheck against the a template with GitHub actions\n\n\n\n.github/workflows/rmd_structure.yml\n\non:\n  push:\n    paths:\n    - 'lab-06.Rmd'\nname: Check Rmd Structure\njobs:\n  test:\n    runs-on: self-hosted\n    container:\n      image: ghcr.io/statprog-s1-2020/hw2-docker:latest\n    steps:\n    - name: Checkout\n      uses: actions/checkout@master\n    - name: Check Structure\n      run: |\n        tpl = readRDS(\".github/workflows/template.rds\")\n        checklist::quit_on_failure({\n          parsermd::rmd_check_template(\"lab-06.Rmd\", tpl)\n        })\n      shell: Rscript {0}"
+  },
+  {
+    "objectID": "talks/5-discussion/discussion.html#extend-quarto",
+    "href": "talks/5-discussion/discussion.html#extend-quarto",
+    "title": "looking backand looking beyond",
+    "section": "extend quarto",
+    "text": "extend quarto\n\n Andrew :: closeread\n\n\nHow text is presented might (does?) have an effect on how much your readers focus on what they’re reading\nWhen all of quarto isn’t enough, dive into the extensions\nYou – yes, you, person with (probably) a stats degree and a passion for making things work / look exactly the way you want them – can also extend Quarto!"
+  },
+  {
+    "objectID": "talks/5-discussion/discussion.html#so-many-extensions",
+    "href": "talks/5-discussion/discussion.html#so-many-extensions",
+    "title": "looking backand looking beyond",
+    "section": "so many extensions!",
+    "text": "so many extensions!"
+  },
+  {
+    "objectID": "talks/5-discussion/discussion.html#as-simple-as",
+    "href": "talks/5-discussion/discussion.html#as-simple-as",
+    "title": "looking backand looking beyond",
+    "section": "as simple as…",
+    "text": "as simple as…\n\n\neasy peasy  squeezy\n\n\n\n\nInstall the fontawesome extension\n\nquarto add quarto-ext/fontawesome\n\n\n\nUse it with the fa shortcode"
+  },
+  {
+    "objectID": "talks/5-discussion/discussion.html#as-not-so-simple-as",
+    "href": "talks/5-discussion/discussion.html#as-not-so-simple-as",
+    "title": "looking backand looking beyond",
+    "section": "as not-so-simple as…",
+    "text": "as not-so-simple as…"
+  },
+  {
+    "objectID": "talks/5-discussion/discussion.html#as-not-so-simple-as-1",
+    "href": "talks/5-discussion/discussion.html#as-not-so-simple-as-1",
+    "title": "looking backand looking beyond",
+    "section": "as not-so-simple as…",
+    "text": "as not-so-simple as…\n\n\n\n\n\n\nInstall the fontawesome extension\n\nquarto use template quarto-journals/jasa\n\n\nRender the .qmd"
+  },
+  {
+    "objectID": "talks/5-discussion/discussion.html#did-someone-say",
+    "href": "talks/5-discussion/discussion.html#did-someone-say",
+    "title": "looking backand looking beyond",
+    "section": "did someone say?",
+    "text": "did someone say?\n\nWhat was the plot you showed us earlier?\n\n\n\nInstall the quarto-drop extension\n\nquarto add r-wasm/quarto-drop\n\n\n\nAdd the plugin to your presentation yaml\n\n---\nformat: revealjs\nrevealjs-plugins:\n  - drop\n---"
+  },
+  {
+    "objectID": "talks/5-discussion/discussion.html#thank-you-questions",
+    "href": "talks/5-discussion/discussion.html#thank-you-questions",
+    "title": "looking backand looking beyond",
+    "section": "thank you! + questions?",
+    "text": "thank you! + questions?\n\nbit.ly/quarto-possibilities\n\n\n\nArtwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst."
+  },
+  {
+    "objectID": "talks/5-discussion/discussion.html#questions",
+    "href": "talks/5-discussion/discussion.html#questions",
+    "title": "looking backand looking beyond",
+    "section": "questions?",
+    "text": "questions?"
+  },
+  {
+    "objectID": "talks/2-gglm/index.html",
+    "href": "talks/2-gglm/index.html",
+    "title": "Stop Repeating Yourself: Shared R Resources to Reduce Duplicated Prep",
+    "section": "",
+    "text": "For introductory statistics courses that incorporate programming, a lot of time is spent creating and maintaining how-to guides and design class activities that introduce help students get up and running with the language, navigating the IDE, fundamental building blocks of the programming language, and practicing the commands to carryout analyses. This takes a lot of time and effort, which can be duplicated across faculty when there are many sections of the same course taught in a term. In this talk, we explore the use of an R “lab manual” paired with an R package that serves as a shared resource for the introductory statistics courses at Carleton College. We’ll discuss its usage, maintenance, and frustration-saving features. Along the way we’ll also discus a smattering of other “life hacks”, such as generating alternative text with AI and using quarto-live for class activities."
+  },
+  {
+    "objectID": "talks/2-gglm/index.html#abstract",
+    "href": "talks/2-gglm/index.html#abstract",
+    "title": "Stop Repeating Yourself: Shared R Resources to Reduce Duplicated Prep",
+    "section": "",
+    "text": "For introductory statistics courses that incorporate programming, a lot of time is spent creating and maintaining how-to guides and design class activities that introduce help students get up and running with the language, navigating the IDE, fundamental building blocks of the programming language, and practicing the commands to carryout analyses. This takes a lot of time and effort, which can be duplicated across faculty when there are many sections of the same course taught in a term. In this talk, we explore the use of an R “lab manual” paired with an R package that serves as a shared resource for the introductory statistics courses at Carleton College. We’ll discuss its usage, maintenance, and frustration-saving features. Along the way we’ll also discus a smattering of other “life hacks”, such as generating alternative text with AI and using quarto-live for class activities."
+  },
+  {
+    "objectID": "talks/2-gglm/index.html#slides",
+    "href": "talks/2-gglm/index.html#slides",
+    "title": "Stop Repeating Yourself: Shared R Resources to Reduce Duplicated Prep",
+    "section": "Slides",
+    "text": "Slides\n\nSource code for slides\nFull screen slides"
+  },
+  {
+    "objectID": "talks/2-gglm/index.html#speaker",
+    "href": "talks/2-gglm/index.html#speaker",
+    "title": "Stop Repeating Yourself: Shared R Resources to Reduce Duplicated Prep",
+    "section": "Speaker",
+    "text": "Speaker\n\nAdam Loy is…"
+  },
+  {
+    "objectID": "talks/1-automate/index.html",
+    "href": "talks/1-automate/index.html",
+    "title": "Automate all the things",
+    "section": "",
+    "text": "Teaching modern data science and statistics courses presents numerous logistical challenges—from building and distributing assignments and other course materials to providing timely, consistent feedback. In this talk, we explore tools for automating the repetitive aspects of course administration, building on the core reproducible infrastructure of Git, GitHub, and Quarto. Examples will include the ghclass package, which streamlines classroom management on GitHub, enabling automated repository creation, assignment distribution, and collection. GitHub Actions, which extends this ecosystem with CI pipelines that automatically render documents, run checks, and provide feedback on student submissions. The parsermd and markrmd packages, which offer programmatic tools for parsing and manipulating R Markdown and Quarto documents, enabling both automated and more efficient manual assessment of student work. Finally, we look ahead to the emerging role of agentic AI tools in teaching, discussing both the opportunities and considerations for AI-driven automation in course management."
+  },
+  {
+    "objectID": "talks/1-automate/index.html#abstract",
+    "href": "talks/1-automate/index.html#abstract",
+    "title": "Automate all the things",
+    "section": "",
+    "text": "Teaching modern data science and statistics courses presents numerous logistical challenges—from building and distributing assignments and other course materials to providing timely, consistent feedback. In this talk, we explore tools for automating the repetitive aspects of course administration, building on the core reproducible infrastructure of Git, GitHub, and Quarto. Examples will include the ghclass package, which streamlines classroom management on GitHub, enabling automated repository creation, assignment distribution, and collection. GitHub Actions, which extends this ecosystem with CI pipelines that automatically render documents, run checks, and provide feedback on student submissions. The parsermd and markrmd packages, which offer programmatic tools for parsing and manipulating R Markdown and Quarto documents, enabling both automated and more efficient manual assessment of student work. Finally, we look ahead to the emerging role of agentic AI tools in teaching, discussing both the opportunities and considerations for AI-driven automation in course management."
+  },
+  {
+    "objectID": "talks/1-automate/index.html#slides",
+    "href": "talks/1-automate/index.html#slides",
+    "title": "Automate all the things",
+    "section": "Slides",
+    "text": "Slides\n\nSource code for slides\nFull screen slides"
+  },
+  {
+    "objectID": "talks/1-automate/index.html#speaker",
+    "href": "talks/1-automate/index.html#speaker",
+    "title": "Automate all the things",
+    "section": "Speaker",
+    "text": "Speaker\n\nColin Rundel is Associate Professor of the Practice at Duke University where he has been teaching since 2012. His work focuses on teaching statistical computing to both undergraduate and graduate students in both R and Python."
+  }
+]

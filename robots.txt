@@ -1,0 +1,1 @@
+Sitemap: https://beanumber.github.io/quarto-life-hacks-jsm26/sitemap.xml
