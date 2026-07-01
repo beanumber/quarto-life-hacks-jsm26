@@ -1,3 +1,3 @@
-# quarto-world-of-possibilities-jsm24
+# quarto-life-hacks-jsm26
 
-Slides and materials for the "A World of Possibilities for Reproducible Publishing with Quarto" session at JSM 2024.
+Slides and materials for the "Life Hacks for Educators" session at JSM 2026.
