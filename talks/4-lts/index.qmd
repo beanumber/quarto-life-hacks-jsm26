@@ -1,0 +1,29 @@
+---
+title: "The LTS Document: Lab, Template and Solutions All in One"
+author: William Hopper
+image: featured.png
+image-alt: "Screenshot from Colin's presentation with parsermd package logo overlaid."
+---
+
+## Abstract
+
+Assigning low-stakes practice problems or "lab" activities during class is one strategy for incorporating active learning into a traditional lecture-oriented course. 
+In a course that incorporates computation, instructors may find it useful to provide a document with detailed information and instructions (a "lab" document), a document with initial scaffolding for students to work within (a "template" document), and a document with example results (a "solutions" document). 
+However, keeping content synchronized across these three documents, as well as the learning management system used to distribute these documents, introduces administrative overhead and mistakes. 
+This talk demonstrates how to use an LTS document (a custom document format for the Quarto publishing system) to create each of these student-facing files simultaneously from one main instructor-facing file, and automatically deploy them to Moodle using an R package. 
+
+## Slides
+
+```{=html}
+<iframe class="slide-deck" src="" height="420" width="747" style="border: 1px solid #2e3846;"></iframe>
+```
+
+[Source code for slides]()
+
+[Full screen slides]()
+
+## Speaker
+
+![](https://www.smith.edu/sites/default/files/styles/content_faculty_profile_full_large/public/2025-09/will-hopper-25.jpg.webp?itok=xsaslWSL){style="float: right; padding-left: 10px;" fig-alt="Photo of Colin Rundel" width="200"}
+
+Will Hopper is...

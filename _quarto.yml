@@ -5,14 +5,14 @@ website:
   repo-url: https://github.com/mine-cetinkaya-rundel/quarto-world-of-possibilities-jsm24
   repo-actions: [edit, issue]
   navbar:
-    logo: jsm-logo.png
+    logo: https://ww2.amstat.org/meetings/jsm/2026/images/logo.png
     search: true
     left:
       - href: index.qmd
         text: Home
     tools:
       - icon: github
-        href: https://github.com/mine-cetinkaya-rundel/quarto-world-of-possibilities-jsm24
+        href: https://github.com/beanumber/quarto-life-hacks-jsm26
 
 format:
   html:
@@ -20,8 +20,6 @@ format:
       light: flatly
       dark: darkly
     toc: true
-
-editor: visual
 
 execute:
   freeze: auto

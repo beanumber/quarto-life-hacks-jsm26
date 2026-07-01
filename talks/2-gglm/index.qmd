@@ -1,0 +1,30 @@
+---
+title: "Stop Repeating Yourself: Shared R Resources to Reduce Duplicated Prep"
+author: Adam Loy
+image: featured.png
+image-alt: "Screenshot from Colin's presentation with parsermd package logo overlaid."
+---
+
+## Abstract
+
+For introductory statistics courses that incorporate programming, a lot of time is spent creating and maintaining how-to guides and design class activities that introduce help students get up and running with the language, navigating the IDE, fundamental building blocks of the programming language, and practicing the commands to carryout analyses. 
+This takes a lot of time and effort, which can be duplicated across faculty when there are many sections of the same course taught in a term. 
+In this talk, we explore the use of an R "lab manual" paired with an R package that serves as a shared resource for the introductory statistics courses at Carleton College. 
+We'll discuss its usage, maintenance, and frustration-saving features. Along the way we'll also discus a smattering of other "life hacks", such as generating alternative text with AI and using quarto-live for class activities.   
+
+## Slides
+
+```{=html}
+<iframe class="slide-deck" src="" height="420" width="747" style="border: 1px solid #2e3846;"></iframe>
+```
+
+[Source code for slides]()
+
+[Full screen slides]()
+
+## Speaker
+
+![](https://www.carleton.edu/directory/photo/aloy/?resize=400){style="float: right; padding-left: 10px;" fig-alt="Photo of Adam Loy" width="200"}
+
+Adam Loy is...
+
