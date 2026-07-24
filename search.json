@@ -28,81 +28,32 @@
     "text": "Homepage\nAll session materials can be viewed at https://beanumber.github.io/quarto-life-hacks-jsm26/. The GitHub repo that serves this site is at https://github.com/beanumber/quarto-life-hacks-jsm26/."
   },
   {
-    "objectID": "talks/4-lts/index.html",
-    "href": "talks/4-lts/index.html",
-    "title": "The LTS Document: Lab, Template and Solutions All in One",
+    "objectID": "talks/2-gglm/index.html",
+    "href": "talks/2-gglm/index.html",
+    "title": "Stop Repeating Yourself: Shared R Resources to Reduce Duplicated Prep",
     "section": "",
-    "text": "Assigning low-stakes practice problems or “lab” activities during class is one strategy for incorporating active learning into a traditional lecture-oriented course. In a course that incorporates computation, instructors may find it useful to provide a document with detailed information and instructions (a “lab” document), a document with initial scaffolding for students to work within (a “template” document), and a document with example results (a “solutions” document). However, keeping content synchronized across these three documents, as well as the learning management system used to distribute these documents, introduces administrative overhead and mistakes. This talk demonstrates how to use an LTS document (a custom document format for the Quarto publishing system) to create each of these student-facing files simultaneously from one main instructor-facing file, and automatically deploy them to Moodle using an R package."
+    "text": "For introductory statistics courses that incorporate programming, a lot of time is spent creating and maintaining how-to guides and design class activities that introduce help students get up and running with the language, navigating the IDE, fundamental building blocks of the programming language, and practicing the commands to carryout analyses. This takes a lot of time and effort, which can be duplicated across faculty when there are many sections of the same course taught in a term. In this talk, we explore the use of an R “lab manual” paired with an R package that serves as a shared resource for the introductory statistics courses at Carleton College. We’ll discuss its usage, maintenance, and frustration-saving features. Along the way we’ll also discus a smattering of other “life hacks”, such as generating alternative text with AI and using quarto-live for class activities."
   },
   {
-    "objectID": "talks/4-lts/index.html#abstract",
-    "href": "talks/4-lts/index.html#abstract",
-    "title": "The LTS Document: Lab, Template and Solutions All in One",
+    "objectID": "talks/2-gglm/index.html#abstract",
+    "href": "talks/2-gglm/index.html#abstract",
+    "title": "Stop Repeating Yourself: Shared R Resources to Reduce Duplicated Prep",
     "section": "",
-    "text": "Assigning low-stakes practice problems or “lab” activities during class is one strategy for incorporating active learning into a traditional lecture-oriented course. In a course that incorporates computation, instructors may find it useful to provide a document with detailed information and instructions (a “lab” document), a document with initial scaffolding for students to work within (a “template” document), and a document with example results (a “solutions” document). However, keeping content synchronized across these three documents, as well as the learning management system used to distribute these documents, introduces administrative overhead and mistakes. This talk demonstrates how to use an LTS document (a custom document format for the Quarto publishing system) to create each of these student-facing files simultaneously from one main instructor-facing file, and automatically deploy them to Moodle using an R package."
+    "text": "For introductory statistics courses that incorporate programming, a lot of time is spent creating and maintaining how-to guides and design class activities that introduce help students get up and running with the language, navigating the IDE, fundamental building blocks of the programming language, and practicing the commands to carryout analyses. This takes a lot of time and effort, which can be duplicated across faculty when there are many sections of the same course taught in a term. In this talk, we explore the use of an R “lab manual” paired with an R package that serves as a shared resource for the introductory statistics courses at Carleton College. We’ll discuss its usage, maintenance, and frustration-saving features. Along the way we’ll also discus a smattering of other “life hacks”, such as generating alternative text with AI and using quarto-live for class activities."
   },
   {
-    "objectID": "talks/4-lts/index.html#slides",
-    "href": "talks/4-lts/index.html#slides",
-    "title": "The LTS Document: Lab, Template and Solutions All in One",
+    "objectID": "talks/2-gglm/index.html#slides",
+    "href": "talks/2-gglm/index.html#slides",
+    "title": "Stop Repeating Yourself: Shared R Resources to Reduce Duplicated Prep",
     "section": "Slides",
     "text": "Slides\n\nSource code for slides\nFull screen slides"
   },
   {
-    "objectID": "talks/4-lts/index.html#speaker",
-    "href": "talks/4-lts/index.html#speaker",
-    "title": "The LTS Document: Lab, Template and Solutions All in One",
+    "objectID": "talks/2-gglm/index.html#speaker",
+    "href": "talks/2-gglm/index.html#speaker",
+    "title": "Stop Repeating Yourself: Shared R Resources to Reduce Duplicated Prep",
     "section": "Speaker",
-    "text": "Speaker\n\nWill Hopper is…"
-  },
-  {
-    "objectID": "talks/5-discussion/index.html",
-    "href": "talks/5-discussion/index.html",
-    "title": "Looking back and looking beyond",
-    "section": "",
-    "text": "Source code for slides\nFull screen slides"
-  },
-  {
-    "objectID": "talks/5-discussion/index.html#slides",
-    "href": "talks/5-discussion/index.html#slides",
-    "title": "Looking back and looking beyond",
-    "section": "",
-    "text": "Source code for slides\nFull screen slides"
-  },
-  {
-    "objectID": "talks/5-discussion/index.html#speaker",
-    "href": "talks/5-discussion/index.html#speaker",
-    "title": "Looking back and looking beyond",
-    "section": "Speaker",
-    "text": "Speaker\n\nMine Çetinkaya-Rundel is Professor of the Practice at Duke University and Developer Educator at Posit. Mine’s work focuses on innovation in statistics and data science pedagogy, with an emphasis on computing, reproducible research, student-centered learning, and open-source education as well as pedagogical approaches for enhancing retention of women and under-represented minorities in STEM. Mine works on the OpenIntro project, whose mission is to make educational products that are free, transparent, and lower barriers to education. As part of this project she co-authored four open-source introductory statistics textbooks – latest is the 2nd edition of Introduction to Modern Statistics. She is also a co-author on R for Data Science, the creator and maintainer of Data Science in a Box, and she teaches popular data analysis and data science with R courses on Coursera. Mine is a Fellow of the ASA and Elected Member of the ISI as well as a Waller and Hogg award winner for teaching excellence. In 2024, she was elected as Vice President of the International Association for Statistical Education (IASE)."
-  },
-  {
-    "objectID": "talks/3-sry/index.html",
-    "href": "talks/3-sry/index.html",
-    "title": "gglm: A tool for teaching linear model diagnostics while adhering to the grammar of graphics",
-    "section": "",
-    "text": "In this talk, I’ll discuss the gglm R package, which allows for easy creation of linear model diagnostic plots using the grammar of the graphics and ggplot2. More specifically, gglm provides a consistent and intuitive syntax to produce residual diagnostic plots for a variety of model types. We’ll cover the basics of the package, along with motivation and use cases for a modern statistics, statistical learning, or data science classroom. We’ll compare gglm’s diagnostic plot solution to solutions provided by base R and others. We’ll then discuss features of the package that allow for more robust analysis of residuals than typical model diagnostic tools, including different model types (i.e., engines) and multivariate diagnostics. Finally, I’ll showcase a shiny dashboard that allows the user to upload data, build a statistical model, and produce diagnostics powered by gglm, aimed at introductory statistics courses that don’t cover programming, but still want to use real data."
-  },
-  {
-    "objectID": "talks/3-sry/index.html#abstract",
-    "href": "talks/3-sry/index.html#abstract",
-    "title": "gglm: A tool for teaching linear model diagnostics while adhering to the grammar of graphics",
-    "section": "",
-    "text": "In this talk, I’ll discuss the gglm R package, which allows for easy creation of linear model diagnostic plots using the grammar of the graphics and ggplot2. More specifically, gglm provides a consistent and intuitive syntax to produce residual diagnostic plots for a variety of model types. We’ll cover the basics of the package, along with motivation and use cases for a modern statistics, statistical learning, or data science classroom. We’ll compare gglm’s diagnostic plot solution to solutions provided by base R and others. We’ll then discuss features of the package that allow for more robust analysis of residuals than typical model diagnostic tools, including different model types (i.e., engines) and multivariate diagnostics. Finally, I’ll showcase a shiny dashboard that allows the user to upload data, build a statistical model, and produce diagnostics powered by gglm, aimed at introductory statistics courses that don’t cover programming, but still want to use real data."
-  },
-  {
-    "objectID": "talks/3-sry/index.html#slides",
-    "href": "talks/3-sry/index.html#slides",
-    "title": "gglm: A tool for teaching linear model diagnostics while adhering to the grammar of graphics",
-    "section": "Slides",
-    "text": "Slides\n\nSource code for slides\nFull screen slides"
-  },
-  {
-    "objectID": "talks/3-sry/index.html#speaker",
-    "href": "talks/3-sry/index.html#speaker",
-    "title": "gglm: A tool for teaching linear model diagnostics while adhering to the grammar of graphics",
-    "section": "Speaker",
-    "text": "Speaker\n\nGrayson White is a Visiting Assistant Professor of Statistics at Reed College. His research interests are in small area estimation, hierarchical Bayesian modeling, environmental statistics applied to forestry and natural resources problems, and statistical software development. More specifically, my research focuses on implementing model-based statistical methods for small area estimation of forest attributes, and developing methodologies for formal assessment of those estimators."
+    "text": "Speaker\n\nAdam Loy is…"
   },
   {
     "objectID": "talks/5-discussion/discussion.html#one-stop-shop",
@@ -245,34 +196,6 @@
     "text": "questions?"
   },
   {
-    "objectID": "talks/2-gglm/index.html",
-    "href": "talks/2-gglm/index.html",
-    "title": "Stop Repeating Yourself: Shared R Resources to Reduce Duplicated Prep",
-    "section": "",
-    "text": "For introductory statistics courses that incorporate programming, a lot of time is spent creating and maintaining how-to guides and design class activities that introduce help students get up and running with the language, navigating the IDE, fundamental building blocks of the programming language, and practicing the commands to carryout analyses. This takes a lot of time and effort, which can be duplicated across faculty when there are many sections of the same course taught in a term. In this talk, we explore the use of an R “lab manual” paired with an R package that serves as a shared resource for the introductory statistics courses at Carleton College. We’ll discuss its usage, maintenance, and frustration-saving features. Along the way we’ll also discus a smattering of other “life hacks”, such as generating alternative text with AI and using quarto-live for class activities."
-  },
-  {
-    "objectID": "talks/2-gglm/index.html#abstract",
-    "href": "talks/2-gglm/index.html#abstract",
-    "title": "Stop Repeating Yourself: Shared R Resources to Reduce Duplicated Prep",
-    "section": "",
-    "text": "For introductory statistics courses that incorporate programming, a lot of time is spent creating and maintaining how-to guides and design class activities that introduce help students get up and running with the language, navigating the IDE, fundamental building blocks of the programming language, and practicing the commands to carryout analyses. This takes a lot of time and effort, which can be duplicated across faculty when there are many sections of the same course taught in a term. In this talk, we explore the use of an R “lab manual” paired with an R package that serves as a shared resource for the introductory statistics courses at Carleton College. We’ll discuss its usage, maintenance, and frustration-saving features. Along the way we’ll also discus a smattering of other “life hacks”, such as generating alternative text with AI and using quarto-live for class activities."
-  },
-  {
-    "objectID": "talks/2-gglm/index.html#slides",
-    "href": "talks/2-gglm/index.html#slides",
-    "title": "Stop Repeating Yourself: Shared R Resources to Reduce Duplicated Prep",
-    "section": "Slides",
-    "text": "Slides\n\nSource code for slides\nFull screen slides"
-  },
-  {
-    "objectID": "talks/2-gglm/index.html#speaker",
-    "href": "talks/2-gglm/index.html#speaker",
-    "title": "Stop Repeating Yourself: Shared R Resources to Reduce Duplicated Prep",
-    "section": "Speaker",
-    "text": "Speaker\n\nAdam Loy is…"
-  },
-  {
     "objectID": "talks/1-automate/index.html",
     "href": "talks/1-automate/index.html",
     "title": "Automate all the things",
@@ -299,5 +222,82 @@
     "title": "Automate all the things",
     "section": "Speaker",
     "text": "Speaker\n\nColin Rundel is Associate Professor of the Practice at Duke University where he has been teaching since 2012. His work focuses on teaching statistical computing to both undergraduate and graduate students in both R and Python."
+  },
+  {
+    "objectID": "talks/5-discussion/index.html",
+    "href": "talks/5-discussion/index.html",
+    "title": "Looking back and looking beyond",
+    "section": "",
+    "text": "Source code for slides\nFull screen slides"
+  },
+  {
+    "objectID": "talks/5-discussion/index.html#slides",
+    "href": "talks/5-discussion/index.html#slides",
+    "title": "Looking back and looking beyond",
+    "section": "",
+    "text": "Source code for slides\nFull screen slides"
+  },
+  {
+    "objectID": "talks/5-discussion/index.html#speaker",
+    "href": "talks/5-discussion/index.html#speaker",
+    "title": "Looking back and looking beyond",
+    "section": "Speaker",
+    "text": "Speaker\n\nMine Çetinkaya-Rundel is a Professor of the Practice and Associate Director of Undergraduate Studies in the Department of Statistical Science as well as the Director of First-Year Experience in Trinity College of Arts & Sciences at Duke University. She is also Senior Developer Advocate at Posit. Mine is a leading voice in modern statistics and data science education. Her work focuses on integrating reproducible computing, open-source tools, and real-world data into the statistics curriculum, transforming how students engage with data and statistical thinking. She is a co-author of R for Data Science, the creator and maintainer of Data Science in a Box, and she teaches popular data analysis and data science with R courses on Coursera.. She is also a core contributor to the OpenIntro project and an advocate for open educational resources and statistical computing in R. A Fellow of the American Statistical Association and an Elected Member of the International Statistical Institute, she has received numerous honors, including the ASA’s Waller Education Award and the Robert V. Hogg Award for Excellence in Teaching Introductory Statistics. She currently serves as Vice President of the International Association for Statistical Education (IASE) and as co-chair of the ASA’s DataFest Steering Committee. Through her teaching, writing, and advocacy, Dr. ÇetinkayaRundel has advanced accessible, computation-rich, and reproducible data science education worldwide."
+  },
+  {
+    "objectID": "talks/3-sry/index.html",
+    "href": "talks/3-sry/index.html",
+    "title": "gglm: A tool for teaching linear model diagnostics while adhering to the grammar of graphics",
+    "section": "",
+    "text": "In this talk, I’ll discuss the gglm R package, which allows for easy creation of linear model diagnostic plots using the grammar of the graphics and ggplot2. More specifically, gglm provides a consistent and intuitive syntax to produce residual diagnostic plots for a variety of model types. We’ll cover the basics of the package, along with motivation and use cases for a modern statistics, statistical learning, or data science classroom. We’ll compare gglm’s diagnostic plot solution to solutions provided by base R and others. We’ll then discuss features of the package that allow for more robust analysis of residuals than typical model diagnostic tools, including different model types (i.e., engines) and multivariate diagnostics. Finally, I’ll showcase a shiny dashboard that allows the user to upload data, build a statistical model, and produce diagnostics powered by gglm, aimed at introductory statistics courses that don’t cover programming, but still want to use real data."
+  },
+  {
+    "objectID": "talks/3-sry/index.html#abstract",
+    "href": "talks/3-sry/index.html#abstract",
+    "title": "gglm: A tool for teaching linear model diagnostics while adhering to the grammar of graphics",
+    "section": "",
+    "text": "In this talk, I’ll discuss the gglm R package, which allows for easy creation of linear model diagnostic plots using the grammar of the graphics and ggplot2. More specifically, gglm provides a consistent and intuitive syntax to produce residual diagnostic plots for a variety of model types. We’ll cover the basics of the package, along with motivation and use cases for a modern statistics, statistical learning, or data science classroom. We’ll compare gglm’s diagnostic plot solution to solutions provided by base R and others. We’ll then discuss features of the package that allow for more robust analysis of residuals than typical model diagnostic tools, including different model types (i.e., engines) and multivariate diagnostics. Finally, I’ll showcase a shiny dashboard that allows the user to upload data, build a statistical model, and produce diagnostics powered by gglm, aimed at introductory statistics courses that don’t cover programming, but still want to use real data."
+  },
+  {
+    "objectID": "talks/3-sry/index.html#slides",
+    "href": "talks/3-sry/index.html#slides",
+    "title": "gglm: A tool for teaching linear model diagnostics while adhering to the grammar of graphics",
+    "section": "Slides",
+    "text": "Slides\n\nSource code for slides\nFull screen slides"
+  },
+  {
+    "objectID": "talks/3-sry/index.html#speaker",
+    "href": "talks/3-sry/index.html#speaker",
+    "title": "gglm: A tool for teaching linear model diagnostics while adhering to the grammar of graphics",
+    "section": "Speaker",
+    "text": "Speaker\n\nGrayson White is a Visiting Assistant Professor of Statistics at Reed College. His research interests are in small area estimation, hierarchical Bayesian modeling, environmental statistics applied to forestry and natural resources problems, and statistical software development. More specifically, my research focuses on implementing model-based statistical methods for small area estimation of forest attributes, and developing methodologies for formal assessment of those estimators."
+  },
+  {
+    "objectID": "talks/4-lts/index.html",
+    "href": "talks/4-lts/index.html",
+    "title": "The LTS Document: Lab, Template and Solutions All in One",
+    "section": "",
+    "text": "Assigning low-stakes practice problems or “lab” activities during class is one strategy for incorporating active learning into a traditional lecture-oriented course. In a course that incorporates computation, instructors may find it useful to provide a document with detailed information and instructions (a “lab” document), a document with initial scaffolding for students to work within (a “template” document), and a document with example results (a “solutions” document). However, keeping content synchronized across these three documents, as well as the learning management system used to distribute these documents, introduces administrative overhead and mistakes. This talk demonstrates how to use an LTS document (a custom document format for the Quarto publishing system) to create each of these student-facing files simultaneously from one main instructor-facing file, and automatically deploy them to Moodle using an R package."
+  },
+  {
+    "objectID": "talks/4-lts/index.html#abstract",
+    "href": "talks/4-lts/index.html#abstract",
+    "title": "The LTS Document: Lab, Template and Solutions All in One",
+    "section": "",
+    "text": "Assigning low-stakes practice problems or “lab” activities during class is one strategy for incorporating active learning into a traditional lecture-oriented course. In a course that incorporates computation, instructors may find it useful to provide a document with detailed information and instructions (a “lab” document), a document with initial scaffolding for students to work within (a “template” document), and a document with example results (a “solutions” document). However, keeping content synchronized across these three documents, as well as the learning management system used to distribute these documents, introduces administrative overhead and mistakes. This talk demonstrates how to use an LTS document (a custom document format for the Quarto publishing system) to create each of these student-facing files simultaneously from one main instructor-facing file, and automatically deploy them to Moodle using an R package."
+  },
+  {
+    "objectID": "talks/4-lts/index.html#slides",
+    "href": "talks/4-lts/index.html#slides",
+    "title": "The LTS Document: Lab, Template and Solutions All in One",
+    "section": "Slides",
+    "text": "Slides\n\nSource code for slides\nFull screen slides"
+  },
+  {
+    "objectID": "talks/4-lts/index.html#speaker",
+    "href": "talks/4-lts/index.html#speaker",
+    "title": "The LTS Document: Lab, Template and Solutions All in One",
+    "section": "Speaker",
+    "text": "Speaker\n\nWill Hopper is…"
   }
 ]
