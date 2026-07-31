@@ -6,10 +6,10 @@
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-5a2acb6f4ed5aeb23a104ba421924b87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-eaeb381c6b7494c50009502241a4985c.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.9.38">
+  <meta name="generator" content="quarto-1.10.18">
 
   <meta name="author" content="mine çetinkaya-rundel">
   <title>looking back and looking beyond</title>
@@ -22,10 +22,13 @@
     /* Default styles provided by pandoc.
     ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
     */
-    code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
     ul.task-list li input[type="checkbox"] {
@@ -205,7 +208,7 @@
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-mine çetinkaya-rundel 
+mine çetinkaya-rundel
 </div>
 </div>
 </div>
@@ -224,11 +227,11 @@ mine çetinkaya-rundel
 <div class="code-with-filename-file">
 <pre><strong>_quarto.yml</strong></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-filename="_quarto.yml"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a></a><span class="fu">format</span><span class="kw">:</span></span>
-<span id="cb1-2"><a></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
-<span id="cb1-3"><a></a><span class="at">    </span><span class="fu">theme</span><span class="kw">:</span><span class="at"> </span></span>
-<span id="cb1-4"><a></a><span class="at">      </span><span class="fu">light</span><span class="kw">:</span><span class="at"> flatly</span></span>
-<span id="cb1-5"><a></a><span class="at">      </span><span class="fu">dark</span><span class="kw">:</span><span class="at"> darkly</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-filename="_quarto.yml"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a aria-label="1"></a><span class="fu">format</span><span class="kw">:</span></span>
+<span id="cb1-2"><a aria-label="2"></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
+<span id="cb1-3"><a aria-label="3"></a><span class="at">    </span><span class="fu">theme</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb1-4"><a aria-label="4"></a><span class="at">      </span><span class="fu">light</span><span class="kw">:</span><span class="at"> flatly</span></span>
+<span id="cb1-5"><a aria-label="5"></a><span class="at">      </span><span class="fu">dark</span><span class="kw">:</span><span class="at"> darkly</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p><br><br></p>
 <div class="fragment hand-blue-large">
@@ -249,10 +252,10 @@ mine çetinkaya-rundel
 <section id="slides-with-code-output" class="slide level2">
 <h2>slides with code + output</h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb2-2"><a></a><span class="co">#| output-location: fragment</span></span>
-<span id="cb2-3"><a></a><span class="fu">plot</span>(cars)</span>
-<span id="cb2-4"><a></a><span class="in">```</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a aria-label="1"></a><span class="in">```{r}</span></span>
+<span id="cb2-2"><a aria-label="2"></a><span class="co">#| output-location: fragment</span></span>
+<span id="cb2-3"><a aria-label="3"></a><span class="fu">plot</span>(cars)</span>
+<span id="cb2-4"><a aria-label="4"></a><span class="in">```</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <div class="cell fragment">
 <div class="cell-output-display">
@@ -268,10 +271,10 @@ mine çetinkaya-rundel
 <h2>slides with code + output</h2>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb3-2"><a></a><span class="co">#| output-location: column-fragment</span></span>
-<span id="cb3-3"><a></a><span class="fu">plot</span>(cars)</span>
-<span id="cb3-4"><a></a><span class="in">```</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a aria-label="1"></a><span class="in">```{r}</span></span>
+<span id="cb3-2"><a aria-label="2"></a><span class="co">#| output-location: column-fragment</span></span>
+<span id="cb3-3"><a aria-label="3"></a><span class="fu">plot</span>(cars)</span>
+<span id="cb3-4"><a aria-label="4"></a><span class="in">```</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div><div class="column fragment">
 <div class="cell-output-display">
 <div>
@@ -316,39 +319,39 @@ mine çetinkaya-rundel
 <div class="code-with-filename-file">
 <pre><strong>.github/workflows/render-website.yaml</strong></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4" data-filename=".github/workflows/render-website.yaml"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb4-1"><a></a><span class="fu">on</span><span class="kw">:</span></span>
-<span id="cb4-2"><a></a><span class="at">  </span><span class="fu">push</span><span class="kw">:</span></span>
-<span id="cb4-3"><a></a><span class="at">    </span><span class="fu">branches</span><span class="kw">:</span><span class="at"> main</span></span>
-<span id="cb4-4"><a></a><span class="at">  </span><span class="fu">workflow_dispatch</span><span class="kw">:</span></span>
-<span id="cb4-5"><a></a></span>
-<span id="cb4-6"><a></a><span class="fu">name</span><span class="kw">:</span><span class="at"> Render Website</span></span>
-<span id="cb4-7"><a></a></span>
-<span id="cb4-8"><a></a><span class="fu">jobs</span><span class="kw">:</span></span>
-<span id="cb4-9"><a></a><span class="at">  </span><span class="fu">build-website</span><span class="kw">:</span></span>
-<span id="cb4-10"><a></a><span class="at">    </span><span class="fu">runs-on</span><span class="kw">:</span><span class="at"> self-hosted</span></span>
-<span id="cb4-11"><a></a><span class="at">    </span><span class="fu">container</span><span class="kw">:</span></span>
-<span id="cb4-12"><a></a><span class="at">      </span><span class="fu">image</span><span class="kw">:</span><span class="at"> ghcr.io/dukestatsci/r_gh_actions:latest</span></span>
-<span id="cb4-13"><a></a><span class="at">    </span><span class="fu">env</span><span class="kw">:</span></span>
-<span id="cb4-14"><a></a><span class="at">      </span><span class="fu">GITHUB_PAT</span><span class="kw">:</span><span class="at"> ${{ secrets.GITHUB_TOKEN }}</span></span>
-<span id="cb4-15"><a></a><span class="at">    </span><span class="fu">steps</span><span class="kw">:</span></span>
-<span id="cb4-16"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> actions/checkout@v2</span></span>
-<span id="cb4-17"><a></a></span>
-<span id="cb4-18"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Install packages</span></span>
-<span id="cb4-19"><a></a><span class="fu">        run</span><span class="kw">: </span><span class="ch">|</span></span>
-<span id="cb4-20"><a></a>          checklist::install_missing_pkgs()</span>
-<span id="cb4-21"><a></a><span class="at">        </span><span class="fu">shell</span><span class="kw">:</span><span class="at"> Rscript {0}</span></span>
-<span id="cb4-22"><a></a><span class="at">        </span></span>
-<span id="cb4-23"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Render Quarto Project</span></span>
-<span id="cb4-24"><a></a><span class="fu">        run</span><span class="kw">: </span><span class="ch">|</span></span>
-<span id="cb4-25"><a></a>          quarto render &amp;&amp;</span>
-<span id="cb4-26"><a></a>          touch docs/.nojekyll</span>
-<span id="cb4-27"><a></a><span class="at">      </span></span>
-<span id="cb4-28"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Deploy 🚀</span></span>
-<span id="cb4-29"><a></a><span class="at">        </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> JamesIves/github-pages-deploy-action@v4</span></span>
-<span id="cb4-30"><a></a><span class="at">        </span><span class="fu">with</span><span class="kw">:</span></span>
-<span id="cb4-31"><a></a><span class="at">          </span><span class="fu">clean</span><span class="kw">:</span><span class="at"> </span><span class="ch">false</span></span>
-<span id="cb4-32"><a></a><span class="at">          </span><span class="fu">branch</span><span class="kw">:</span><span class="at"> gh-pages</span></span>
-<span id="cb4-33"><a></a><span class="at">          </span><span class="fu">folder</span><span class="kw">:</span><span class="at"> docs</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4" data-filename=".github/workflows/render-website.yaml"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb4-1"><a aria-label="1"></a><span class="fu">on</span><span class="kw">:</span></span>
+<span id="cb4-2"><a aria-label="2"></a><span class="at">  </span><span class="fu">push</span><span class="kw">:</span></span>
+<span id="cb4-3"><a aria-label="3"></a><span class="at">    </span><span class="fu">branches</span><span class="kw">:</span><span class="at"> main</span></span>
+<span id="cb4-4"><a aria-label="4"></a><span class="at">  </span><span class="fu">workflow_dispatch</span><span class="kw">:</span></span>
+<span id="cb4-5"><a aria-label="5"></a></span>
+<span id="cb4-6"><a aria-label="6"></a><span class="fu">name</span><span class="kw">:</span><span class="at"> Render Website</span></span>
+<span id="cb4-7"><a aria-label="7"></a></span>
+<span id="cb4-8"><a aria-label="8"></a><span class="fu">jobs</span><span class="kw">:</span></span>
+<span id="cb4-9"><a aria-label="9"></a><span class="at">  </span><span class="fu">build-website</span><span class="kw">:</span></span>
+<span id="cb4-10"><a aria-label="10"></a><span class="at">    </span><span class="fu">runs-on</span><span class="kw">:</span><span class="at"> self-hosted</span></span>
+<span id="cb4-11"><a aria-label="11"></a><span class="at">    </span><span class="fu">container</span><span class="kw">:</span></span>
+<span id="cb4-12"><a aria-label="12"></a><span class="at">      </span><span class="fu">image</span><span class="kw">:</span><span class="at"> ghcr.io/dukestatsci/r_gh_actions:latest</span></span>
+<span id="cb4-13"><a aria-label="13"></a><span class="at">    </span><span class="fu">env</span><span class="kw">:</span></span>
+<span id="cb4-14"><a aria-label="14"></a><span class="at">      </span><span class="fu">GITHUB_PAT</span><span class="kw">:</span><span class="at"> ${{ secrets.GITHUB_TOKEN }}</span></span>
+<span id="cb4-15"><a aria-label="15"></a><span class="at">    </span><span class="fu">steps</span><span class="kw">:</span></span>
+<span id="cb4-16"><a aria-label="16"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> actions/checkout@v2</span></span>
+<span id="cb4-17"><a aria-label="17"></a></span>
+<span id="cb4-18"><a aria-label="18"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Install packages</span></span>
+<span id="cb4-19"><a aria-label="19"></a><span class="fu">        run</span><span class="kw">: </span><span class="ch">|</span></span>
+<span id="cb4-20"><a aria-label="20"></a>          checklist::install_missing_pkgs()</span>
+<span id="cb4-21"><a aria-label="21"></a><span class="at">        </span><span class="fu">shell</span><span class="kw">:</span><span class="at"> Rscript {0}</span></span>
+<span id="cb4-22"><a aria-label="22"></a><span class="at">        </span></span>
+<span id="cb4-23"><a aria-label="23"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Render Quarto Project</span></span>
+<span id="cb4-24"><a aria-label="24"></a><span class="fu">        run</span><span class="kw">: </span><span class="ch">|</span></span>
+<span id="cb4-25"><a aria-label="25"></a>          quarto render &amp;&amp;</span>
+<span id="cb4-26"><a aria-label="26"></a>          touch docs/.nojekyll</span>
+<span id="cb4-27"><a aria-label="27"></a><span class="at">      </span></span>
+<span id="cb4-28"><a aria-label="28"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Deploy 🚀</span></span>
+<span id="cb4-29"><a aria-label="29"></a><span class="at">        </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> JamesIves/github-pages-deploy-action@v4</span></span>
+<span id="cb4-30"><a aria-label="30"></a><span class="at">        </span><span class="fu">with</span><span class="kw">:</span></span>
+<span id="cb4-31"><a aria-label="31"></a><span class="at">          </span><span class="fu">clean</span><span class="kw">:</span><span class="at"> </span><span class="ch">false</span></span>
+<span id="cb4-32"><a aria-label="32"></a><span class="at">          </span><span class="fu">branch</span><span class="kw">:</span><span class="at"> gh-pages</span></span>
+<span id="cb4-33"><a aria-label="33"></a><span class="at">          </span><span class="fu">folder</span><span class="kw">:</span><span class="at"> docs</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div>
 </section>
@@ -380,14 +383,14 @@ mine çetinkaya-rundel
 <div class="code-with-filename-file">
 <pre><strong>gen-template.R</strong></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5" data-filename="gen-template.R"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a><span class="fu">library</span>(magrittr)</span>
-<span id="cb5-2"><a></a><span class="fu">library</span>(readr)</span>
-<span id="cb5-3"><a></a></span>
-<span id="cb5-4"><a></a>parsermd<span class="sc">::</span><span class="fu">parse_rmd</span>(<span class="st">"lab-06.Rmd"</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb5-5"><a></a>  parsermd<span class="sc">::</span><span class="fu">as_tibble</span>() <span class="sc">%&gt;%</span></span>
-<span id="cb5-6"><a></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(sec_h3 <span class="sc">!=</span> <span class="st">"Load packages"</span> <span class="sc">&amp;</span> <span class="sc">!</span><span class="fu">is.na</span>(sec_h3)) <span class="sc">%&gt;%</span></span>
-<span id="cb5-7"><a></a>  parsermd<span class="sc">::</span><span class="fu">rmd_template</span>(<span class="at">keep_content =</span> <span class="cn">TRUE</span>, <span class="at">keep_headings =</span> <span class="cn">TRUE</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb5-8"><a></a>  <span class="fu">write_rds</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">".github/workflows/template.rds"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5" data-filename="gen-template.R"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a aria-label="1"></a><span class="fu">library</span>(magrittr)</span>
+<span id="cb5-2"><a aria-label="2"></a><span class="fu">library</span>(readr)</span>
+<span id="cb5-3"><a aria-label="3"></a></span>
+<span id="cb5-4"><a aria-label="4"></a>parsermd<span class="sc">::</span><span class="fu">parse_rmd</span>(<span class="st">"lab-06.Rmd"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb5-5"><a aria-label="5"></a>  parsermd<span class="sc">::</span><span class="fu">as_tibble</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb5-6"><a aria-label="6"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(sec_h3 <span class="sc">!=</span> <span class="st">"Load packages"</span> <span class="sc">&amp;</span> <span class="sc">!</span><span class="fu">is.na</span>(sec_h3)) <span class="sc">%&gt;%</span></span>
+<span id="cb5-7"><a aria-label="7"></a>  parsermd<span class="sc">::</span><span class="fu">rmd_template</span>(<span class="at">keep_content =</span> <span class="cn">TRUE</span>, <span class="at">keep_headings =</span> <span class="cn">TRUE</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb5-8"><a aria-label="8"></a>  <span class="fu">write_rds</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">".github/workflows/template.rds"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="a-look-back-at-break-rmarkdown" class="slide level2">
@@ -399,26 +402,26 @@ mine çetinkaya-rundel
 <div class="code-with-filename-file">
 <pre><strong>.github/workflows/rmd_structure.yml</strong></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6" data-filename=".github/workflows/rmd_structure.yml"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb6-1"><a></a><span class="fu">on</span><span class="kw">:</span></span>
-<span id="cb6-2"><a></a><span class="at">  </span><span class="fu">push</span><span class="kw">:</span></span>
-<span id="cb6-3"><a></a><span class="at">    </span><span class="fu">paths</span><span class="kw">:</span></span>
-<span id="cb6-4"><a></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="st">'lab-06.Rmd'</span></span>
-<span id="cb6-5"><a></a><span class="fu">name</span><span class="kw">:</span><span class="at"> Check Rmd Structure</span></span>
-<span id="cb6-6"><a></a><span class="fu">jobs</span><span class="kw">:</span></span>
-<span id="cb6-7"><a></a><span class="at">  </span><span class="fu">test</span><span class="kw">:</span></span>
-<span id="cb6-8"><a></a><span class="at">    </span><span class="fu">runs-on</span><span class="kw">:</span><span class="at"> self-hosted</span></span>
-<span id="cb6-9"><a></a><span class="at">    </span><span class="fu">container</span><span class="kw">:</span></span>
-<span id="cb6-10"><a></a><span class="at">      </span><span class="fu">image</span><span class="kw">:</span><span class="at"> ghcr.io/statprog-s1-2020/hw2-docker:latest</span></span>
-<span id="cb6-11"><a></a><span class="at">    </span><span class="fu">steps</span><span class="kw">:</span></span>
-<span id="cb6-12"><a></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Checkout</span></span>
-<span id="cb6-13"><a></a><span class="at">      </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> actions/checkout@master</span></span>
-<span id="cb6-14"><a></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Check Structure</span></span>
-<span id="cb6-15"><a></a><span class="fu">      run</span><span class="kw">: </span><span class="ch">|</span></span>
-<span id="cb6-16"><a></a>        tpl = readRDS(".github/workflows/template.rds")</span>
-<span id="cb6-17"><a></a>        checklist::quit_on_failure({</span>
-<span id="cb6-18"><a></a>          parsermd::rmd_check_template("lab-06.Rmd", tpl)</span>
-<span id="cb6-19"><a></a>        })</span>
-<span id="cb6-20"><a></a><span class="at">      </span><span class="fu">shell</span><span class="kw">:</span><span class="at"> Rscript {0}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6" data-filename=".github/workflows/rmd_structure.yml"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb6-1"><a aria-label="1"></a><span class="fu">on</span><span class="kw">:</span></span>
+<span id="cb6-2"><a aria-label="2"></a><span class="at">  </span><span class="fu">push</span><span class="kw">:</span></span>
+<span id="cb6-3"><a aria-label="3"></a><span class="at">    </span><span class="fu">paths</span><span class="kw">:</span></span>
+<span id="cb6-4"><a aria-label="4"></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="st">'lab-06.Rmd'</span></span>
+<span id="cb6-5"><a aria-label="5"></a><span class="fu">name</span><span class="kw">:</span><span class="at"> Check Rmd Structure</span></span>
+<span id="cb6-6"><a aria-label="6"></a><span class="fu">jobs</span><span class="kw">:</span></span>
+<span id="cb6-7"><a aria-label="7"></a><span class="at">  </span><span class="fu">test</span><span class="kw">:</span></span>
+<span id="cb6-8"><a aria-label="8"></a><span class="at">    </span><span class="fu">runs-on</span><span class="kw">:</span><span class="at"> self-hosted</span></span>
+<span id="cb6-9"><a aria-label="9"></a><span class="at">    </span><span class="fu">container</span><span class="kw">:</span></span>
+<span id="cb6-10"><a aria-label="10"></a><span class="at">      </span><span class="fu">image</span><span class="kw">:</span><span class="at"> ghcr.io/statprog-s1-2020/hw2-docker:latest</span></span>
+<span id="cb6-11"><a aria-label="11"></a><span class="at">    </span><span class="fu">steps</span><span class="kw">:</span></span>
+<span id="cb6-12"><a aria-label="12"></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Checkout</span></span>
+<span id="cb6-13"><a aria-label="13"></a><span class="at">      </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> actions/checkout@master</span></span>
+<span id="cb6-14"><a aria-label="14"></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Check Structure</span></span>
+<span id="cb6-15"><a aria-label="15"></a><span class="fu">      run</span><span class="kw">: </span><span class="ch">|</span></span>
+<span id="cb6-16"><a aria-label="16"></a>        tpl = readRDS(".github/workflows/template.rds")</span>
+<span id="cb6-17"><a aria-label="17"></a>        checklist::quit_on_failure({</span>
+<span id="cb6-18"><a aria-label="18"></a>          parsermd::rmd_check_template("lab-06.Rmd", tpl)</span>
+<span id="cb6-19"><a aria-label="19"></a>        })</span>
+<span id="cb6-20"><a aria-label="20"></a><span class="at">      </span><span class="fu">shell</span><span class="kw">:</span><span class="at"> Rscript {0}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="extend-quarto" class="slide level2">
@@ -447,7 +450,7 @@ mine çetinkaya-rundel
 <ul>
 <li>Install the <code>fontawesome</code> extension</li>
 </ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a></a><span class="ex">quarto</span> add quarto-ext/fontawesome</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a aria-label="1"></a><span class="ex">quarto</span> add quarto-ext/fontawesome</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <div class="fragment">
 <ul>
@@ -470,7 +473,7 @@ mine çetinkaya-rundel
 <ul>
 <li>Install the <code>fontawesome</code> extension</li>
 </ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode numberSource bash number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode bash hljs"><span id="cb8-1" class="hljs-ln-code"><a></a><span class="ex">quarto</span> use template quarto-journals/jasa</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode numberSource bash number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode bash hljs"><span id="cb8-1" class="hljs-ln-code"><a aria-label="1"></a><span class="ex">quarto</span> use template quarto-journals/jasa</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="fragment">
 <ul>
 <li>Render the <code>.qmd</code></li>
@@ -486,17 +489,17 @@ mine çetinkaya-rundel
 <ul>
 <li>Install the <code>quarto-drop</code> extension</li>
 </ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a></a><span class="ex">quarto</span> add r-wasm/quarto-drop</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a aria-label="1"></a><span class="ex">quarto</span> add r-wasm/quarto-drop</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <div class="fragment">
 <ul>
 <li>Add the plugin to your presentation yaml</li>
 </ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb10-1"><a></a><span class="pp">---</span></span>
-<span id="cb10-2"><a></a><span class="fu">format</span><span class="kw">:</span><span class="at"> revealjs</span></span>
-<span id="cb10-3"><a></a><span class="fu">revealjs-plugins</span><span class="kw">:</span></span>
-<span id="cb10-4"><a></a><span class="at">  </span><span class="kw">-</span><span class="at"> drop</span></span>
-<span id="cb10-5"><a></a><span class="pp">---</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb10-1"><a aria-label="1"></a><span class="pp">---</span></span>
+<span id="cb10-2"><a aria-label="2"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> revealjs</span></span>
+<span id="cb10-3"><a aria-label="3"></a><span class="fu">revealjs-plugins</span><span class="kw">:</span></span>
+<span id="cb10-4"><a aria-label="4"></a><span class="at">  </span><span class="kw">-</span><span class="at"> drop</span></span>
+<span id="cb10-5"><a aria-label="5"></a><span class="pp">---</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="thank-you-questions" class="slide level2" data-background-image="images/thank-you.png">

@@ -11,7 +11,7 @@
     "href": "index.html#talks",
     "title": "Life Hacking for Educators",
     "section": "Talks",
-    "text": "Talks\n\n\n\n\n\n\n\n\n\n\nAutomate all the things\n\n\n\nColin Rundel\n\n\n\n\n\n\n\n\n\n\n\n\n\nStop Repeating Yourself: Shared R Resources to Reduce Duplicated Prep\n\n\n\nAdam Loy\n\n\n\n\n\n\n\n\n\n\n\n\n\ngglm: A tool for teaching linear model diagnostics while adhering to the grammar of graphics\n\n\n\nGrayson White\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe LTS Document: Lab, Template and Solutions All in One\n\n\n\nWilliam Hopper\n\n\n\n\n\n\n\n\n\n\n\n\n\nLooking back and looking beyond\n\n\nDiscussion\n\n\n\nMine Çetinkaya-Rundel\n\n\n\n\n\n\nNo matching items"
+    "text": "Talks\n\n\n\n\n\n\n\n\n\n\nAutomate all the things\n\n\n\nColin Rundel\n\n\n\n\n\n\n\n\n\n\n\n\n\ngglm: A tool for teaching linear model diagnostics while adhering to the grammar of graphics\n\n\n\nGrayson White\n\n\n\n\n\n\n\n\n\n\n\n\n\nStop Repeating Yourself: Shared R Resources to Reduce Duplicated Prep\n\n\n\nAdam Loy\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe LTS Document: Lab, Template and Solutions All in One\n\n\n\nWilliam Hopper\n\n\n\n\n\n\n\n\n\n\n\n\n\nLooking back and looking beyond\n\n\nDiscussion\n\n\n\nMine Çetinkaya-Rundel\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html#overview",
@@ -30,30 +30,30 @@
   {
     "objectID": "talks/2-gglm/index.html",
     "href": "talks/2-gglm/index.html",
-    "title": "Stop Repeating Yourself: Shared R Resources to Reduce Duplicated Prep",
+    "title": "gglm: A tool for teaching linear model diagnostics while adhering to the grammar of graphics",
     "section": "",
-    "text": "For introductory statistics courses that incorporate programming, a lot of time is spent creating and maintaining how-to guides and design class activities that introduce help students get up and running with the language, navigating the IDE, fundamental building blocks of the programming language, and practicing the commands to carryout analyses. This takes a lot of time and effort, which can be duplicated across faculty when there are many sections of the same course taught in a term. In this talk, we explore the use of an R “lab manual” paired with an R package that serves as a shared resource for the introductory statistics courses at Carleton College. We’ll discuss its usage, maintenance, and frustration-saving features. Along the way we’ll also discus a smattering of other “life hacks”, such as generating alternative text with AI and using quarto-live for class activities."
+    "text": "In this talk, I’ll discuss the gglm R package, which allows for easy creation of linear model diagnostic plots using the grammar of the graphics and ggplot2. More specifically, gglm provides a consistent and intuitive syntax to produce residual diagnostic plots for a variety of model types. We’ll cover the basics of the package, along with motivation and use cases for a modern statistics, statistical learning, or data science classroom. We’ll compare gglm’s diagnostic plot solution to solutions provided by base R and others. We’ll then discuss features of the package that allow for more robust analysis of residuals than typical model diagnostic tools, including different model types (i.e., engines) and multivariate diagnostics. Finally, I’ll showcase a shiny dashboard that allows the user to upload data, build a statistical model, and produce diagnostics powered by gglm, aimed at introductory statistics courses that don’t cover programming, but still want to use real data."
   },
   {
     "objectID": "talks/2-gglm/index.html#abstract",
     "href": "talks/2-gglm/index.html#abstract",
-    "title": "Stop Repeating Yourself: Shared R Resources to Reduce Duplicated Prep",
+    "title": "gglm: A tool for teaching linear model diagnostics while adhering to the grammar of graphics",
     "section": "",
-    "text": "For introductory statistics courses that incorporate programming, a lot of time is spent creating and maintaining how-to guides and design class activities that introduce help students get up and running with the language, navigating the IDE, fundamental building blocks of the programming language, and practicing the commands to carryout analyses. This takes a lot of time and effort, which can be duplicated across faculty when there are many sections of the same course taught in a term. In this talk, we explore the use of an R “lab manual” paired with an R package that serves as a shared resource for the introductory statistics courses at Carleton College. We’ll discuss its usage, maintenance, and frustration-saving features. Along the way we’ll also discus a smattering of other “life hacks”, such as generating alternative text with AI and using quarto-live for class activities."
+    "text": "In this talk, I’ll discuss the gglm R package, which allows for easy creation of linear model diagnostic plots using the grammar of the graphics and ggplot2. More specifically, gglm provides a consistent and intuitive syntax to produce residual diagnostic plots for a variety of model types. We’ll cover the basics of the package, along with motivation and use cases for a modern statistics, statistical learning, or data science classroom. We’ll compare gglm’s diagnostic plot solution to solutions provided by base R and others. We’ll then discuss features of the package that allow for more robust analysis of residuals than typical model diagnostic tools, including different model types (i.e., engines) and multivariate diagnostics. Finally, I’ll showcase a shiny dashboard that allows the user to upload data, build a statistical model, and produce diagnostics powered by gglm, aimed at introductory statistics courses that don’t cover programming, but still want to use real data."
   },
   {
     "objectID": "talks/2-gglm/index.html#slides",
     "href": "talks/2-gglm/index.html#slides",
-    "title": "Stop Repeating Yourself: Shared R Resources to Reduce Duplicated Prep",
+    "title": "gglm: A tool for teaching linear model diagnostics while adhering to the grammar of graphics",
     "section": "Slides",
     "text": "Slides\n\nSource code for slides\nFull screen slides"
   },
   {
     "objectID": "talks/2-gglm/index.html#speaker",
     "href": "talks/2-gglm/index.html#speaker",
-    "title": "Stop Repeating Yourself: Shared R Resources to Reduce Duplicated Prep",
+    "title": "gglm: A tool for teaching linear model diagnostics while adhering to the grammar of graphics",
     "section": "Speaker",
-    "text": "Speaker\n\nAdam Loy is…"
+    "text": "Speaker\n\nGrayson White is a Visiting Assistant Professor of Statistics at Reed College. His research interests are in small area estimation, hierarchical Bayesian modeling, environmental statistics applied to forestry and natural resources problems, and statistical software development. More specifically, his research focuses on implementing model-based statistical methods for small area estimation of forest attributes, and developing methodologies for formal assessment of those estimators."
   },
   {
     "objectID": "talks/5-discussion/discussion.html#one-stop-shop",
@@ -247,30 +247,30 @@
   {
     "objectID": "talks/3-sry/index.html",
     "href": "talks/3-sry/index.html",
-    "title": "gglm: A tool for teaching linear model diagnostics while adhering to the grammar of graphics",
+    "title": "Stop Repeating Yourself: Shared R Resources to Reduce Duplicated Prep",
     "section": "",
-    "text": "In this talk, I’ll discuss the gglm R package, which allows for easy creation of linear model diagnostic plots using the grammar of the graphics and ggplot2. More specifically, gglm provides a consistent and intuitive syntax to produce residual diagnostic plots for a variety of model types. We’ll cover the basics of the package, along with motivation and use cases for a modern statistics, statistical learning, or data science classroom. We’ll compare gglm’s diagnostic plot solution to solutions provided by base R and others. We’ll then discuss features of the package that allow for more robust analysis of residuals than typical model diagnostic tools, including different model types (i.e., engines) and multivariate diagnostics. Finally, I’ll showcase a shiny dashboard that allows the user to upload data, build a statistical model, and produce diagnostics powered by gglm, aimed at introductory statistics courses that don’t cover programming, but still want to use real data."
+    "text": "For introductory statistics courses that incorporate programming, a lot of time is spent creating and maintaining how-to guides and design class activities that introduce help students get up and running with the language, navigating the IDE, fundamental building blocks of the programming language, and practicing the commands to carryout analyses. This takes a lot of time and effort, which can be duplicated across faculty when there are many sections of the same course taught in a term. In this talk, we explore the use of an R “lab manual” paired with an R package that serves as a shared resource for the introductory statistics courses at Carleton College. We’ll discuss its usage, maintenance, and frustration-saving features. Along the way we’ll also discus a smattering of other “life hacks”, such as generating alternative text with AI and using quarto-live for class activities."
   },
   {
     "objectID": "talks/3-sry/index.html#abstract",
     "href": "talks/3-sry/index.html#abstract",
-    "title": "gglm: A tool for teaching linear model diagnostics while adhering to the grammar of graphics",
+    "title": "Stop Repeating Yourself: Shared R Resources to Reduce Duplicated Prep",
     "section": "",
-    "text": "In this talk, I’ll discuss the gglm R package, which allows for easy creation of linear model diagnostic plots using the grammar of the graphics and ggplot2. More specifically, gglm provides a consistent and intuitive syntax to produce residual diagnostic plots for a variety of model types. We’ll cover the basics of the package, along with motivation and use cases for a modern statistics, statistical learning, or data science classroom. We’ll compare gglm’s diagnostic plot solution to solutions provided by base R and others. We’ll then discuss features of the package that allow for more robust analysis of residuals than typical model diagnostic tools, including different model types (i.e., engines) and multivariate diagnostics. Finally, I’ll showcase a shiny dashboard that allows the user to upload data, build a statistical model, and produce diagnostics powered by gglm, aimed at introductory statistics courses that don’t cover programming, but still want to use real data."
+    "text": "For introductory statistics courses that incorporate programming, a lot of time is spent creating and maintaining how-to guides and design class activities that introduce help students get up and running with the language, navigating the IDE, fundamental building blocks of the programming language, and practicing the commands to carryout analyses. This takes a lot of time and effort, which can be duplicated across faculty when there are many sections of the same course taught in a term. In this talk, we explore the use of an R “lab manual” paired with an R package that serves as a shared resource for the introductory statistics courses at Carleton College. We’ll discuss its usage, maintenance, and frustration-saving features. Along the way we’ll also discus a smattering of other “life hacks”, such as generating alternative text with AI and using quarto-live for class activities."
   },
   {
     "objectID": "talks/3-sry/index.html#slides",
     "href": "talks/3-sry/index.html#slides",
-    "title": "gglm: A tool for teaching linear model diagnostics while adhering to the grammar of graphics",
+    "title": "Stop Repeating Yourself: Shared R Resources to Reduce Duplicated Prep",
     "section": "Slides",
     "text": "Slides\n\nSource code for slides\nFull screen slides"
   },
   {
     "objectID": "talks/3-sry/index.html#speaker",
     "href": "talks/3-sry/index.html#speaker",
-    "title": "gglm: A tool for teaching linear model diagnostics while adhering to the grammar of graphics",
+    "title": "Stop Repeating Yourself: Shared R Resources to Reduce Duplicated Prep",
     "section": "Speaker",
-    "text": "Speaker\n\nGrayson White is a Visiting Assistant Professor of Statistics at Reed College. His research interests are in small area estimation, hierarchical Bayesian modeling, environmental statistics applied to forestry and natural resources problems, and statistical software development. More specifically, my research focuses on implementing model-based statistical methods for small area estimation of forest attributes, and developing methodologies for formal assessment of those estimators."
+    "text": "Speaker\n\nAdam Loy is…"
   },
   {
     "objectID": "talks/4-lts/index.html",
