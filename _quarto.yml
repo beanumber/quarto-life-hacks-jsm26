@@ -1,5 +1,6 @@
 project:
   type: website
+  resources: loy_custom.scss
 
 website:
   repo-url: https://github.com/mine-cetinkaya-rundel/quarto-world-of-possibilities-jsm24

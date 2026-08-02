@@ -7,7 +7,7 @@ author:
     email: aloy@carleton.edu
 format: 
   live-revealjs: 
-    theme: [default, custom.scss]
+    theme: [default, loy_custom.scss]
     transition: fade
     width: 1400
     height: 900
