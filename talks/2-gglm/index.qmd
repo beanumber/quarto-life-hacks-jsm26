@@ -26,7 +26,7 @@ Finally, I'll showcase a shiny dashboard that allows the user to upload data, bu
 
 ## Speaker
 
-![](https://graysonwhite.com/headshot.jpeg){style="float: right; padding-left: 10px;" fig-alt="Photo of Colin Rundel" width="200"}
+![](https://graysonwhite.com/headshot.jpeg){style="float: right; padding-left: 10px;" fig-alt="Photo of Grayson White" width="200"}
 
 Grayson White is a Visiting Assistant Professor of Statistics at Reed College.
 His research interests are in small area estimation, hierarchical Bayesian modeling, environmental statistics applied to forestry and natural resources problems, and statistical software development. More specifically, his research focuses on implementing model-based statistical methods for small area estimation of forest attributes, and developing methodologies for formal assessment of those estimators.
