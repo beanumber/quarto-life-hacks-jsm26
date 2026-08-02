@@ -18,13 +18,13 @@ We'll discuss its usage, maintenance, and frustration-saving features. Along the
 <iframe class="slide-deck" src="" height="420" width="747" style="border: 1px solid #2e3846;"></iframe>
 ```
 
-[Source code for slides]()
+[Source code for slides](https://github.com/beanumber/quarto-life-hacks-jsm26/blob/main/talks/3-sry/sry.qmd)
 
-[Full screen slides]()
+[Full screen slides](https://beanumber.github.io/quarto-life-hacks-jsm26/talks/3-sry/sry.html)
 
 ## Speaker
 
 ![](https://www.carleton.edu/directory/photo/aloy/?resize=400){style="float: right; padding-left: 10px;" fig-alt="Photo of Adam Loy" width="200"}
 
-Adam Loy is...
+Adam Loy is an associate professor of statistics in the Department of Mathematics and Statistics at Carleton College. He teaches statistics at all levels of the curriculum and is passionate about communicating the beauty and power of modern statistical methods to his students. Adam's research focuses on incorporating realistic computation and visualization into the classroom, exploring the potential of visual inference, developing better visualizations to explore complex models, and developing useful and useable R packages.
 
