@@ -56,6 +56,83 @@
     "text": "Speaker\n\nGrayson White is a Visiting Assistant Professor of Statistics at Reed College. His research interests are in small area estimation, hierarchical Bayesian modeling, environmental statistics applied to forestry and natural resources problems, and statistical software development. More specifically, his research focuses on implementing model-based statistical methods for small area estimation of forest attributes, and developing methodologies for formal assessment of those estimators."
   },
   {
+    "objectID": "talks/3-sry/index.html",
+    "href": "talks/3-sry/index.html",
+    "title": "Stop Repeating Yourself: Shared R Resources to Reduce Duplicated Prep",
+    "section": "",
+    "text": "For introductory statistics courses that incorporate programming, a lot of time is spent creating and maintaining how-to guides and design class activities that introduce help students get up and running with the language, navigating the IDE, fundamental building blocks of the programming language, and practicing the commands to carryout analyses. This takes a lot of time and effort, which can be duplicated across faculty when there are many sections of the same course taught in a term. In this talk, we explore the use of an R “lab manual” paired with an R package that serves as a shared resource for the introductory statistics courses at Carleton College. We’ll discuss its usage, maintenance, and frustration-saving features. Along the way we’ll also discus a smattering of other “life hacks”, such as generating alternative text with AI and using quarto-live for class activities."
+  },
+  {
+    "objectID": "talks/3-sry/index.html#abstract",
+    "href": "talks/3-sry/index.html#abstract",
+    "title": "Stop Repeating Yourself: Shared R Resources to Reduce Duplicated Prep",
+    "section": "",
+    "text": "For introductory statistics courses that incorporate programming, a lot of time is spent creating and maintaining how-to guides and design class activities that introduce help students get up and running with the language, navigating the IDE, fundamental building blocks of the programming language, and practicing the commands to carryout analyses. This takes a lot of time and effort, which can be duplicated across faculty when there are many sections of the same course taught in a term. In this talk, we explore the use of an R “lab manual” paired with an R package that serves as a shared resource for the introductory statistics courses at Carleton College. We’ll discuss its usage, maintenance, and frustration-saving features. Along the way we’ll also discus a smattering of other “life hacks”, such as generating alternative text with AI and using quarto-live for class activities."
+  },
+  {
+    "objectID": "talks/3-sry/index.html#slides",
+    "href": "talks/3-sry/index.html#slides",
+    "title": "Stop Repeating Yourself: Shared R Resources to Reduce Duplicated Prep",
+    "section": "Slides",
+    "text": "Slides\n\nSource code for slides\nFull screen slides"
+  },
+  {
+    "objectID": "talks/3-sry/index.html#speaker",
+    "href": "talks/3-sry/index.html#speaker",
+    "title": "Stop Repeating Yourself: Shared R Resources to Reduce Duplicated Prep",
+    "section": "Speaker",
+    "text": "Speaker\n\nAdam Loy is…"
+  },
+  {
+    "objectID": "talks/5-discussion/index.html",
+    "href": "talks/5-discussion/index.html",
+    "title": "Looking back and looking beyond",
+    "section": "",
+    "text": "Source code for slides\nFull screen slides"
+  },
+  {
+    "objectID": "talks/5-discussion/index.html#slides",
+    "href": "talks/5-discussion/index.html#slides",
+    "title": "Looking back and looking beyond",
+    "section": "",
+    "text": "Source code for slides\nFull screen slides"
+  },
+  {
+    "objectID": "talks/5-discussion/index.html#speaker",
+    "href": "talks/5-discussion/index.html#speaker",
+    "title": "Looking back and looking beyond",
+    "section": "Speaker",
+    "text": "Speaker\n\nMine Çetinkaya-Rundel is a Professor of the Practice and Associate Director of Undergraduate Studies in the Department of Statistical Science as well as the Director of First-Year Experience in Trinity College of Arts & Sciences at Duke University. She is also Senior Developer Advocate at Posit. Mine is a leading voice in modern statistics and data science education. Her work focuses on integrating reproducible computing, open-source tools, and real-world data into the statistics curriculum, transforming how students engage with data and statistical thinking. She is a co-author of R for Data Science, the creator and maintainer of Data Science in a Box, and she teaches popular data analysis and data science with R courses on Coursera.. She is also a core contributor to the OpenIntro project and an advocate for open educational resources and statistical computing in R. A Fellow of the American Statistical Association and an Elected Member of the International Statistical Institute, she has received numerous honors, including the ASA’s Waller Education Award and the Robert V. Hogg Award for Excellence in Teaching Introductory Statistics. She currently serves as Vice President of the International Association for Statistical Education (IASE) and as co-chair of the ASA’s DataFest Steering Committee. Through her teaching, writing, and advocacy, Dr. ÇetinkayaRundel has advanced accessible, computation-rich, and reproducible data science education worldwide."
+  },
+  {
+    "objectID": "talks/1-automate/index.html",
+    "href": "talks/1-automate/index.html",
+    "title": "Automate all the things",
+    "section": "",
+    "text": "Teaching modern data science and statistics courses presents numerous logistical challenges—from building and distributing assignments and other course materials to providing timely, consistent feedback. In this talk, we explore tools for automating the repetitive aspects of course administration, building on the core reproducible infrastructure of Git, GitHub, and Quarto. Examples will include the ghclass package, which streamlines classroom management on GitHub, enabling automated repository creation, assignment distribution, and collection. GitHub Actions, which extends this ecosystem with CI pipelines that automatically render documents, run checks, and provide feedback on student submissions. The parsermd and markrmd packages, which offer programmatic tools for parsing and manipulating R Markdown and Quarto documents, enabling both automated and more efficient manual assessment of student work. Finally, we look ahead to the emerging role of agentic AI tools in teaching, discussing both the opportunities and considerations for AI-driven automation in course management."
+  },
+  {
+    "objectID": "talks/1-automate/index.html#abstract",
+    "href": "talks/1-automate/index.html#abstract",
+    "title": "Automate all the things",
+    "section": "",
+    "text": "Teaching modern data science and statistics courses presents numerous logistical challenges—from building and distributing assignments and other course materials to providing timely, consistent feedback. In this talk, we explore tools for automating the repetitive aspects of course administration, building on the core reproducible infrastructure of Git, GitHub, and Quarto. Examples will include the ghclass package, which streamlines classroom management on GitHub, enabling automated repository creation, assignment distribution, and collection. GitHub Actions, which extends this ecosystem with CI pipelines that automatically render documents, run checks, and provide feedback on student submissions. The parsermd and markrmd packages, which offer programmatic tools for parsing and manipulating R Markdown and Quarto documents, enabling both automated and more efficient manual assessment of student work. Finally, we look ahead to the emerging role of agentic AI tools in teaching, discussing both the opportunities and considerations for AI-driven automation in course management."
+  },
+  {
+    "objectID": "talks/1-automate/index.html#slides",
+    "href": "talks/1-automate/index.html#slides",
+    "title": "Automate all the things",
+    "section": "Slides",
+    "text": "Slides\n\nSource code for slides\nFull screen slides"
+  },
+  {
+    "objectID": "talks/1-automate/index.html#speaker",
+    "href": "talks/1-automate/index.html#speaker",
+    "title": "Automate all the things",
+    "section": "Speaker",
+    "text": "Speaker\n\nColin Rundel is Associate Professor of the Practice at Duke University where he has been teaching since 2012. His work focuses on teaching statistical computing to both undergraduate and graduate students in both R and Python."
+  },
+  {
     "objectID": "talks/5-discussion/discussion.html#one-stop-shop",
     "href": "talks/5-discussion/discussion.html#one-stop-shop",
     "title": "looking backand looking beyond",
@@ -194,83 +271,6 @@
     "title": "looking backand looking beyond",
     "section": "questions?",
     "text": "questions?"
-  },
-  {
-    "objectID": "talks/1-automate/index.html",
-    "href": "talks/1-automate/index.html",
-    "title": "Automate all the things",
-    "section": "",
-    "text": "Teaching modern data science and statistics courses presents numerous logistical challenges—from building and distributing assignments and other course materials to providing timely, consistent feedback. In this talk, we explore tools for automating the repetitive aspects of course administration, building on the core reproducible infrastructure of Git, GitHub, and Quarto. Examples will include the ghclass package, which streamlines classroom management on GitHub, enabling automated repository creation, assignment distribution, and collection. GitHub Actions, which extends this ecosystem with CI pipelines that automatically render documents, run checks, and provide feedback on student submissions. The parsermd and markrmd packages, which offer programmatic tools for parsing and manipulating R Markdown and Quarto documents, enabling both automated and more efficient manual assessment of student work. Finally, we look ahead to the emerging role of agentic AI tools in teaching, discussing both the opportunities and considerations for AI-driven automation in course management."
-  },
-  {
-    "objectID": "talks/1-automate/index.html#abstract",
-    "href": "talks/1-automate/index.html#abstract",
-    "title": "Automate all the things",
-    "section": "",
-    "text": "Teaching modern data science and statistics courses presents numerous logistical challenges—from building and distributing assignments and other course materials to providing timely, consistent feedback. In this talk, we explore tools for automating the repetitive aspects of course administration, building on the core reproducible infrastructure of Git, GitHub, and Quarto. Examples will include the ghclass package, which streamlines classroom management on GitHub, enabling automated repository creation, assignment distribution, and collection. GitHub Actions, which extends this ecosystem with CI pipelines that automatically render documents, run checks, and provide feedback on student submissions. The parsermd and markrmd packages, which offer programmatic tools for parsing and manipulating R Markdown and Quarto documents, enabling both automated and more efficient manual assessment of student work. Finally, we look ahead to the emerging role of agentic AI tools in teaching, discussing both the opportunities and considerations for AI-driven automation in course management."
-  },
-  {
-    "objectID": "talks/1-automate/index.html#slides",
-    "href": "talks/1-automate/index.html#slides",
-    "title": "Automate all the things",
-    "section": "Slides",
-    "text": "Slides\n\nSource code for slides\nFull screen slides"
-  },
-  {
-    "objectID": "talks/1-automate/index.html#speaker",
-    "href": "talks/1-automate/index.html#speaker",
-    "title": "Automate all the things",
-    "section": "Speaker",
-    "text": "Speaker\n\nColin Rundel is Associate Professor of the Practice at Duke University where he has been teaching since 2012. His work focuses on teaching statistical computing to both undergraduate and graduate students in both R and Python."
-  },
-  {
-    "objectID": "talks/5-discussion/index.html",
-    "href": "talks/5-discussion/index.html",
-    "title": "Looking back and looking beyond",
-    "section": "",
-    "text": "Source code for slides\nFull screen slides"
-  },
-  {
-    "objectID": "talks/5-discussion/index.html#slides",
-    "href": "talks/5-discussion/index.html#slides",
-    "title": "Looking back and looking beyond",
-    "section": "",
-    "text": "Source code for slides\nFull screen slides"
-  },
-  {
-    "objectID": "talks/5-discussion/index.html#speaker",
-    "href": "talks/5-discussion/index.html#speaker",
-    "title": "Looking back and looking beyond",
-    "section": "Speaker",
-    "text": "Speaker\n\nMine Çetinkaya-Rundel is a Professor of the Practice and Associate Director of Undergraduate Studies in the Department of Statistical Science as well as the Director of First-Year Experience in Trinity College of Arts & Sciences at Duke University. She is also Senior Developer Advocate at Posit. Mine is a leading voice in modern statistics and data science education. Her work focuses on integrating reproducible computing, open-source tools, and real-world data into the statistics curriculum, transforming how students engage with data and statistical thinking. She is a co-author of R for Data Science, the creator and maintainer of Data Science in a Box, and she teaches popular data analysis and data science with R courses on Coursera.. She is also a core contributor to the OpenIntro project and an advocate for open educational resources and statistical computing in R. A Fellow of the American Statistical Association and an Elected Member of the International Statistical Institute, she has received numerous honors, including the ASA’s Waller Education Award and the Robert V. Hogg Award for Excellence in Teaching Introductory Statistics. She currently serves as Vice President of the International Association for Statistical Education (IASE) and as co-chair of the ASA’s DataFest Steering Committee. Through her teaching, writing, and advocacy, Dr. ÇetinkayaRundel has advanced accessible, computation-rich, and reproducible data science education worldwide."
-  },
-  {
-    "objectID": "talks/3-sry/index.html",
-    "href": "talks/3-sry/index.html",
-    "title": "Stop Repeating Yourself: Shared R Resources to Reduce Duplicated Prep",
-    "section": "",
-    "text": "For introductory statistics courses that incorporate programming, a lot of time is spent creating and maintaining how-to guides and design class activities that introduce help students get up and running with the language, navigating the IDE, fundamental building blocks of the programming language, and practicing the commands to carryout analyses. This takes a lot of time and effort, which can be duplicated across faculty when there are many sections of the same course taught in a term. In this talk, we explore the use of an R “lab manual” paired with an R package that serves as a shared resource for the introductory statistics courses at Carleton College. We’ll discuss its usage, maintenance, and frustration-saving features. Along the way we’ll also discus a smattering of other “life hacks”, such as generating alternative text with AI and using quarto-live for class activities."
-  },
-  {
-    "objectID": "talks/3-sry/index.html#abstract",
-    "href": "talks/3-sry/index.html#abstract",
-    "title": "Stop Repeating Yourself: Shared R Resources to Reduce Duplicated Prep",
-    "section": "",
-    "text": "For introductory statistics courses that incorporate programming, a lot of time is spent creating and maintaining how-to guides and design class activities that introduce help students get up and running with the language, navigating the IDE, fundamental building blocks of the programming language, and practicing the commands to carryout analyses. This takes a lot of time and effort, which can be duplicated across faculty when there are many sections of the same course taught in a term. In this talk, we explore the use of an R “lab manual” paired with an R package that serves as a shared resource for the introductory statistics courses at Carleton College. We’ll discuss its usage, maintenance, and frustration-saving features. Along the way we’ll also discus a smattering of other “life hacks”, such as generating alternative text with AI and using quarto-live for class activities."
-  },
-  {
-    "objectID": "talks/3-sry/index.html#slides",
-    "href": "talks/3-sry/index.html#slides",
-    "title": "Stop Repeating Yourself: Shared R Resources to Reduce Duplicated Prep",
-    "section": "Slides",
-    "text": "Slides\n\nSource code for slides\nFull screen slides"
-  },
-  {
-    "objectID": "talks/3-sry/index.html#speaker",
-    "href": "talks/3-sry/index.html#speaker",
-    "title": "Stop Repeating Yourself: Shared R Resources to Reduce Duplicated Prep",
-    "section": "Speaker",
-    "text": "Speaker\n\nAdam Loy is…"
   },
   {
     "objectID": "talks/4-lts/index.html",
