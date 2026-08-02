@@ -17,12 +17,12 @@ Finally, I'll showcase a shiny dashboard that allows the user to upload data, bu
 ## Slides
 
 ```{=html}
-<iframe class="slide-deck" src="" height="420" width="747" style="border: 1px solid #2e3846;"></iframe>
+<iframe class="slide-deck" src="/talks/2-gglm/gglm.html" height="420" width="747" style="border: 1px solid #2e3846;"></iframe>
 ```
 
-[Source code for slides]()
+[Source code for slides](https://github.com/beanumber/quarto-life-hacks-jsm26/blob/main/talks/2-gglm/gglm.qmd)
 
-[Full screen slides]()
+[Full screen slides](https://beanumber.github.io/quarto-life-hacks-jsm26/talks/2-gglm/gglm.html)
 
 ## Speaker
 
