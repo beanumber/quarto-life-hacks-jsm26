@@ -1,0 +1,178 @@
+/*-- scss:defaults --*/
+
+// Fonts — Carleton brand alternatives
+// Playfair Display substitutes for licensed Surveyor (headlines/display)
+// Montserrat substitutes for licensed Gotham (body/subheads)
+$mainFont: 'Montserrat', 'Helvetica Neue', sans-serif;
+$headingFont: 'Playfair Display', Georgia, serif;
+$headingTextTransform: none;
+$headingFontWeight: 700;
+$headingLetterSpacing: -0.01em;
+$headingTextShadow: none;
+$mainFontSize: 34px;
+
+// Colors — Carleton brand palette
+$backgroundColor: #fffef5;   // Carleton Cream
+$mainColor:        #1c2126;   // Near-black for body text
+$headingColor:     #003069;   // Carleton Blue
+$linkColor:        #009785;   // Carleton Teal
+$linkColorHover:   #007a6a;
+$selectionBackgroundColor: #ffd24f;  // Carleton Maize
+
+/*-- scss:rules --*/
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500;700&family=Source+Code+Pro:wght@400;600&display=swap');
+
+// Title slide — flush left
+// Quarto applies .center to the title slide by default; !important overrides it
+.reveal .title-slide,
+.reveal .title-slide h1,
+.reveal .title-slide h2,
+.reveal .title-slide p,
+.reveal .title-slide .quarto-title-author-block,
+.reveal .title-slide .quarto-title-author-name,
+.reveal .title-slide .quarto-title-affiliation,
+.reveal .title-slide .quarto-title-author-email {
+  text-align: left !important;
+}
+
+// Carleton Maize underline on slide headings — width matches text only
+.reveal h2 {
+  width: fit-content;
+  border-bottom: 4px solid #ffd24f;
+  padding-bottom: 0.15em;
+  margin-bottom: 0.6em;
+}
+
+// Section title slides — Carleton Blue
+.reveal h1 {
+  font-style: normal;
+  color: #003069;
+}
+
+// h3 subheadings (e.g., Benefits / Challenges) — Montserrat, small caps feel
+.reveal h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.85em;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #003069;
+}
+
+// Bold text in Carleton Blue
+.reveal .slides strong {
+  color: #003069;
+}
+
+// Benefits / Challenges two-color blocks
+// box-sizing: border-box keeps the border/padding from expanding the
+// column beyond its assigned flex width (which would otherwise force
+// the columns to wrap onto separate lines)
+.reveal .column.benefits,
+.reveal .column.challenges {
+  box-sizing: border-box;
+  padding-left: 0.8em;
+}
+
+// Benefits — Carleton Blue accent
+.reveal .column.benefits {
+  border-left: 4px solid #003069;
+}
+
+.reveal .column.benefits h3 {
+  color: #003069;
+}
+
+// Challenges — Carleton Teal accent
+.reveal .column.challenges {
+  border-left: 4px solid #009785;
+}
+
+.reveal .column.challenges h3 {
+  color: #009785;
+}
+
+// Prompt / Result blocks (LLM alt-text example)
+// Prompt — Carleton Teal accent
+.reveal .alt-prompt {
+  border-left: 4px solid #009785;
+  padding-left: 0.8em;
+  box-sizing: border-box;
+  margin-bottom: 0.6em;
+}
+
+// Result — Carleton Blue accent, smaller text so both long
+// paragraphs fit comfortably once revealed
+.reveal .alt-result {
+  border-left: 4px solid #003069;
+  padding-left: 0.8em;
+  box-sizing: border-box;
+  font-size: 0.8em;
+}
+
+.reveal .alt-prompt blockquote,
+.reveal .alt-result blockquote {
+  margin: 0.3em 0;
+}
+
+// Larger font size for the live webr exercise editor on the
+// "Scaffolded example" slide.
+// Note: quarto-live's own stylesheet already sets
+// `.reveal .card.exercise-editor { --exercise-font-size: 1.3rem; ... }`
+// as its reveal.js default, and that rule has the same specificity as a
+// plain `.exercise-editor` selector (loading after this theme file), so
+// it silently wins ties. Match `.card.exercise-editor` under our
+// `.big-code` wrapper to increase specificity and actually override it.
+.reveal .big-code .card.exercise-editor {
+  --exercise-font-size: 2rem;
+}
+
+// Inline code
+.reveal code {
+  color: #003069;
+  background-color: #eae8e3;  // Carleton Neutral 1
+  border-radius: 3px;
+  padding: 0.05em 0.3em;
+}
+
+// Code blocks
+.reveal pre {
+  background-color: #eae8e3;  // Carleton Neutral 1
+  border: 1px solid #dbd9d7;  // Carleton Neutral 2
+  border-radius: 6px;
+  box-shadow: none;
+  font-size: 0.75em;
+}
+
+.reveal pre code {
+  background-color: transparent;
+  padding: 0;
+  color: #1c2126;
+  font-family: 'Source Code Pro', monospace;
+}
+
+// Progress bar — Carleton Maize
+.reveal .progress {
+  color: #ffd24f;
+}
+
+// Slide number
+.reveal .slide-number {
+  background-color: transparent;
+  color: #858689;  // Carleton Neutral 6
+  font-family: $mainFont;
+  font-size: 0.5em;
+}
+
+// Footer
+.reveal .footer {
+  color: #858689;  // Carleton Neutral 6
+  font-size: 0.45em;
+}
+
+// Bullet/list spacing
+.reveal ul,
+.reveal ol {
+  line-height: 1.6;
+}
