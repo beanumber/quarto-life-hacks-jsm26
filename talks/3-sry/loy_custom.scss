@@ -65,6 +65,69 @@ $selectionBackgroundColor: #ffd24f;  // Carleton Maize
   color: #003069;
 }
 
+// Benefits / Challenges two-color blocks
+// box-sizing: border-box keeps the border/padding from expanding the
+// column beyond its assigned flex width (which would otherwise force
+// the columns to wrap onto separate lines)
+.reveal .column.benefits,
+.reveal .column.challenges {
+  box-sizing: border-box;
+  padding-left: 0.8em;
+}
+
+// Benefits — Carleton Blue accent
+.reveal .column.benefits {
+  border-left: 4px solid #003069;
+}
+
+.reveal .column.benefits h3 {
+  color: #003069;
+}
+
+// Challenges — Carleton Teal accent
+.reveal .column.challenges {
+  border-left: 4px solid #009785;
+}
+
+.reveal .column.challenges h3 {
+  color: #009785;
+}
+
+// Prompt / Result blocks (LLM alt-text example)
+// Prompt — Carleton Teal accent
+.reveal .alt-prompt {
+  border-left: 4px solid #009785;
+  padding-left: 0.8em;
+  box-sizing: border-box;
+  margin-bottom: 0.6em;
+}
+
+// Result — Carleton Blue accent, smaller text so both long
+// paragraphs fit comfortably once revealed
+.reveal .alt-result {
+  border-left: 4px solid #003069;
+  padding-left: 0.8em;
+  box-sizing: border-box;
+  font-size: 0.8em;
+}
+
+.reveal .alt-prompt blockquote,
+.reveal .alt-result blockquote {
+  margin: 0.3em 0;
+}
+
+// Larger font size for the live webr exercise editor on the
+// "Scaffolded example" slide.
+// Note: quarto-live's own stylesheet already sets
+// `.reveal .card.exercise-editor { --exercise-font-size: 1.3rem; ... }`
+// as its reveal.js default, and that rule has the same specificity as a
+// plain `.exercise-editor` selector (loading after this theme file), so
+// it silently wins ties. Match `.card.exercise-editor` under our
+// `.big-code` wrapper to increase specificity and actually override it.
+.reveal .big-code .card.exercise-editor {
+  --exercise-font-size: 2rem;
+}
+
 // Inline code
 .reveal code {
   color: #003069;

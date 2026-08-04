@@ -340,7 +340,7 @@
     "href": "talks/3-sry/sry.html#generating-alt-text",
     "title": "Stop Repeating Yourself",
     "section": "Generating alt text",
-    "text": "Generating alt text\n\nDOJ is mandating that all digital content, including password protected content, adheres to the WCAG 2.1 AA standards by April 2027 (it was 2026…)\nHow can I quickly generate alt text for the lab manual, my websites, slides, etc.?!?"
+    "text": "Generating alt text\n\nThe DOJ requires all digital content — including password-protected content — to meet WCAG 2.1 AA standards by April 2027 (deadline pushed back from 2026)\nHow can I quickly generate alt text for the lab manual, my websites, slides, etc.?"
   },
   {
     "objectID": "talks/3-sry/sry.html#generating-alt-text-1",
@@ -354,21 +354,21 @@
     "href": "talks/3-sry/sry.html#generating-alt-text-2",
     "title": "Stop Repeating Yourself",
     "section": "Generating alt text",
-    "text": "Generating alt text\nPrompt:\n\nPlease create alt text for this set of box plots for the number of seconds songs in the top 100 of the billboard charts last (duration).\n\nResult:\n\nThis image features a series of vertical box-and-whisker plots titled “Length of #1 hits by decade,” illustrating the duration of top-charting songs in seconds from the 1950s through the 2020s.\n\n\nThe chart shows a clear historical trend where the median song length gradually increased from approximately 150 seconds in the 1950s to a peak of about 250 seconds in the 1990s, followed by a steady decline back toward 200 seconds in the 2020s. The 1970s and 1980s exhibit significant upward outliers, with some tracks reaching between 400 and 500 seconds, while the 2020s include an extreme outlier extending above 600 seconds. Overall, the 1950s have the most compact distribution with the shortest durations, while the 1990s show the highest consistent song lengths with the fewest outliers."
+    "text": "Generating alt text\n\nPrompt:\nPlease create alt text for this set of box plots for the number of seconds songs in the top 100 of the billboard charts last (duration).\n\n\nResult:\nThis image features a series of vertical box-and-whisker plots titled “Length of #1 hits by decade,” illustrating the duration of top-charting songs in seconds from the 1950s through the 2020s.\nThe chart shows a clear historical trend where the median song length gradually increased from approximately 150 seconds in the 1950s to a peak of about 250 seconds in the 1990s, followed by a steady decline back toward 200 seconds in the 2020s. The 1970s and 1980s exhibit significant upward outliers, with some tracks reaching between 400 and 500 seconds, while the 2020s include an extreme outlier extending above 600 seconds. Overall, the 1950s have the most compact distribution with the shortest durations, while the 1990s show the highest consistent song lengths with the fewest outliers."
   },
   {
     "objectID": "talks/3-sry/sry.html#alt-text-for-the-lab-manual",
     "href": "talks/3-sry/sry.html#alt-text-for-the-lab-manual",
     "title": "Stop Repeating Yourself",
     "section": "Alt text for the lab manual",
-    "text": "Alt text for the lab manual\n\nIn January, student worker wrote program to produce alt text for every image in the lab manual using Gemini\nThat worked, but I don’t have the program…\nCan Posit Assistant help me do the same thing?"
+    "text": "Alt text for the lab manual\n\n\n\nIn January, student worker wrote program to produce alt text for every image in the lab manual using Gemini\nThat worked, but I don’t have the program…\nCan Posit Assistant help me do the same thing?"
   },
   {
     "objectID": "talks/3-sry/sry.html#alt-text-via-posit-assistant",
     "href": "talks/3-sry/sry.html#alt-text-via-posit-assistant",
     "title": "Stop Repeating Yourself",
     "section": "Alt text via Posit Assistant",
-    "text": "Alt text via Posit Assistant\nModel: Claude Sonnet 4.6 (free trial)"
+    "text": "Alt text via Posit Assistant\nModel: Claude Sonnet 4.6 (free trial)\n\nPrompt:"
   },
   {
     "objectID": "talks/3-sry/sry.html#alt-text-via-posit-assistant-1",
@@ -382,21 +382,21 @@
     "href": "talks/3-sry/sry.html#other-hacks-with-llms",
     "title": "Stop Repeating Yourself",
     "section": "Other “hacks” with LLMs",
-    "text": "Other “hacks” with LLMs\n\nConverting tex to typst\nExtracting information from PDFs (better OCR)\nDevising additional quiz questions for standards-based grading\nSimulating data to match examples in journal articles when you only have a table or plot\nSupercharged find and replace (switch from %&gt;% to |&gt; in all resources for a course)"
+    "text": "Other “hacks” with LLMs\n\nConverting tex to typst\nExtracting information from PDFs (better OCR)\nDevising additional quiz questions for standards-based grading\nSimulating data to match examples in journal articles when you only have a table or plot\nSupercharged find and replace (switch from %&gt;% to |&gt; in all resources for a course)\nMaking school-specific quarto slide themes"
   },
   {
     "objectID": "talks/3-sry/sry.html#rapid-overview-of-quarto-live",
     "href": "talks/3-sry/sry.html#rapid-overview-of-quarto-live",
     "title": "Stop Repeating Yourself",
     "section": "Rapid Overview of Quarto Live",
-    "text": "Rapid Overview of Quarto Live\n\nQuarto Live is an extension that lets you embed live, runnable R (or Python) code cells directly into a Quarto reveal.js slide or webpage\nPowered by WebR — R runs entirely in the student’s browser, no server or install required\nStudents can edit code and see results instantly, right on the slide or page\n\n\nThe only syntax change: swap the chunk engine\nRegular R chunk:\n```{r}\nlm(rating ~ complaints, data = attitude)\n```\nQuarto Live R chunk:\n```{webr}\nlm(rating ~ complaints, data = attitude)\n```\n\n\nIf you can write a normal Quarto code chunk, you can make it interactive — just change r to webr."
+    "text": "Rapid Overview of Quarto Live\n\nQuarto Live is an extension that lets you embed live, runnable R (or Python) code cells directly into a Quarto reveal.js slide or webpage\nPowered by WebR — R runs entirely in the student’s browser, no server or install required\nStudents can edit code and see results instantly, right on the slide or page\n\n\nThe only syntax change: swap the chunk engine\n\n\nRegular R chunk:\n```{r}\nlm(rating ~ complaints, data = attitude)\n```\n\n\n\nQuarto Live R chunk:\n```{webr}\nlm(rating ~ complaints, data = attitude)\n```\n\n\n\n\nIf you can write a normal Quarto code chunk, you can make it interactive — just change r to webr."
   },
   {
     "objectID": "talks/3-sry/sry.html#scaffolded-example",
     "href": "talks/3-sry/sry.html#scaffolded-example",
     "title": "Stop Repeating Yourself",
     "section": "Scaffolded example",
-    "text": "Scaffolded example\n\nFill in the blanks to fit an SLR model with rating as the response and complaints as the explanatory variable. Then print the model summary."
+    "text": "Scaffolded example\nFill in the blanks to fit an SLR model with rating as the response and complaints as the explanatory variable. Then print the model summary."
   },
   {
     "objectID": "talks/4-lts/index.html",
