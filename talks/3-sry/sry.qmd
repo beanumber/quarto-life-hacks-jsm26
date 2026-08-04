@@ -72,7 +72,7 @@ Learn more: https://quarto.org/docs/books/
 ## 
 
 :::: {.columns}
-::: {.column width="47.5%"}
+::: {.column .benefits width="47.5%"}
 ### Benefits
 
 - Adapted for our Stat 1
@@ -86,7 +86,7 @@ Learn more: https://quarto.org/docs/books/
 ::: {.column width="5%"}
 :::
 
-::: {.column width="47.5%"}
+::: {.column .challenges width="47.5%"}
 ### Challenges
 
 - What happens if someone wants to use a different toolkit? <br> (e.g., ggformula vs. ggplot2)
@@ -155,7 +155,7 @@ Learn more: https://r-pkgs.org
 ## 
 
 :::: {.columns}
-::: {.column width="47.5%"}
+::: {.column .benefits width="47.5%"}
 ### Benefits
 
 - Adapted for our Stat 1, has the features we need to complement the rest of our toolkit
@@ -166,7 +166,7 @@ Learn more: https://r-pkgs.org
 ::: {.column width="5%"}
 :::
 
-::: {.column width="47.5%"}
+::: {.column .challenges width="47.5%"}
 ### Challenges
 
 - One person needs to agree to maintain it (during the summer)
@@ -179,9 +179,9 @@ A few more life hacks that I found helpful this past year
 
 ## Generating alt text
 
-- DOJ is mandating that all digital content, including password protected content, adheres to the WCAG 2.1 AA standards by April 2027 (it was 2026…)
+- The DOJ requires all digital content — including password-protected content — to meet WCAG 2.1 AA standards by April 2027 (deadline pushed back from 2026)
 
-- How can I quickly generate alt text for the lab manual, my websites, slides, etc.?!?
+- How can I quickly generate alt text for the lab manual, my websites, slides, etc.?
 
 ## Generating alt text
 
@@ -193,36 +193,54 @@ My idea: Use LLM to generate the alt text for my slides, notes, etc.
 
 ## Generating alt text
 
+::: {.alt-prompt}
 Prompt:
 
-> Please create alt text for this set of box plots for the number of seconds songs in the top 100 of the billboard charts last (duration).
+Please create alt text for this set of box plots for the number of seconds songs in the top 100 of the billboard charts last (duration).
+:::
 
+::: {.fragment .fade-up .alt-result}
 Result:
 
-> This image features a series of vertical box-and-whisker plots titled "Length of #1 hits by decade," illustrating the duration of top-charting songs in seconds from the 1950s through the 2020s.
+This image features a series of vertical box-and-whisker plots titled "Length of #1 hits by decade," illustrating the duration of top-charting songs in seconds from the 1950s through the 2020s.
 
-> The chart shows a clear historical trend where the median song length gradually increased from approximately 150 seconds in the 1950s to a peak of about 250 seconds in the 1990s, followed by a steady decline back toward 200 seconds in the 2020s. The 1970s and 1980s exhibit significant upward outliers, with some tracks reaching between 400 and 500 seconds, while the 2020s include an extreme outlier extending above 600 seconds. Overall, the 1950s have the most compact distribution with the shortest durations, while the 1990s show the highest consistent song lengths with the fewest outliers.
+The chart shows a clear historical trend where the median song length gradually increased from approximately 150 seconds in the 1950s to a peak of about 250 seconds in the 1990s, followed by a steady decline back toward 200 seconds in the 2020s. The 1970s and 1980s exhibit significant upward outliers, with some tracks reaching between 400 and 500 seconds, while the 2020s include an extreme outlier extending above 600 seconds. Overall, the 1950s have the most compact distribution with the shortest durations, while the 1990s show the highest consistent song lengths with the fewest outliers.
+:::
 
 ## Alt text for the lab manual
 
+:::: {.columns}
+::: {.column width="60%"}
 - In January, student worker wrote program to produce alt text for every image in the lab manual using Gemini
 
 - That worked, but I don't have the program...
 
 - Can Posit Assistant help me do the same thing?
+:::
 
+::: {.column width="5%"}
+:::
+
+::: {.column width="35%"}
 ![](images/clipboard-3188375758.png)
+:::
+::::
 
 ## Alt text via Posit Assistant
 
 Model: Claude Sonnet 4.6 (free trial)
 
+::: {.alt-prompt}
+Prompt:
+:::
+
 ![](images/clipboard-2094255764.png)
 
 ## Alt text via Posit Assistant
 
-> Scatterplot of average math SAT score (y-axis) against the percent of high school students who took the SAT (x-axis) for 51 U.S. states and D.C. The relationship is negative: states where a smaller share of students take the SAT tend to have higher average math scores.
-
+::: {.alt-result}
+Scatterplot of average math SAT score (y-axis) against the percent of high school students who took the SAT (x-axis) for 51 U.S. states and D.C. The relationship is negative: states where a smaller share of students take the SAT tend to have higher average math scores.
+:::
 
 ```{r}
 #| echo: false
@@ -250,6 +268,8 @@ ggplot(sat, aes(x = taken, y = math)) + geom_point() +
 
 - Supercharged find and replace<br> (switch from `%>%` to `|>` in all resources for a course)
 
+- Making school-specific quarto slide themes
+
 ## Rapid Overview of Quarto Live
 
 ::: incremental
@@ -261,18 +281,29 @@ ggplot(sat, aes(x = taken, y = math)) + geom_point() +
 ::: fragment
 **The only syntax change: swap the chunk engine**
 
+:::: {.columns}
+::: {.column width="49.5%"}
 Regular R chunk:
 
 ```{{r}}
 lm(rating ~ complaints, data = attitude)
 ```
+:::
 
+::: {.column width="1%"}
+:::
+
+::: {.column width="49.5%"}
 Quarto Live R chunk:
 
 ```{{webr}}
 lm(rating ~ complaints, data = attitude)
 ```
 :::
+::::
+:::
+
+<br>
 
 ::: {.fragment .fade-up}
 If you can write a normal Quarto code chunk, you can make it interactive — just change `r` to `webr`.
@@ -280,13 +311,16 @@ If you can write a normal Quarto code chunk, you can make it interactive — jus
 
 ## Scaffolded example
 
-> Fill in the blanks to fit an SLR model with rating as the response and complaints as the explanatory variable. Then print the model summary.
+Fill in the blanks to fit an SLR model with rating as the response and complaints as the explanatory variable. Then print the model summary.
 
+<br>
 
+::: {.big-code}
 ```{webr}
 #| echo: true
-# Press run!
+# Press run after you fill in the blanks!
 fm <- ___(___ ~ ___, data = attitude)
 ___(fm)
 ```
+:::
 
