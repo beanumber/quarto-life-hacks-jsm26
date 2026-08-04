@@ -140,7 +140,7 @@ Both campers have **data-centric** classrooms!
 
 ::: {.fragment .fade-up .midi .center}
 
-**But, when done right, they can be highly symbiotic**
+**But, when done right, they can be highly symbiotic.**
 
 :::
 
@@ -156,29 +156,39 @@ Both campers have **data-centric** classrooms!
 
 ::: {.fragment .fade-up .midi .center}
 
-I believe that **learning to code** while learning to statistics  
+I believe that **learning to code** while learning statistics  
 
 **helps students gain a deeper understanding** of the material.
 
 
 :::
 
+<br>
+
 ::: {.fragment}
 
-But nowadays, less people agree with me! (Video source: [Posit](https://posit.co/products/ai))
 
 :::: .columns
 
-::: {.column width='15%'}
+::: {.column width='25%'}
+
+<br>
+
+<br>
+
+But nowadays, less people agree with me! (Video source: [Posit](https://posit.co/products/ai))
+
 :::
 
-::: {.column width='70%'}
+::: {.column width='5%'}
+
+
+:::
+
+::: {.column  width='70%'}
 
 ![](figs/posit.gif)
 
-:::
-
-::: {.column  width='15%'}
 :::
 
 ::::
@@ -384,7 +394,7 @@ par(opar)
 
 <br>
 
-* We should be teaching **generalizable skills**, not **special cases** 
+* We should be teaching **generalizable skills**, not **special cases**.
 
 <br>
 
@@ -410,7 +420,7 @@ par(opar)
 
 ::: {.midi .center .fade-up .fragment}
 
-Provide students with the **tools to learn code** that has both a
+Provide students with the **tools to learn code** that have both a
 
 design language and syntax that is **consistent** & **intuitive**. 
 
@@ -619,7 +629,19 @@ Once students have **learned the grammar**, they can **use `ggplot2`** to answer
 
 ### Linear Regression
 
-You ask your students to fit a linear regression model to predict penguin bill length by their body mass and sex. 
+::: {.midi .center}
+
+
+Suppose that you ask your students to fit a linear regression model to predict penguin bill length by their body mass and sex. 
+
+:::
+
+<br>
+
+::: {.fragment}
+
+<div class=big-code>
+
 
 ```{r}
 library(palmerpenguins)
@@ -628,12 +650,16 @@ mod <- lm(bill_length_mm ~ body_mass_g + sex, penguins)
 get_regression_table(mod)
 ```
 
+</div>
+
+:::
+
 <br> 
 
 
 ::: {.fragment .fade-up .midi .center}
 
-What do you want your students to do as they fit and interpret this model? 
+**What do you want your students to do as they fit and interpret this model? **
 
 :::
 
@@ -658,9 +684,9 @@ penguins %>%
 
 </div>
 
-- This is a great solution for models that can be visualized in 2D,
+- This is a great solution for models that can be visualized in 2D.
 
-- but as soon as we'd like to assess more complex models, or just more formally check linear model assumptions, we need **diagnostic plots**. 
+- But as soon as we'd like to assess more complex models, or just more formally check linear model assumptions, we need **diagnostic plots**. 
 
 
 ------------------------------------------------------------------------
@@ -729,11 +755,11 @@ plot(mod, las = 1)
 ::: {.column width='45%'}
 
 
-- that, if our students can't use our "universal" grammar of graphics to make basic diagnostic plots, that they won't believe this grammar is too helpful
+- That, if our students can't use our "universal" grammar of graphics to make basic diagnostic plots, that they won't believe this grammar is too helpful.
 
 <br>
 
-- that students might just start to memorize symbols, because we no longer are **consistent** or **intuitive** in our syntax
+- That students might just start to memorize symbols, because we no longer are **consistent** or **intuitive** in our syntax.
 
 :::
 
@@ -742,7 +768,7 @@ plot(mod, las = 1)
 
 ::: {.column .fragment .nonincremental width='45%'}
 
-- that maybe, just maybe, we should have been in the other camp. 
+- That maybe, just maybe, we should have been in the other camp. 
 
 ![](figs/car-camping.jpg)
 
