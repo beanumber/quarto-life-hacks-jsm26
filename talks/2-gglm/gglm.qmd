@@ -1290,7 +1290,7 @@ model diagnostics with `gglm::launch()`
 
 <br>
 
-- If you're a camp(R), programming should not be **tool that enhances understanding**, not a barrier to extracting knowledge from data. 
+- If you're a camp(R), programming should be a **tool that enhances understanding**, not a barrier to extracting knowledge from data. 
 
 <br>
 
