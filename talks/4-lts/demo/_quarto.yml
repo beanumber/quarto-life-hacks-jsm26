@@ -1,0 +1,6 @@
+project:
+  type: lts
+
+format:
+  html:
+    css: _extensions/lts/styles.css

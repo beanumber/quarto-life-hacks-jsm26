@@ -1,0 +1,11 @@
+{
+  "demo.qmd": {
+    "demo.html": "e1ad734e"
+  },
+  "demo_template.qmd": {
+    "demo_template.html": "be7ccb78"
+  },
+  "demo_solutions.qmd": {
+    "demo_solutions.html": "fb7aa268"
+  }
+}

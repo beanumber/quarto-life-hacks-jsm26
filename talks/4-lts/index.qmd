@@ -18,12 +18,12 @@ This talk demonstrates how to use an LTS document (a custom document format for 
 <iframe class="slide-deck" src="" height="420" width="747" style="border: 1px solid #2e3846;"></iframe>
 ```
 
-[Source code for slides]()
+[Source code for slides](https://www.science.smith.edu/~whopper/Talks/JSM_2026/lts_talk.qmd)
 
-[Full screen slides]()
+[Full screen slides](https://www.science.smith.edu/~whopper/Talks/JSM_2026/lts_talk.html)
 
 ## Speaker
 
-![](https://www.smith.edu/sites/default/files/styles/content_faculty_profile_full_large/public/2025-09/will-hopper-25.jpg.webp?itok=xsaslWSL){style="float: right; padding-left: 10px;" fig-alt="Photo of Colin Rundel" width="200"}
+![](https://www.smith.edu/sites/default/files/styles/content_faculty_profile_full_large/public/2025-09/will-hopper-25.jpg.webp?itok=xsaslWSL){style="float: right; padding-left: 10px;" fig-alt="Photo of Will Hopper" width="200"}
 
 Will Hopper is...
