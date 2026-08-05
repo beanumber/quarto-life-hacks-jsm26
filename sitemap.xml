@@ -2,38 +2,54 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://beanumber.github.io/quarto-life-hacks-jsm26/index.html</loc>
-    <lastmod>2026-08-05T00:52:13.186Z</lastmod>
-  </url>
-  <url>
-    <loc>https://beanumber.github.io/quarto-life-hacks-jsm26/talks/2-gglm/index.html</loc>
-    <lastmod>2026-08-05T00:52:13.296Z</lastmod>
-  </url>
-  <url>
-    <loc>https://beanumber.github.io/quarto-life-hacks-jsm26/talks/3-sry/index.html</loc>
-    <lastmod>2026-08-05T00:52:13.303Z</lastmod>
-  </url>
-  <url>
-    <loc>https://beanumber.github.io/quarto-life-hacks-jsm26/talks/5-discussion/discussion.html</loc>
-    <lastmod>2026-08-05T00:52:13.305Z</lastmod>
-  </url>
-  <url>
-    <loc>https://beanumber.github.io/quarto-life-hacks-jsm26/talks/1-automate/index.html</loc>
-    <lastmod>2026-08-05T00:52:13.187Z</lastmod>
-  </url>
-  <url>
-    <loc>https://beanumber.github.io/quarto-life-hacks-jsm26/talks/5-discussion/index.html</loc>
-    <lastmod>2026-08-05T00:52:13.319Z</lastmod>
-  </url>
-  <url>
-    <loc>https://beanumber.github.io/quarto-life-hacks-jsm26/talks/3-sry/sry.html</loc>
-    <lastmod>2026-08-05T00:52:13.303Z</lastmod>
-  </url>
-  <url>
-    <loc>https://beanumber.github.io/quarto-life-hacks-jsm26/talks/2-gglm/gglm.html</loc>
-    <lastmod>2026-08-05T00:52:13.296Z</lastmod>
+    <lastmod>2026-08-05T14:24:40.776Z</lastmod>
   </url>
   <url>
     <loc>https://beanumber.github.io/quarto-life-hacks-jsm26/talks/4-lts/index.html</loc>
-    <lastmod>2026-08-05T00:52:13.304Z</lastmod>
+    <lastmod>2026-08-05T14:24:40.925Z</lastmod>
+  </url>
+  <url>
+    <loc>https://beanumber.github.io/quarto-life-hacks-jsm26/talks/4-lts/demo/demo_solutions.html</loc>
+    <lastmod>2026-08-05T14:24:40.892Z</lastmod>
+  </url>
+  <url>
+    <loc>https://beanumber.github.io/quarto-life-hacks-jsm26/talks/2-gglm/index.html</loc>
+    <lastmod>2026-08-05T14:24:40.880Z</lastmod>
+  </url>
+  <url>
+    <loc>https://beanumber.github.io/quarto-life-hacks-jsm26/talks/3-sry/index.html</loc>
+    <lastmod>2026-08-05T14:24:40.887Z</lastmod>
+  </url>
+  <url>
+    <loc>https://beanumber.github.io/quarto-life-hacks-jsm26/talks/5-discussion/discussion.html</loc>
+    <lastmod>2026-08-05T14:24:40.926Z</lastmod>
+  </url>
+  <url>
+    <loc>https://beanumber.github.io/quarto-life-hacks-jsm26/talks/1-automate/index.html</loc>
+    <lastmod>2026-08-05T14:24:40.777Z</lastmod>
+  </url>
+  <url>
+    <loc>https://beanumber.github.io/quarto-life-hacks-jsm26/talks/5-discussion/index.html</loc>
+    <lastmod>2026-08-05T14:24:40.939Z</lastmod>
+  </url>
+  <url>
+    <loc>https://beanumber.github.io/quarto-life-hacks-jsm26/talks/3-sry/sry.html</loc>
+    <lastmod>2026-08-05T14:24:40.887Z</lastmod>
+  </url>
+  <url>
+    <loc>https://beanumber.github.io/quarto-life-hacks-jsm26/talks/2-gglm/gglm.html</loc>
+    <lastmod>2026-08-05T14:24:40.880Z</lastmod>
+  </url>
+  <url>
+    <loc>https://beanumber.github.io/quarto-life-hacks-jsm26/talks/4-lts/demo/demo_template.html</loc>
+    <lastmod>2026-08-05T14:24:40.894Z</lastmod>
+  </url>
+  <url>
+    <loc>https://beanumber.github.io/quarto-life-hacks-jsm26/talks/4-lts/demo/demo.html</loc>
+    <lastmod>2026-08-05T14:24:40.889Z</lastmod>
+  </url>
+  <url>
+    <loc>https://beanumber.github.io/quarto-life-hacks-jsm26/talks/4-lts/lts_talk.html</loc>
+    <lastmod>2026-08-05T14:24:40.925Z</lastmod>
   </url>
 </urlset>

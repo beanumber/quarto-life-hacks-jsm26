@@ -28,6 +28,55 @@
     "text": "Homepage\nAll session materials can be viewed at https://beanumber.github.io/quarto-life-hacks-jsm26/. The GitHub repo that serves this site is at https://github.com/beanumber/quarto-life-hacks-jsm26/."
   },
   {
+    "objectID": "talks/4-lts/index.html",
+    "href": "talks/4-lts/index.html",
+    "title": "The LTS Document: Lab, Template and Solutions All in One",
+    "section": "",
+    "text": "Assigning low-stakes practice problems or “lab” activities during class is one strategy for incorporating active learning into a traditional lecture-oriented course. In a course that incorporates computation, instructors may find it useful to provide a document with detailed information and instructions (a “lab” document), a document with initial scaffolding for students to work within (a “template” document), and a document with example results (a “solutions” document). However, keeping content synchronized across these three documents, as well as the learning management system used to distribute these documents, introduces administrative overhead and mistakes. This talk demonstrates how to use an LTS document (a custom document format for the Quarto publishing system) to create each of these student-facing files simultaneously from one main instructor-facing file, and automatically deploy them to Moodle using an R package."
+  },
+  {
+    "objectID": "talks/4-lts/index.html#abstract",
+    "href": "talks/4-lts/index.html#abstract",
+    "title": "The LTS Document: Lab, Template and Solutions All in One",
+    "section": "",
+    "text": "Assigning low-stakes practice problems or “lab” activities during class is one strategy for incorporating active learning into a traditional lecture-oriented course. In a course that incorporates computation, instructors may find it useful to provide a document with detailed information and instructions (a “lab” document), a document with initial scaffolding for students to work within (a “template” document), and a document with example results (a “solutions” document). However, keeping content synchronized across these three documents, as well as the learning management system used to distribute these documents, introduces administrative overhead and mistakes. This talk demonstrates how to use an LTS document (a custom document format for the Quarto publishing system) to create each of these student-facing files simultaneously from one main instructor-facing file, and automatically deploy them to Moodle using an R package."
+  },
+  {
+    "objectID": "talks/4-lts/index.html#slides",
+    "href": "talks/4-lts/index.html#slides",
+    "title": "The LTS Document: Lab, Template and Solutions All in One",
+    "section": "Slides",
+    "text": "Slides\n\nSource code for slides\nFull screen slides"
+  },
+  {
+    "objectID": "talks/4-lts/index.html#speaker",
+    "href": "talks/4-lts/index.html#speaker",
+    "title": "The LTS Document: Lab, Template and Solutions All in One",
+    "section": "Speaker",
+    "text": "Speaker\n\nWill Hopper is…"
+  },
+  {
+    "objectID": "talks/4-lts/demo/demo_solutions.html",
+    "href": "talks/4-lts/demo/demo_solutions.html",
+    "title": "Lab 1: Getting Acquainted with R, RStudio and Quarto",
+    "section": "",
+    "text": "You should see the following output in your console:\n\n\n[1] 7"
+  },
+  {
+    "objectID": "talks/4-lts/demo/demo_solutions.html#question-1",
+    "href": "talks/4-lts/demo/demo_solutions.html#question-1",
+    "title": "Lab 1: Getting Acquainted with R, RStudio and Quarto",
+    "section": "",
+    "text": "You should see the following output in your console:\n\n\n[1] 7"
+  },
+  {
+    "objectID": "talks/4-lts/demo/demo_solutions.html#question-2",
+    "href": "talks/4-lts/demo/demo_solutions.html#question-2",
+    "title": "Lab 1: Getting Acquainted with R, RStudio and Quarto",
+    "section": "Question 2",
+    "text": "Question 2\n\nThe name of each object is shown, along with its computed value.\nThe computed result is not printed out"
+  },
+  {
     "objectID": "talks/2-gglm/index.html",
     "href": "talks/2-gglm/index.html",
     "title": "gglm: A tool for teaching linear model diagnostics while adhering to the grammar of graphics",
@@ -399,31 +448,157 @@
     "text": "Scaffolded example\nFill in the blanks to fit an SLR model with rating as the response and complaints as the explanatory variable. Then print the model summary."
   },
   {
-    "objectID": "talks/4-lts/index.html",
-    "href": "talks/4-lts/index.html",
-    "title": "The LTS Document: Lab, Template and Solutions All in One",
+    "objectID": "talks/4-lts/demo/demo_template.html",
+    "href": "talks/4-lts/demo/demo_template.html",
+    "title": "Lab 1: Getting Acquainted with R, RStudio and Quarto",
     "section": "",
-    "text": "Assigning low-stakes practice problems or “lab” activities during class is one strategy for incorporating active learning into a traditional lecture-oriented course. In a course that incorporates computation, instructors may find it useful to provide a document with detailed information and instructions (a “lab” document), a document with initial scaffolding for students to work within (a “template” document), and a document with example results (a “solutions” document). However, keeping content synchronized across these three documents, as well as the learning management system used to distribute these documents, introduces administrative overhead and mistakes. This talk demonstrates how to use an LTS document (a custom document format for the Quarto publishing system) to create each of these student-facing files simultaneously from one main instructor-facing file, and automatically deploy them to Moodle using an R package."
+    "text": "In the Console, enter 5 + 2 and press Enter to run the code."
   },
   {
-    "objectID": "talks/4-lts/index.html#abstract",
-    "href": "talks/4-lts/index.html#abstract",
-    "title": "The LTS Document: Lab, Template and Solutions All in One",
+    "objectID": "talks/4-lts/demo/demo_template.html#question-1",
+    "href": "talks/4-lts/demo/demo_template.html#question-1",
+    "title": "Lab 1: Getting Acquainted with R, RStudio and Quarto",
     "section": "",
-    "text": "Assigning low-stakes practice problems or “lab” activities during class is one strategy for incorporating active learning into a traditional lecture-oriented course. In a course that incorporates computation, instructors may find it useful to provide a document with detailed information and instructions (a “lab” document), a document with initial scaffolding for students to work within (a “template” document), and a document with example results (a “solutions” document). However, keeping content synchronized across these three documents, as well as the learning management system used to distribute these documents, introduces administrative overhead and mistakes. This talk demonstrates how to use an LTS document (a custom document format for the Quarto publishing system) to create each of these student-facing files simultaneously from one main instructor-facing file, and automatically deploy them to Moodle using an R package."
+    "text": "In the Console, enter 5 + 2 and press Enter to run the code."
   },
   {
-    "objectID": "talks/4-lts/index.html#slides",
-    "href": "talks/4-lts/index.html#slides",
-    "title": "The LTS Document: Lab, Template and Solutions All in One",
-    "section": "Slides",
-    "text": "Slides\n\nSource code for slides\nFull screen slides"
+    "objectID": "talks/4-lts/demo/demo_template.html#question-2",
+    "href": "talks/4-lts/demo/demo_template.html#question-2",
+    "title": "Lab 1: Getting Acquainted with R, RStudio and Quarto",
+    "section": "Question 2",
+    "text": "Question 2\nIn the console, type in result &lt;- 5 + 2 and press Enter to run the code.\nThen, type in applesauce &lt;- 10 * 3 in the console and press Enter to run the code.\nThen, write an answer the following questions in your Lab 2 Quarto document:\n\nWhat happens in the RStudio “Environment” pane when you use the assignment operator to create a new object?\nWhat doesn’t happen in the console when you use the assignment operator to create a new object?"
   },
   {
-    "objectID": "talks/4-lts/index.html#speaker",
-    "href": "talks/4-lts/index.html#speaker",
-    "title": "The LTS Document: Lab, Template and Solutions All in One",
-    "section": "Speaker",
-    "text": "Speaker\n\nWill Hopper is…"
+    "objectID": "talks/4-lts/demo/demo_template.html#question-3",
+    "href": "talks/4-lts/demo/demo_template.html#question-3",
+    "title": "Lab 1: Getting Acquainted with R, RStudio and Quarto",
+    "section": "Question 3",
+    "text": "Question 3\nIn your template file, locate the code chunk that looks like this:\n\nresult &lt;- 5 + 2\napplesauce &lt;- 10 * 3\n\nWrite the command result + applesauce on the blank line at the end of the code chunk. Then click the green triangle “play” button in the upper right hand corner of the code chunk to execute the code in the chunk."
+  },
+  {
+    "objectID": "talks/4-lts/demo/demo.html",
+    "href": "talks/4-lts/demo/demo.html",
+    "title": "Lab 1: Getting Acquainted with R, RStudio and Quarto",
+    "section": "",
+    "text": "ImportantLab Goals\n\n\n\nThe purpose of this lab is to introduce you to working with R and with resources and techniques for problem solving while using R.\nAfter completing this lab, you should understand:\n\nThe RStudio interface\nHow to use  as a calculator\nHow to store the results of your calculations as objects in the  environment\nHow to interpret error messages from \nHow to find the built-in help resources in \nIdentify working directories and navigate file paths"
+  },
+  {
+    "objectID": "talks/4-lts/demo/demo.html#r-as-a-calculator",
+    "href": "talks/4-lts/demo/demo.html#r-as-a-calculator",
+    "title": "Lab 1: Getting Acquainted with R, RStudio and Quarto",
+    "section": "R as a calculator",
+    "text": "R as a calculator\nThe first thing you can try to do with R is a familiar one - simply use it like a calculator. It is easy to forget because of all the other things it can do, but R at the lowest level is still just working with numbers."
+  },
+  {
+    "objectID": "talks/4-lts/demo/demo.html#storing-information-in-objects",
+    "href": "talks/4-lts/demo/demo.html#storing-information-in-objects",
+    "title": "Lab 1: Getting Acquainted with R, RStudio and Quarto",
+    "section": "Storing information in objects",
+    "text": "Storing information in objects\nRight now, the outputs of our code (in this case, the number 7) are just being shown to us. That can be helpful, but isn’t really the point of a programming language. We want to be able to save our results and build on them as we go. We can do that by assigning the output of the code we run into an object.\nYou can think of objects as boxes that store things. To create an object, we have to ask R to take the results of some code and assign those results to an object. We can do this using the assignment operator &lt;-, which is often called the arrow. In your code, you write the assignment operator iby typing in the “less than” symbol, followed by a dash."
+  },
+  {
+    "objectID": "talks/4-lts/lts_talk.html#a-typical-in-class-activity",
+    "href": "talks/4-lts/lts_talk.html#a-typical-in-class-activity",
+    "title": "The LTS Document",
+    "section": "A Typical In-Class Activity",
+    "text": "A Typical In-Class Activity\n\n\nA “lab” with instructions\n\n\n\n\n\n\nA template with scaffolding\n\n\n\n\n\n\nA solutions guide"
+  },
+  {
+    "objectID": "talks/4-lts/lts_talk.html#the-hidden-pain-of-good-assignments",
+    "href": "talks/4-lts/lts_talk.html#the-hidden-pain-of-good-assignments",
+    "title": "The LTS Document",
+    "section": "The Hidden Pain of Good Assignments",
+    "text": "The Hidden Pain of Good Assignments\nEach of these is a separate document to create, distribute, and maintain\n\nYou changed the variables names in the lab\nDid you also change the template?\nAnd re-render the solutions?\n\n\nWe needed to solve this problem to scale SDS 100: Reproducible Scientific Computing with Data up for 100’s of students and several simultaneous instructors (that change each semester!)"
+  },
+  {
+    "objectID": "talks/4-lts/lts_talk.html#the-solution-the-lts-document-format",
+    "href": "talks/4-lts/lts_talk.html#the-solution-the-lts-document-format",
+    "title": "The LTS Document",
+    "section": "The Solution: The LTS Document Format",
+    "text": "The Solution: The LTS Document Format"
+  },
+  {
+    "objectID": "talks/4-lts/lts_talk.html#what-does-an-lts-document-look-like",
+    "href": "talks/4-lts/lts_talk.html#what-does-an-lts-document-look-like",
+    "title": "The LTS Document",
+    "section": "What Does an LTS Document Look Like?",
+    "text": "What Does an LTS Document Look Like?\n---\ntitle: \"Lab 1: Getting Acquainted with R, RStudio and Quarto\"\neditor: source\nformat: lts-html:\n---\n\n## Creating Objects\n\nYou can think of *objects* as boxes that store things. To create an object, we have to ask R to take the results of some code and *assign* those results to an object. We can do this using the **assignment operator** `&lt;-`, which is often called the arrow. In your code, you write the assignment operator by typing in the \"less than\" symbol, followed by a dash.\n\n::: question\nIn your template file, locate the code chunk that looks like this:\n\n```{r}\n#| echo: fenced\nresult &lt;- 5 + 2\napplesauce &lt;- 10 * 3\n```\n\nWrite the command `result + applesauce` on the blank line at the end of the code chunk. Then click the green triangle \"play\" button in the upper right hand corner of the code chunk to execute the code in the chunk.\n:::\n\n::: solution\n\n```{r}\nresult &lt;- 5 + 2\napplesauce &lt;- 10 * 3\nresult + applesauce\n```\n\nYou should see the number 37 printed out in the console, just as it is shown above.\n:::"
+  },
+  {
+    "objectID": "talks/4-lts/lts_talk.html#how-does-it-work",
+    "href": "talks/4-lts/lts_talk.html#how-does-it-work",
+    "title": "The LTS Document",
+    "section": "How Does it Work?",
+    "text": "How Does it Work?\n\nEach lts-html document is parsed using a Quarto project pre-rendering script (written in Lua for portability)\n\nThe .question divs are written into a new *_template.qmd file\nThe .solution divs are written into a new *_solutions.qmd file\n\nThe lab, template, and solutions are rendered into HTML documents\n\nA pandoc filter strips all .solution divs from the main lab file during rendering"
+  },
+  {
+    "objectID": "talks/4-lts/lts_talk.html#getting-started-with-lts",
+    "href": "talks/4-lts/lts_talk.html#getting-started-with-lts",
+    "title": "The LTS Document",
+    "section": "Getting Started with LTS",
+    "text": "Getting Started with LTS\nTo start a new project:\nquarto use template wjhopper/lts\n\n\nWithin an existing project:\nquarto add wjhopper/lts\n\n\nThen manually add\npre-render: _extensions/wjhopper/lts/setup.lua\nto the project’s _quarto.yml configuration file"
+  },
+  {
+    "objectID": "talks/4-lts/lts_talk.html#meet-the-moodler-package",
+    "href": "talks/4-lts/lts_talk.html#meet-the-moodler-package",
+    "title": "The LTS Document",
+    "section": "Meet the moodleR Package!",
+    "text": "Meet the moodleR Package!\nLet’s upload these to our course’s Moodle using the moodleR package!\n\n# remotes::install_github(\"wjhopper/moodleR)\nlibrary(moodleR)\n\n\nmoodleR speeds up common but repetitive and click-heavy tasks in Moodle by allowing you to script them from \n\n\nBuilt on top of the chromote and httr packages\n\n\nMoodle doesn’t really have a full-fledged web API (and good luck getting your IT admin to turn it on for you anyway!)\nSo moodleR conducts much of its business as though it were a web browser"
+  },
+  {
+    "objectID": "talks/4-lts/lts_talk.html#tell-me-who-are-you",
+    "href": "talks/4-lts/lts_talk.html#tell-me-who-are-you",
+    "title": "The LTS Document",
+    "section": "Tell Me Who Are You?",
+    "text": "Tell Me Who Are You?\n\n\nFirst, open a browser for authentication\n\ntab &lt;- moodleR::open_moodle(\n  \"https://moodle.smith.edu\",\n  graphical = TRUE\n)\n\n\nAfter authentication, browser switches into “headless” mode\n\n\nVideo"
+  },
+  {
+    "objectID": "talks/4-lts/lts_talk.html#uploading-to-moodle",
+    "href": "talks/4-lts/lts_talk.html#uploading-to-moodle",
+    "title": "The LTS Document",
+    "section": "Uploading to Moodle",
+    "text": "Uploading to Moodle\n\n\nNavigate to the course, and create a new section\n\ntab$course &lt;- 57135 # ID number from course page URL\nsection_info &lt;- create_section(\n  tab,\n  section_name = \"Lab 1\"\n)\n\n\n\n\n\nAdd each file to the page using moodleR::upload_file()\n\nmoodleR::upload_file(tab, section = \"Lab 1\", title = \"Lab 1: Welcome to R\", path = \"lab1.html\")\nmoodleR::upload_file(tab, section = \"Lab 1\", title = \"Lab 1 Template\", path = \"lab1_template.qmd\")\nmoodleR::upload_file(tab, section = \"Lab 1\", title = \"Lab 1 Answer Key\", path = \"lab1_solutions.html\",\n                     visible = FALSE # Keep solutions hidden until after class\n                     )"
+  },
+  {
+    "objectID": "talks/4-lts/lts_talk.html#moodler-spotlight-creating-and-populating-groups",
+    "href": "talks/4-lts/lts_talk.html#moodler-spotlight-creating-and-populating-groups",
+    "title": "The LTS Document",
+    "section": "MoodleR Spotlight: Creating and Populating Groups",
+    "text": "MoodleR Spotlight: Creating and Populating Groups\nYou have a group project coming up, and want teams to submit their work on Moodle\n\ngroups &lt;- googlesheets4::read_sheet(\"197hRqQ-Ul3w2IhTDb8iJd8ip6IK4BPB0PT9otJSLPLw\")\nprint(groups)\n\n# A tibble: 15 × 3\n   group_name    name          email_address   \n   &lt;chr&gt;         &lt;chr&gt;         &lt;chr&gt;           \n 1 The Shamoners Rose Lia      rlia@smith.edu  \n 2 The Shamoners Art I. Cuno   acuno@smith.edu \n 3 The Shamoners Drag A. Pult  dpult@smith.edu \n 4 Slow Starters Reg I. Gigas  rgigas@smith.edu\n 5 Slow Starters Drake O. Vish dvish@smith.edu \n 6 Slow Starters Don D. Ozo    ddozo@smith.edu \n 7 Dream World   Sam U. Rott   srott@smith.edu \n 8 Dream World   Rogg N. Rola  rrola@smith.edu \n 9 Dream World   Krook O. Dile kdile@smith.edu \n10 DRA           Drag A. Pult  dpult@smith.edu \n11 DRA           Rose Lia      rlia@smith.edu  \n12 DRA           Art I. Cuno   acuno@smith.edu \n13 Banworthy     Chan D. Lure  clure@smith.edu \n14 Banworthy     Zam A. Zenta  zzenta@smith.edu\n15 Banworthy     Drake O. Vish dvish@smith.edu"
+  },
+  {
+    "objectID": "talks/4-lts/lts_talk.html#moodler-spotlight-creating-and-populating-groups-1",
+    "href": "talks/4-lts/lts_talk.html#moodler-spotlight-creating-and-populating-groups-1",
+    "title": "The LTS Document",
+    "section": "MoodleR Spotlight: Creating and Populating Groups",
+    "text": "MoodleR Spotlight: Creating and Populating Groups\nNormally, creating 5 new groups and populating them with 3 members each would require manual data entry for group and person, and several dozens of clicks\n\n\nBut with moodleR, it’s two lines of code =)\n\nmoodleR::create_groups(\n  tab,\n  groups = unique(groups$group_name)\n  )\nmoodleR::populate_groups(tab, groups)"
+  },
+  {
+    "objectID": "talks/4-lts/lts_talk.html#moodler-spotlight-project-rotation-schedules",
+    "href": "talks/4-lts/lts_talk.html#moodler-spotlight-project-rotation-schedules",
+    "title": "The LTS Document",
+    "section": "MoodleR Spotlight: Project Rotation Schedules",
+    "text": "MoodleR Spotlight: Project Rotation Schedules\nIn SDS 100, we have a phased group project where students collaborate on an exploratory data analysis\n\n\nEach student chooses their own data set, and starts their own report\n\nEach week, they rotate data sets, and pick up the report where their group mate left off\n\n\nWe help students keep track of who’s doing what each week by posting a project rotation schedule"
+  },
+  {
+    "objectID": "talks/4-lts/lts_talk.html#moodler-spotlight-project-rotation-schedules-1",
+    "href": "talks/4-lts/lts_talk.html#moodler-spotlight-project-rotation-schedules-1",
+    "title": "The LTS Document",
+    "section": "MoodleR Spotlight: Project Rotation Schedules",
+    "text": "MoodleR Spotlight: Project Rotation Schedules\n\n\nStep 1: Create the Schedule\n\nschedule &lt;- split(groups, groups$group_name) |&gt;\n  lapply(\\(x) {\n    sds100::create_rotation_table(\n      group_members = x$name,\n      row_names = paste(\"Phase\", 1:4)\n    ) |&gt;\n    sds100::write_rotation_schedule()\n    }\n  )\n\n\n{ifingroup 63501} is a Moodle FilterCodes that restricts visibility to members of a specific group\n\n\n{ifingroup 63501}\n\n&lt;h5 id=\"phase-1\"&gt;Phase 1&lt;/h5&gt;\n  &lt;ul&gt;\n    &lt;li&gt;&lt;strong&gt;Chan D. Lure&lt;/strong&gt; will write the data description for their own data, and send all the neccesary materials to Zam A. Zenta when the data description is fully completed.&lt;/li&gt;\n    &lt;li&gt;&lt;strong&gt;Zam A. Zenta&lt;/strong&gt; will write the data description for their own data, and send all the neccesary materials to Drake O. Vish when the data description is fully completed.&lt;/li&gt;\n    &lt;li&gt;&lt;strong&gt;Drake O. Vish&lt;/strong&gt; will write the data description for their own data, and send all the neccesary materials to Chan D. Lure when the data description is fully completed.&lt;/li&gt;\n  &lt;/ul&gt;\n&lt;h5 id=\"phase-2\"&gt;Phase 2&lt;/h5&gt;\n  &lt;ul&gt;\n    &lt;li&gt;&lt;strong&gt;Zam A. Zenta&lt;/strong&gt; will pick up where Chan D. Lure left off in the prior phase, and summarize Art’s Data. They will send all the neccesary materials to Drake O. Vish when the summaries are fully complete.&lt;/li&gt;\n    &lt;li&gt;&lt;strong&gt;Drake O. Vish&lt;/strong&gt; will pick up where Zam A. Zenta left off in the prior phase, and summarize Drag’s Data. They will send all the neccesary materials to Chan D. Lure when the summaries are fully complete.&lt;/li&gt;\n    &lt;li&gt;&lt;strong&gt;Chan D. Lure&lt;/strong&gt; will pick up where Drake O. Vish left off in the prior phase, and summarize Rose’s Data. They will send all the neccesary materials to Zam A. Zenta when the summaries are fully complete.&lt;/li&gt;\n  &lt;/ul&gt;\n&lt;h5 id=\"phase-3\"&gt;Phase 3&lt;/h5&gt;\n  &lt;ul&gt;\n    &lt;li&gt;&lt;strong&gt;Drake O. Vish&lt;/strong&gt; will pick up where Zam A. Zenta left off in the prior phase, and visualize Art’s Data. They will send all the neccesary materials to Chan D. Lure when the visualizations are fully complete.&lt;/li&gt;\n    &lt;li&gt;&lt;strong&gt;Chan D. Lure&lt;/strong&gt; will pick up where Drake O. Vish left off in the prior phase, and visualize Drag’s Data. They will send all the neccesary materials to Zam A. Zenta when the visualizations are fully complete.&lt;/li&gt;\n    &lt;li&gt;&lt;strong&gt;Zam A. Zenta&lt;/strong&gt; will pick up where Chan D. Lure left off in the prior phase, and visualize Rose’s Data. They will send all the neccesary materials to Drake O. Vish when the visualizations are fully complete.&lt;/li&gt;\n  &lt;/ul&gt;\n&lt;h5 id=\"phase-4\"&gt;Phase 4&lt;/h5&gt;\n  &lt;ul&gt;\n    &lt;li&gt;&lt;strong&gt;Chan D. Lure&lt;/strong&gt; will pick up where Drake O. Vish left off, and describe the ethical impacts of their own data.&lt;/li&gt;\n    &lt;li&gt;&lt;strong&gt;Zam A. Zenta&lt;/strong&gt; will pick up where Chan D. Lure left off, and describe the ethical impacts of their own data.&lt;/li&gt;\n    &lt;li&gt;&lt;strong&gt;Drake O. Vish&lt;/strong&gt; will pick up where Zam A. Zenta left off, and describe the ethical impacts of their own data.&lt;/li&gt;\n  &lt;/ul&gt;\n  \n{\\ifingroup 63501}"
+  },
+  {
+    "objectID": "talks/4-lts/lts_talk.html#moodler-spotlight-project-rotation-schedules-2",
+    "href": "talks/4-lts/lts_talk.html#moodler-spotlight-project-rotation-schedules-2",
+    "title": "The LTS Document",
+    "section": "MoodleR Spotlight: Project Rotation Schedules",
+    "text": "MoodleR Spotlight: Project Rotation Schedules\n\n\nStep 2: Post the Schedule\n\nmoodleR::create_section(\n  tab,\n  section_name = \"Rotation Schedule\"\n)\n\nschedule |&gt;\n  paste(collapse = \"\\n\") |&gt;\n  moodleR::add_text(section = \"Rotation Schedule\")"
+  },
+  {
+    "objectID": "talks/4-lts/lts_talk.html#moodler-honorable-mentions",
+    "href": "talks/4-lts/lts_talk.html#moodler-honorable-mentions",
+    "title": "The LTS Document",
+    "section": "moodleR Honorable Mentions",
+    "text": "moodleR Honorable Mentions\n\nmoodler::download_quiz_responses()\n\nDownloads quiz responses and file attachments in one batch (similar to how Moodle allows you to download all submissions for an assignment)\n\nmoodleR::get_course_roster()\nmoodleR::export_gradebook()"
   }
 ]
