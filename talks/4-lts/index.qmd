@@ -1,8 +1,8 @@
 ---
 title: "The LTS Document: Lab, Template and Solutions All in One"
 author: William Hopper
-image: featured.png
-image-alt: "Screenshot from Colin's presentation with parsermd package logo overlaid."
+image: img/logo.png
+image-alt: "LTS Logo"
 ---
 
 ## Abstract
