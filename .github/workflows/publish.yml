@@ -35,6 +35,8 @@ jobs:
             graysonwhite/gglm
             any::lme4
             hadley/emo
+            wjhopper/moodleR
+            any::fontawesome
 
       - name: Publish to GitHub Pages (and render)
         uses: quarto-dev/quarto-actions/publish@v2

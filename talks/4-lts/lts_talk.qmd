@@ -242,7 +242,12 @@ moodleR::upload_file(tab, section = "Lab 1", title = "Lab 1 Answer Key", path = 
 
 ## `MoodleR` Spotlight: Creating and Populating Groups
 
-You have a group project coming up, and want team to submit their work on Moodle
+You have a group project coming up, and want teams to submit their work on Moodle
+
+```{r}
+#| echo: false
+googlesheets4::gs4_deauth()
+```
 
 ```{r}
 #| cache: true
