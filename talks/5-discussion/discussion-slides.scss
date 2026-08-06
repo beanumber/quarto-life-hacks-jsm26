@@ -1,95 +1,211 @@
 /*-- scss:defaults --*/
 
-// fonts
-@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+// fonts -- techno display + terminal mono, "Hackers" (1995) poster vibe
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600&display=swap');
 
+// neon palette
+$neon-green:  #39ff14;
+$neon-cyan:   #00e5ff;
+$neon-pink:   #ff2e97;
+$neon-blue:   #2f7bff;
+$neon-yellow: #f5f749;
+$ink:         #04060d; // near-black background
 
-$font-family-sans-serif: "Atkinson Hyperlegible", sans-serif;
+$font-family-sans-serif: "Share Tech Mono", monospace;
 $font-family-monospace: "Source Code Pro", monospace;
-$presentation-heading-color: #272836; /* Pantone Baritone Blue */
-$link-color: #272836;
-$code-color: #272836;
+$presentation-heading-font: "Orbitron", sans-serif;
+$presentation-heading-color: $neon-green;
+$body-color: #d7f9ff;
+$link-color: $neon-cyan;
+$code-color: $neon-pink;
 $code-block-font-size: 0.7em;
-$presentation-h2-font-size: 1.4em !default;
-$presentation-font-size-root: 36px !default;
-$body-bg: #E4DAC9; /* Pantone White Swan */
+$presentation-h2-font-size: 1.3em !default;
+$presentation-font-size-root: 34px !default;
+$body-bg: $ink;
 
 /*-- scss:rules --*/
 
-details>summary {
-  font-size: 0.75em;
+// neon glow helper
+@mixin glow($color) {
+  color: $color;
+  text-shadow:
+    0 0 4px rgba($color, 0.9),
+    0 0 12px rgba($color, 0.65),
+    0 0 28px rgba($color, 0.35);
 }
 
+.reveal {
+  background:
+    radial-gradient(ellipse at 20% 0%, rgba($neon-blue, 0.16), transparent 55%),
+    radial-gradient(ellipse at 100% 100%, rgba($neon-pink, 0.14), transparent 55%),
+    $ink;
+}
+
+// faint circuit grid + CRT scanlines over the whole deck
+.reveal .slides::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  background-image:
+    repeating-linear-gradient(0deg, rgba($neon-green, 0.04) 0 1px, transparent 1px 3px),
+    linear-gradient(rgba($neon-cyan, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba($neon-cyan, 0.05) 1px, transparent 1px);
+  background-size: 100% 3px, 42px 42px, 42px 42px;
+}
+
+.reveal .slides { z-index: 2; }
+
+.reveal h1,
+.reveal h2,
+.reveal h3 {
+  font-family: $presentation-heading-font;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  @include glow($neon-green);
+}
+
+.reveal p,
+.reveal li { color: $body-color; }
+
+.reveal a { @include glow($neon-cyan); }
+.reveal a:hover { color: #ffffff; }
+
+.reveal strong { @include glow($neon-yellow); }
+
+// code
+.reveal code { color: $neon-pink; }
+.reveal pre {
+  border: 1px solid rgba($neon-cyan, 0.5);
+  border-radius: 4px;
+  box-shadow: 0 0 18px rgba($neon-cyan, 0.25);
+  background: rgba(0, 0, 0, 0.55);
+}
+.reveal pre code { background: transparent; }
+
+// title slide
 #title-slide .title {
-  color: #272836;
-  font-family: 'Gochi Hand', cursive;
+  font-family: $presentation-heading-font;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
   font-size: 3em;
+  @include glow($neon-green);
 }
 
 #title-slide .subtitle {
-  color: #272836;
-  font-weight: bold;
+  font-family: $font-family-sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  @include glow($neon-pink);
 }
 
-#title-slide .institute {
-  padding-bottom: 200px;
+#title-slide .author,
+#title-slide .quarto-title-authors {
+  color: $neon-cyan;
 }
 
-.small {
-  font-size: 0.75em;
+#title-slide .institute { padding-bottom: 200px; }
+
+// utility sizes
+.small    { font-size: 0.75em; }
+.smallest { font-size: 0.5em; }
+.large    { font-size: 1.5em; }
+.medium   { font-size: 0.9em; }
+.center-align { text-align: center; }
+
+// neon accents
+.neon-green { @include glow($neon-green); }
+.neon-cyan  { @include glow($neon-cyan); }
+.neon-pink  { @include glow($neon-pink); }
+.neon-yellow{ @include glow($neon-yellow); }
+
+// terminal prompt line -- used for section headers
+.prompt {
+  font-family: $font-family-sans-serif;
+  @include glow($neon-green);
+}
+.prompt::before {
+  content: "root@jsm2026:~$ ";
+  color: rgba($neon-cyan, 0.85);
+  text-shadow: 0 0 8px rgba($neon-cyan, 0.6);
 }
 
-.smallest {
-  font-size: 0.5em;
+// blinking cursor
+.cursor::after {
+  content: "\2588";
+  margin-left: 0.1em;
+  @include glow($neon-green);
+  animation: blink 1s steps(2, start) infinite;
+}
+@keyframes blink { to { visibility: hidden; } }
+
+// glitchy hand-written-esque callout (kept name for compatibility)
+.reveal .hand,
+.reveal .hand-blue {
+  font-family: $presentation-heading-font;
+  @include glow($neon-cyan);
+  font-size: 1.2em;
+}
+.reveal .hand-blue-large {
+  font-family: $presentation-heading-font;
+  @include glow($neon-pink);
+  font-size: 2em;
 }
 
-.large {
-  font-size: 1.5em;
+// blockquotes -- speaker quotes on a neon "screen"
+.reveal blockquote {
+  border-left: 4px solid $neon-pink;
+  background: rgba($neon-pink, 0.08);
+  box-shadow: 0 0 20px rgba($neon-pink, 0.2);
+  color: #ffffff;
+  font-style: normal;
+  padding: 0.4em 0.8em;
 }
 
-.medium {
-  font-size: 0.9em;
+// callout box for "life hacks"
+.reveal .hack {
+  border: 1px dashed rgba($neon-green, 0.7);
+  background: rgba($neon-green, 0.06);
+  box-shadow: 0 0 18px rgba($neon-green, 0.18);
+  padding: 8px 14px;
+  margin: 8px 0;
 }
 
-.center-align {
+// callout box for "reminds me of" -- other people's packages
+.reveal .similar {
+  border: 1px dashed rgba($neon-cyan, 0.7);
+  background: rgba($neon-cyan, 0.06);
+  box-shadow: 0 0 18px rgba($neon-cyan, 0.18);
+  padding: 14px 14px 8px;
+  margin: 8px 0;
   text-align: center;
 }
 
-.reveal .hand {
-  font-family: 'Gochi Hand', cursive;
-  font-size: 1.2em
-}
-
-.reveal .hand-blue {
-  font-family: 'Gochi Hand', cursive;
-  color: #272836;
-  font-size: 1.2em
-}
-
-.reveal .hand-blue-large {
-  font-family: 'Gochi Hand', cursive;
-  color: #272836;
-  font-size: 2em
-}
-
-.reveal .hand-blue {
-  font-family: 'Gochi Hand', cursive;
-  color: #272836;
+// callout box for "my experience" -- Mine's own take
+.reveal .my-experience {
+  border: 1px dashed rgba($neon-pink, 0.7);
+  background: rgba($neon-pink, 0.06);
+  box-shadow: 0 0 18px rgba($neon-pink, 0.18);
+  padding: 8px 14px;
+  margin: 8px 0;
 }
 
 .reveal .slide .talk {
-  padding-right: 10px;
-  padding-left: 10px;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  margin-bottom: 6px;
-  margin-top: 6px;
-  border-left: solid 5px #80a9d7;
-  background-color: #80a9d750;
+  padding: 3px 10px;
+  margin: 6px 0;
+  border-left: solid 5px $neon-cyan;
+  background-color: rgba($neon-cyan, 0.12);
 }
 
-.reveal .slide aside {
-  background-color: #FFFFFF50;
-}
+.reveal .slide aside,
+.reveal .aside { background-color: rgba(0, 0, 0, 0.4); }
+
+details > summary { font-size: 0.75em; }
+
+// iframes get a neon frame
+.reveal iframe.slide-deck,
+.reveal iframe { box-shadow: 0 0 22px rgba($neon-cyan, 0.35); }
