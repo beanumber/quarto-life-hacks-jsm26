@@ -1,0 +1,38 @@
+---
+title: "Lab 1: Getting Acquainted with R, RStudio and Quarto"
+format: html
+execute:
+  echo: false
+---
+
+::: question
+## Question 1
+
+You should see the following output in your console:
+
+```{r}
+5 + 2
+```
+:::
+
+::: question
+## Question 2
+
+- The name of each object is shown, along with its computed value.
+- The computed result is *not* printed out
+:::
+
+```{r}
+result <- 5 + 2
+applesauce <- 10 * 3
+```
+
+::: question
+## Question 3
+
+```{r}
+result + applesauce
+```
+
+The output is 37 - the same value you would get if you ran `5 + 2` + `10 * 3` in the console!
+:::
