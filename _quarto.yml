@@ -1,6 +1,7 @@
 project:
   type: website
   resources: loy_custom.scss
+  pre-render: _extensions/wjhopper/lts/setup.lua
 
 website:
   repo-url: https://github.com/mine-cetinkaya-rundel/quarto-world-of-possibilities-jsm24

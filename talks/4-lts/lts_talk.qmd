@@ -12,8 +12,8 @@ format:
     chalkboard: true
 title-slide-attributes:
   data-background-image: "img/logo.png"
-  data-background-size: auto
-  data-background-position: 15%
+  data-background-size: "35% auto"
+  data-background-position: 7.5%
 ---
 
 ## A Typical In-Class Activity
@@ -61,9 +61,15 @@ We needed to solve this problem to scale [SDS 100: Reproducible Scientific Compu
 
 ---
 
-## The Solution: The LTS Document Format
+## The Solution: The LTS Extension
+
+[lts](https://github.com/wjhopper/lts){target="_blank"} is a Quarto extension providing a custom document format and project type
 
 ![](img/workflow.png){fig-align="center"}
+
+::: {.fragment}
+It allows you to produce all 3 documents from a single `.qmd` file
+:::
 
 ---
 
@@ -72,7 +78,7 @@ We needed to solve this problem to scale [SDS 100: Reproducible Scientific Compu
     ---
     title: "Lab 1: Getting Acquainted with R, RStudio and Quarto"
     editor: source
-    format: lts-html:
+    format: lts-html
     ---
     
     ## Creating Objects
@@ -219,7 +225,9 @@ demo/
 
 ## The Lab: `lab1.html`
 
-![](img/demo screenshot.png){fig-align="center"}
+```{=html}
+<iframe src="demo/demo.html" height="600" width="850"></iframe>
+```
 
 ---
 
@@ -258,15 +266,17 @@ demo/
 
 ---
 
-## The Solutions: `lab1_solutions.qmd`
+## The Solutions: `lab1_solutions.html`
 
-![](img/solutions screenshot.png){fig-align="center"}
+```{=html}
+<iframe src="demo/demo_solutions.html" height="600" width="850"></iframe>
+```
 
 ---
 
 ## Meet the `moodleR` Package!
 
-Let's upload these to our course's Moodle using the [`moodleR` package](https://github.com/wjhopper/moodleR)!
+Let's upload these to our course's Moodle using the [`moodleR` package](https://github.com/wjhopper/moodleR){target="_blank"}!
 
 ```{r}
 #| echo: true
@@ -279,7 +289,7 @@ library(moodleR)
 :::
 
 ::: {.fragment}
-Built on top of the [`chromote`](https://rstudio.github.io/chromote/reference/index.html) and [`httr`](https://httr.r-lib.org/index.html) packages
+Built on top of the [`chromote`](https://rstudio.github.io/chromote/reference/index.html){target="_blank"} and [`httr`](https://httr.r-lib.org/index.html){target="_blank"} packages
 :::
 
 ::: {.incremental}
@@ -369,7 +379,7 @@ moodleR::upload_file(tab, section = "Lab 1", title = "Lab 1 Answer Key", path = 
 
 ## `MoodleR` Spotlight: Creating and Populating Groups
 
-You have a group project coming up, and want team to submit their work on Moodle
+You have a group project coming up, and want teams to submit their work on Moodle
 
 ```{r}
 #| echo: false
@@ -418,7 +428,7 @@ moodleR::populate_groups(tab, groups)
 
 ## `MoodleR` Spotlight: Project Rotation Schedules
 
-In [SDS 100](https://smithcollege-sds.github.io/sds100/), we have a [phased group project](https://smithcollege-sds.github.io/sds100/final_project.html#gallery) where students collaborate on an exploratory data analysis
+In [SDS 100](https://smithcollege-sds.github.io/sds100/){target="_blank"}, we have a [phased group project](https://smithcollege-sds.github.io/sds100/final_project.html#gallery){target="_blank"} where students collaborate on an exploratory data analysis
 
 :::: {.columns}
 
@@ -484,7 +494,7 @@ schedule <- split(groups, groups$group_name) |>
 ```
 
 ::: {.fragment}
-`{ifingroup 63501}` is a Moodle [FilterCodes](https://marketplace.moodle.com/plugins/filter_filtercodes) that restricts visibility to members of a specific group
+`{ifingroup 63501}` is a Moodle [FilterCodes](https://marketplace.moodle.com/plugins/filter_filtercodes){target="_blank"} that restricts visibility to members of a specific group
 :::
 
 :::
@@ -567,3 +577,11 @@ schedule |>
 - `moodleR::get_course_roster()`
 - `moodleR::export_gradebook()`
 :::
+
+---
+
+## Thanks!
+
+- Check out [`r fontawesome::fa("github")` moodleR](https://github.com/wjhopper/moodleR){target="_blank"}
+- Check out [`r fontawesome::fa("github")` lts](https://github.com/wjhopper/lts){target="_blank"}
+- Get in touch [`r fontawesome::fa("envelope")` whopper@smith.edu](mailto:whopper@smith.edu)
