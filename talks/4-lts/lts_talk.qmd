@@ -8,7 +8,8 @@ format:
     theme: ["default", "styles.scss"]
     width: 1500
     code-line-numbers: false
-    logo: "img/smith_logo.jpg"    
+    logo: "img/smith_logo.jpg"
+    chalkboard: true
 title-slide-attributes:
   data-background-image: "img/logo.png"
   data-background-size: auto
