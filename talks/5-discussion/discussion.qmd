@@ -291,6 +291,30 @@ Reminds me of...
 -   **Coding *is* the pedagogy** -- not a distraction from stats, but a deeper way in
 :::
 
+## `my hacks` {.prompt}
+
+Formatting code with [Air](https://posit-dev.github.io/air/):
+
+{{< video videos/air.mov >}}
+
+## `my hacks` {.prompt}
+
+Rainbow CSV extension for Positron:
+
+![](images/rainbow-csv.png)
+
+## `my hacks` {.prompt}
+
+Positron data viewer for CSVs:
+
+![](images/data-viewer-csv.png)
+
+## `biggest hack` {.prompt .center}
+
+::: medium
+Convincing myself what we teach still matters!
+:::
+
 ## `life hacking for educators` {.prompt background-color="#04060d"}
 
 ::: {.center-align .large .neon-green .cursor}
