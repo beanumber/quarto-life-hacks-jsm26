@@ -249,28 +249,28 @@
     "href": "talks/5-discussion/discussion.html#plot-a-regression-line",
     "title": "life hacking for educators",
     "section": "plot a regression line",
-    "text": "plot a regression line\n\nCreate a scatterplot of miles per gallon (mpg) vs. displacement (disp) in mtcars, and overlay the regression line for predicting mpg from disp.\n\n\n\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n\n\n\n\nggplot(\n  mtcars,\n  aes(x = disp, y = mpg)\n) +\n  geom_point() +\n  geom_smooth(\n    method = \"lm\",\n    se = FALSE\n  )\n\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\n\n\n\n\n\nWith Claude Opus 4.8 (via Posit AI)."
+    "text": "plot a regression line\n\nCreate a scatterplot of miles per gallon (mpg) vs. displacement (disp) in mtcars, and overlay the regression line for predicting mpg from disp.\n\n\n\n\nggplot(\n  mtcars,\n  aes(x = disp, y = mpg)\n) +\n  geom_point() +\n  geom_smooth(\n    method = \"lm\",\n    se = FALSE\n  )\n\n\n\n\n\n\n\n\n\nWith Claude Opus 4.8 (via Posit AI)."
   },
   {
     "objectID": "talks/5-discussion/discussion.html#plot-a-regression-line-1",
     "href": "talks/5-discussion/discussion.html#plot-a-regression-line-1",
     "title": "life hacking for educators",
     "section": "plot a regression line",
-    "text": "plot a regression line\n\nNow limit to cars with displacement below 200.\n\n\n\n\nmtcars |&gt;\n  filter(disp &lt; 200) |&gt;\n  ggplot(aes(x = disp, y = mpg)) +\n  geom_point() +\n  geom_smooth(\n    method = \"lm\",\n    se = FALSE\n  )\n\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\n\n\n\n\n\nWith Claude Opus 4.8 (via Posit AI)."
+    "text": "plot a regression line\n\nNow limit to cars with displacement below 200.\n\n\n\n\nmtcars |&gt;\n  filter(disp &lt; 200) |&gt;\n  ggplot(aes(x = disp, y = mpg)) +\n  geom_point() +\n  geom_smooth(\n    method = \"lm\",\n    se = FALSE\n  )\n\n\n\n\n\n\n\n\n\nWith Claude Opus 4.8 (via Posit AI)."
   },
   {
     "objectID": "talks/5-discussion/discussion.html#plot-which-regression-line",
     "href": "talks/5-discussion/discussion.html#plot-which-regression-line",
     "title": "life hacking for educators",
     "section": "plot which regression line?",
-    "text": "plot which regression line?\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\nWarning: Removed 16 rows containing non-finite outside the scale range\n(`stat_smooth()`).\n\n\nWarning: Removed 16 rows containing missing values or values outside the scale range\n(`geom_point()`).\n\n\n\n\n\n\n\n\n\n\n\n\n\n... +\ncoord_cartesian(\n  xlim = c(60, 200)\n)\n\n... +\n  xlim(60, 200)"
+    "text": "plot which regression line?\n\n\n\n\n\n\n\n\n\n\n\n\n... +\ncoord_cartesian(\n  xlim = c(60, 200)\n)\n\n... +\n  xlim(60, 200)"
   },
   {
     "objectID": "talks/5-discussion/discussion.html#plot-which-regression-line-1",
     "href": "talks/5-discussion/discussion.html#plot-which-regression-line-1",
     "title": "life hacking for educators",
     "section": "plot which regression line?",
-    "text": "plot which regression line?\n\n\n`geom_smooth()` using formula = 'y ~ x'\n`geom_smooth()` using formula = 'y ~ x'"
+    "text": "plot which regression line?"
   },
   {
     "objectID": "talks/5-discussion/discussion.html#r-ggplotmod",
