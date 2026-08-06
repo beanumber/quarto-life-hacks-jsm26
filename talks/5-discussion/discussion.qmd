@@ -49,13 +49,120 @@ fig-asp: 0.618
 > But nowadays, fewer people agree with me!
 :::
 
-## `render diagnostics.qmd` {.prompt}
+## `plot a regression line` {.prompt}
 
-<!-- TODO: [ggplot2 example from ICOTS talk] -- Mine to add -->
-
-::: {.center-align .large .cursor}
-[ placeholder: ggplot2 example from ICOTS talk ]
+::: {.chat}
+Create a scatterplot of miles per gallon (mpg) vs. displacement (disp) in mtcars, and overlay the regression line for predicting mpg from disp.
 :::
+
+. . .
+
+```{r}
+#| echo: false
+library(ggplot2)
+library(dplyr)
+ggplot2::theme_set(ggplot2::theme_gray(base_size = 16))
+```
+
+```{r}
+#| echo: true
+#| output-location: column
+ggplot(
+  mtcars,
+  aes(x = disp, y = mpg)
+) +
+  geom_point() +
+  geom_smooth(
+    method = "lm",
+    se = FALSE
+  )
+```
+
+With Claude Opus 4.8 (via Posit AI).
+
+## `plot a regression line` {.prompt}
+
+::: {.chat}
+Now limit to cars with displacement below 200.
+:::
+
+. . .
+
+```{r}
+#| echo: true
+#| output-location: column
+mtcars |>
+  filter(disp < 200) |>
+  ggplot(aes(x = disp, y = mpg)) +
+  geom_point() +
+  geom_smooth(
+    method = "lm",
+    se = FALSE
+  )
+```
+
+With Claude Opus 4.8 (via Posit AI).
+
+## `plot which regression line?` {.prompt}
+
+```{r}
+#| echo: false
+#| layout-ncol: 2
+ggplot(mtcars, aes(x = disp, y = mpg)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE) +
+  coord_cartesian(xlim = c(60, 200)) +
+  labs(title = "Plot A")
+
+ggplot(mtcars, aes(x = disp, y = mpg)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE) +
+  xlim(60, 200) +
+  labs(title = "Plot B")
+```
+
+::: {.columns}
+
+::: {.column .fragment}
+
+```r
+... +
+coord_cartesian(
+  xlim = c(60, 200)
+)
+```
+
+:::
+
+::: {.column .fragment}
+
+```r
+... +
+  xlim(60, 200)
+```
+
+:::
+
+:::
+
+
+
+## `plot which regression line?` {.prompt}
+
+```{r}
+#| echo: false
+#| fig-align: center
+ggplot(mtcars, aes(x = disp, y = mpg)) +
+  geom_point() +
+  geom_point(data = mtcars |> filter(disp < 200), color = "#FE8042") +
+  geom_smooth(method = "lm", se = FALSE) +
+  geom_smooth(
+    data = mtcars |> filter(disp < 200),
+    method = "lm",
+    se = FALSE,
+    color = "#D9418C"
+  )
+```
 
 ## `R ggplot(mod)` {.prompt}
 
@@ -109,7 +216,7 @@ autoAlt is an R package for automatically generating alt-text from qmd and rmd f
 ::: {.my-experience .incremental}
 My experience...
 
--   Generate *a lot* more than you need {{< fa robot >}}
+-   Generate *a lot* more than you need
 -   Pick a few good starting points and improve them
 -   The hack: let AI give you raw material to sculpt
 :::
@@ -122,19 +229,15 @@ My experience...
 
 <hr>
 
-::: incremental
--   Simulating data to match examples in journal articles...
-
--   ...when all you have is a **table** or a **plot**
+::: hack
+> Simulating data to match examples in journal articles when all you have is a table or a plot.
 :::
 
-::: {.fragment .hand-blue-large}
-neat idea! {{< fa lightbulb >}}
+::: {.my-experience .larger}
+[{{< fa heart >}}]{.fragment} [/ {{< fa face-grimace >}}]{.fragment}
 :::
 
-
-
-## `make -j2 colin william` {.prompt}
+## `make packages` {.prompt}
 
 <hr>
 
@@ -142,18 +245,15 @@ neat idea! {{< fa lightbulb >}}
 
 <hr>
 
-::: {.center-align .hand-blue-large}
-productivity as an R package
+::: {.hack}
+Productivity as an R package / the grind of course-ops, packaged
+
+-   Colin -- `ghclass`, `q2r`, `markermd`
+-   William -- `moodleR`
 :::
 
-<br>
-
-::: incremental
--   Colin -- `ghclass`, `q2r`, `markermd`: the grind of course-ops, packaged
-
--   William -- one instructor file → lab + template + solutions → Moodle
-
--   The pattern: **wrap the annoying part, ship it, reuse it**
+::: {.my-experience .incremental}
+The pattern: **wrap the annoying part, ship it, reuse it**
 :::
 
 ## `moodlequiz --deploy` {.prompt}
@@ -164,19 +264,19 @@ productivity as an R package
 
 <hr>
 
-::: {.center-align .large}
-[numbats.github.io/moodlequiz](https://numbats.github.io/moodlequiz/)
+::: hack
+**moodleR** Interact with a Moodle Course Page via Headless Chrome
 :::
 
-<br>
+::: {.similar .fragment}
+Reminds me of...
 
-::: {.center-align .medium}
+[numbats.github.io/moodlequiz](https://numbats.github.io/moodlequiz/)
+
 <img src="https://avatars.githubusercontent.com/u/16127127?v=4" alt="Mitchell O'Hara-Wild" style="width:90px;height:90px;border-radius:50%;object-fit:cover;margin:0 10px"/><br>
 [Mitchell O'Hara-Wild](https://github.com/mitchelloharawild)
-:::
 
-::: {.fragment .medium}
-Reminds me of -- author quizzes in Quarto, deploy to the LMS from R: the same "one source, many outputs" move, aimed straight at Moodle.
+**moodlequiz** package allows the creation of Moodle quiz questions using literate programming with R Markdown.
 :::
 
 ## `cat themes.log` {.prompt}
@@ -191,7 +291,7 @@ Reminds me of -- author quizzes in Quarto, deploy to the LMS from R: the same "o
 -   **Coding *is* the pedagogy** -- not a distraction from stats, but a deeper way in
 :::
 
-## `hack the planet` {.prompt background-color="#04060d"}
+## `life hacking for educators` {.prompt background-color="#04060d"}
 
 ::: {.center-align .large .neon-green .cursor}
 questions?
