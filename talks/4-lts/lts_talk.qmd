@@ -76,29 +76,42 @@ We needed to solve this problem to scale [SDS 100: Reproducible Scientific Compu
     
     ## Creating Objects
     
-    You can think of *objects* as boxes that store things. To create an object, we have to ask R to take the results of some code and *assign* those results to an object. We can do this using the **assignment operator** `<-`, which is often called the arrow. In your code, you write the assignment operator by typing in the "less than" symbol, followed by a dash.
+    You can think of *objects* as boxes that store things. To create an object, we have to ask R to take the results of some code and *assign* those results to an object. We can do this using the **assignment operator** `<-`, which is often called the arrow. In your code, you write the assignment operator iby typing in the "less than" symbol, followed by a dash.
+    
+    ::: question
+    In the console, type in `result <- 5 + 2` and press <kbd>Enter</kbd> to run the code.
+    
+    Then, type in `applesauce <- 10 * 3` in the console and press <kbd>Enter</kbd> to run the code.
+    
+    Then, write an answer the following questions in your Lab 1 Quarto document:
+    
+    - What happens in the RStudio "Environment" pane when you use the assignment operator to create a new object?
+    - What *doesn't* happen in the console when you use the assignment operator to create a new object?
+    :::
+    
+    ::: solution
+    - The name of each object is shown, along with its computed value.
+    - The computed result is *not* printed out
+    :::
     
     ::: question
     In your template file, locate the code chunk that looks like this:
     
-    ```{{r}}
+    ```{r}
     #| echo: fenced
     result <- 5 + 2
     applesauce <- 10 * 3
     ```
     
-    Write the command `result + applesauce` on the blank line at the end of the code chunk. Then click the green triangle "play" button in the upper right hand corner of the code chunk to execute the code in the chunk.
+    Enter a blank line at the end of this code chunk, and write the command `result + applesauce` on the blank line. Then click the green triangle "play" button in the upper right hand corner of the code chunk to execute the code in the chunk. What is the result?
     :::
     
     ::: solution
-    
-    ```{{r}}
-    result <- 5 + 2
-    applesauce <- 10 * 3
+    ```{r}
     result + applesauce
     ```
     
-    You should see the number 37 printed out in the console, just as it is shown above.
+    The output is 37 - the same value you would get if you ran `5 + 2` + `10 * 3` in the console!
     :::
 
 ---
@@ -123,9 +136,9 @@ We needed to solve this problem to scale [SDS 100: Reproducible Scientific Compu
 quarto use template wjhopper/lts
 ```
 
-::: {.fragment}
 <br>
 
+::: {.fragment}
 #### Within an existing project:
 
 ``` bash
@@ -134,14 +147,125 @@ quarto add wjhopper/lts
 :::
 
 ::: {.fragment}
-Then manually add
+Then manually add the pre-render script to the project's `_quarto.yml` configuration file, e.g.,
 
 ```yaml
-pre-render: _extensions/wjhopper/lts/setup.lua
+project:
+  type: website
+  pre-render: _extensions/wjhopper/lts/setup.lua
+```
+:::
+
+---
+
+## LTS in Action
+
+:::: {.columns}
+
+::: {.column}
+
+#### How It Started
+
+```
+demo/
+├── _extensions
+│   └── wjhopper
+│       └── lts
+├── _quarto.yml
+└── lab1.qmd
 ```
 
-to the project's `_quarto.yml` configuration file
+::: {.fragment}
+
+`_quarto.yml`
+
+```yaml
+project:
+  type: lts
+```
+
 :::
+
+:::
+
+::: {.column .fragment}
+
+#### How It's Going
+
+`quarto render`
+
+::: {.frag}
+```
+demo/
+├── _extensions
+│   └── wjhopper
+│       └── lts
+├── _quarto.yml
+├── lab1.html           <-
+├── lab1.qmd
+├── lab1_solutions.html <-
+├── lab1_solutions.qmd
+├── lab1_template.html
+├── lab1_template.qmd   <-
+```
+:::
+
+:::
+
+::::
+
+---
+
+## The Lab: `lab1.html`
+
+```{=html}
+<iframe src="https://www.science.smith.edu/~whopper/Talks/JSM_2026/demo/demo.html" height="600" width="850"></iframe>
+```
+
+---
+
+## The Template: `lab1_template.qmd`
+
+```
+---
+title: "Lab 1: Getting Acquainted with R, RStudio and Quarto"
+format: html
+---
+
+## Question 1
+
+In the Console, enter 5 + 2 and press Enter to run the code.
+
+## Question 2
+
+In the console, type in result <- 5 + 2 and press Enter to run the code.
+
+Then, type in applesauce <- 10 * 3 in the console and press Enter to run the code.
+
+Then, write an answer the following questions in your Lab 1 Quarto document:
+
+- What happens in the RStudio "Environment" pane when you use the assignment operator to create a new object?
+- What doesn't happen in the console when you use the assignment operator to create a new object?
+
+## Question 3
+
+In your template file, locate the code chunk that looks like this:
+
+```{r}
+result <- 5 + 2
+applesauce <- 10 * 3
+```
+
+Enter a blank line at the end of this code chunk, and write the command result + applesauce on the blank line. Then click the green triangle "play" button in the upper right hand corner of the code chunk to execute the code in the chunk. What is the result?
+```
+
+---
+
+## The Solutions: `lab1_solutions.qmd`
+
+```{=html}
+<iframe src="https://www.science.smith.edu/~whopper/Talks/JSM_2026/demo/demo_solutions.html" height="600" width="850"></iframe>
+```
 
 ---
 
@@ -201,12 +325,13 @@ After authentication, browser switches into "headless" mode
 
 ---
 
-## Uploading to Moodle
+## Every File Needs a Home
+
+Navigate to the course using it's ID, and create a new section
 
 :::: {.columns}
 
-::: {.column}
-Navigate to the course, and create a new section
+::: {.column style="padding-top: 20px;"}
 
 ```{r}
 #| eval: false
@@ -225,8 +350,12 @@ section_info <- create_section(
 
 ::::
 
-::: {.fragment}
+---
+
+## Uploading to Moodle
+
 Add each file to the page using `moodleR::upload_file()`
+
 ```{r}
 #| eval: false
 #| echo: true
@@ -236,13 +365,16 @@ moodleR::upload_file(tab, section = "Lab 1", title = "Lab 1 Answer Key", path = 
                      visible = FALSE # Keep solutions hidden until after class
                      )
 ```
+
+::: {.fragment}
+![](img/uploaded_files.png)
 :::
 
 ---
 
 ## `MoodleR` Spotlight: Creating and Populating Groups
 
-You have a group project coming up, and want teams to submit their work on Moodle
+You have a group project coming up, and want team to submit their work on Moodle
 
 ```{r}
 #| echo: false
@@ -347,9 +479,9 @@ We help students keep track of who's doing what each week by posting a **project
 #| echo: true
 schedule <- split(groups, groups$group_name) |>
   lapply(\(x) {
-    sds100::create_rotation_table(
+    sds100::create_rotation(
       group_members = x$name,
-      row_names = paste("Phase", 1:4)
+      rotations = paste("Phase", 1:4)
     ) |>
     sds100::write_rotation_schedule()
     }
@@ -375,15 +507,15 @@ schedule <- split(groups, groups$group_name) |>
   </ul>
 <h5 id="phase-2">Phase 2</h5>
   <ul>
-    <li><strong>Zam A. Zenta</strong> will pick up where Chan D. Lure left off in the prior phase, and summarize Art’s Data. They will send all the neccesary materials to Drake O. Vish when the summaries are fully complete.</li>
-    <li><strong>Drake O. Vish</strong> will pick up where Zam A. Zenta left off in the prior phase, and summarize Drag’s Data. They will send all the neccesary materials to Chan D. Lure when the summaries are fully complete.</li>
-    <li><strong>Chan D. Lure</strong> will pick up where Drake O. Vish left off in the prior phase, and summarize Rose’s Data. They will send all the neccesary materials to Zam A. Zenta when the summaries are fully complete.</li>
+    <li><strong>Zam A. Zenta</strong> will pick up where Chan D. Lure left off in the prior phase, and summarize Chan’s Data. They will send all the neccesary materials to Drake O. Vish when the summaries are fully complete.</li>
+    <li><strong>Drake O. Vish</strong> will pick up where Zam A. Zenta left off in the prior phase, and summarize Zam’s Data. They will send all the neccesary materials to Chan D. Lure when the summaries are fully complete.</li>
+    <li><strong>Chan D. Lure</strong> will pick up where Drake O. Vish left off in the prior phase, and summarize Drake’s Data. They will send all the neccesary materials to Zam A. Zenta when the summaries are fully complete.</li>
   </ul>
 <h5 id="phase-3">Phase 3</h5>
   <ul>
-    <li><strong>Drake O. Vish</strong> will pick up where Zam A. Zenta left off in the prior phase, and visualize Art’s Data. They will send all the neccesary materials to Chan D. Lure when the visualizations are fully complete.</li>
-    <li><strong>Chan D. Lure</strong> will pick up where Drake O. Vish left off in the prior phase, and visualize Drag’s Data. They will send all the neccesary materials to Zam A. Zenta when the visualizations are fully complete.</li>
-    <li><strong>Zam A. Zenta</strong> will pick up where Chan D. Lure left off in the prior phase, and visualize Rose’s Data. They will send all the neccesary materials to Drake O. Vish when the visualizations are fully complete.</li>
+    <li><strong>Drake O. Vish</strong> will pick up where Zam A. Zenta left off in the prior phase, and visualize Chan’s Data. They will send all the neccesary materials to Chan D. Lure when the visualizations are fully complete.</li>
+    <li><strong>Chan D. Lure</strong> will pick up where Drake O. Vish left off in the prior phase, and visualize Zam’s Data. They will send all the neccesary materials to Zam A. Zenta when the visualizations are fully complete.</li>
+    <li><strong>Zam A. Zenta</strong> will pick up where Chan D. Lure left off in the prior phase, and visualize Drake’s Data. They will send all the neccesary materials to Drake O. Vish when the visualizations are fully complete.</li>
   </ul>
 <h5 id="phase-4">Phase 4</h5>
   <ul>
@@ -397,10 +529,6 @@ schedule <- split(groups, groups$group_name) |>
 :::
 
 ::::
-
-
-
-
 
 ---
 
@@ -438,7 +566,9 @@ schedule |>
 
 ## `moodleR` Honorable Mentions
 
-- `moodler::download_quiz_responses()`
+::: {.incremental}
+- `moodleR::download_quiz_responses()`
   - Downloads quiz responses *and* file attachments in one batch (similar to how Moodle allows you to download all submissions for an assignment)
 - `moodleR::get_course_roster()`
 - `moodleR::export_gradebook()`
+:::

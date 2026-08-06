@@ -15,7 +15,7 @@ This talk demonstrates how to use an LTS document (a custom document format for 
 ## Slides
 
 ```{=html}
-<iframe class="slide-deck" src="" height="420" width="747" style="border: 1px solid #2e3846;"></iframe>
+<iframe class="slide-deck" src="../../talks/4-lts/lts_talk.html" height="420" width="747" style="border: 1px solid #2e3846;"></iframe>
 ```
 
 [Source code for slides](https://www.science.smith.edu/~whopper/Talks/JSM_2026/lts_talk.qmd)
@@ -26,4 +26,4 @@ This talk demonstrates how to use an LTS document (a custom document format for 
 
 ![](https://www.smith.edu/sites/default/files/styles/content_faculty_profile_full_large/public/2025-09/will-hopper-25.jpg.webp?itok=xsaslWSL){style="float: right; padding-left: 10px;" fig-alt="Photo of Will Hopper" width="200"}
 
-Will Hopper is...
+Will’s academic career began in the field of psychology, and his research focused on developing mathematical models of episodic memory retrieval with mechanistic explanations of why successfully remembering information (e.g., during a test) produces much more durable memories than any form of restudying. In his statistics and data science teaching, Will integrates real-world applications and computational simulations to reveal the concepts and meaning behind the opaque formulas and recipes that seem to permeate statistics courses, so that students understand not only the what and the how, but the why as well.
