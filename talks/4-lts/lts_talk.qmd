@@ -219,9 +219,7 @@ demo/
 
 ## The Lab: `lab1.html`
 
-```{=html}
-<iframe src="https://beanumber.github.io/quarto-life-hacks-jsm26/talks/4-lts/demo.html" height="600" width="850"></iframe>
-```
+![](img/demo screenshot.png){fig-align="center"}
 
 ---
 
@@ -262,9 +260,7 @@ demo/
 
 ## The Solutions: `lab1_solutions.qmd`
 
-```{=html}
-<iframe src="https://beanumber.github.io/quarto-life-hacks-jsm26/talks/4-lts/demo_solutions.html" height="600" width="850"></iframe>
-```
+![](img/solutions screenshot.png){fig-align="center"}
 
 ---
 
