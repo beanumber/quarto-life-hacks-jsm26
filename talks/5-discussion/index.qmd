@@ -11,9 +11,9 @@ image-alt: "Illustration of two penguins diving into the water from an iceberg, 
 ```{=html}
 <iframe class="slide-deck" src="/talks/5-discussion/discussion.html" height="420" width="747" style="border: 1px solid #2e3846;"></iframe>
 ```
-[Source code for slides](https://github.com/mine-cetinkaya-rundel/quarto-world-of-possibilities-jsm24/tree/main/talks/5-discussion)
+[Source code for slides](https://beanumber.github.io/quarto-life-hacks-jsm26/talks/5-discussion/discussion.qmd)
 
-[Full screen slides](https://mine-cetinkaya-rundel.github.io/quarto-world-of-possibilities-jsm24/talks/5-discussion/discussion.html)
+[Full screen slides](https://beanumber.github.io/quarto-life-hacks-jsm26/talks/5-discussion/discussion.html)
 
 ## Speaker
 
