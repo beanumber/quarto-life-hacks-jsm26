@@ -219,9 +219,7 @@ demo/
 
 ## The Lab: `lab1.html`
 
-```{=html}
-<iframe src="https://www.science.smith.edu/~whopper/Talks/JSM_2026/demo/demo.html" height="600" width="850"></iframe>
-```
+![](img/demo screenshot.png){fig-align="center"}
 
 ---
 
@@ -262,9 +260,7 @@ demo/
 
 ## The Solutions: `lab1_solutions.qmd`
 
-```{=html}
-<iframe src="https://www.science.smith.edu/~whopper/Talks/JSM_2026/demo/demo_solutions.html" height="600" width="850"></iframe>
-```
+![](img/solutions screenshot.png){fig-align="center"}
 
 ---
 
