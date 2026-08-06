@@ -18,9 +18,9 @@ This talk demonstrates how to use an LTS document (a custom document format for 
 <iframe class="slide-deck" src="../../talks/4-lts/lts_talk.html" height="420" width="747" style="border: 1px solid #2e3846;"></iframe>
 ```
 
-[Source code for slides](https://www.science.smith.edu/~whopper/Talks/JSM_2026/lts_talk.qmd)
+[Source code for slides](https://beanumber.github.io/quarto-life-hacks-jsm26/talks/4-lts/lts_talk.html)
 
-[Full screen slides](https://www.science.smith.edu/~whopper/Talks/JSM_2026/lts_talk.html)
+[Full screen slides](https://beanumber.github.io/quarto-life-hacks-jsm26/talks/4-lts/lts_talk.qmd)
 
 ## Speaker
 
