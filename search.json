@@ -245,11 +245,32 @@
     "text": "grep -i \"why we do this\"\n\n Grayson :: diagnostic plots with gg\n\n\n\nI believe that learning to code while learning statistics helps students gain a deeper understanding of the material.\n\n\n\n\nBut nowadays, fewer people agree with me!"
   },
   {
-    "objectID": "talks/5-discussion/discussion.html#render-diagnostics.qmd",
-    "href": "talks/5-discussion/discussion.html#render-diagnostics.qmd",
+    "objectID": "talks/5-discussion/discussion.html#plot-a-regression-line",
+    "href": "talks/5-discussion/discussion.html#plot-a-regression-line",
     "title": "life hacking for educators",
-    "section": "render diagnostics.qmd",
-    "text": "render diagnostics.qmd\n\n\n[ placeholder: ggplot2 example from ICOTS talk ]"
+    "section": "plot a regression line",
+    "text": "plot a regression line\n\nCreate a scatterplot of miles per gallon (mpg) vs. displacement (disp) in mtcars, and overlay the regression line for predicting mpg from disp.\n\n\n\n\nggplot(\n  mtcars,\n  aes(x = disp, y = mpg)\n) +\n  geom_point() +\n  geom_smooth(\n    method = \"lm\",\n    se = FALSE\n  )\n\n\n\n\n\n\n\n\n\nWith Claude Opus 4.8 (via Posit AI)."
+  },
+  {
+    "objectID": "talks/5-discussion/discussion.html#plot-a-regression-line-1",
+    "href": "talks/5-discussion/discussion.html#plot-a-regression-line-1",
+    "title": "life hacking for educators",
+    "section": "plot a regression line",
+    "text": "plot a regression line\n\nNow limit to cars with displacement below 200.\n\n\n\n\nmtcars |&gt;\n  filter(disp &lt; 200) |&gt;\n  ggplot(aes(x = disp, y = mpg)) +\n  geom_point() +\n  geom_smooth(\n    method = \"lm\",\n    se = FALSE\n  )\n\n\n\n\n\n\n\n\n\nWith Claude Opus 4.8 (via Posit AI)."
+  },
+  {
+    "objectID": "talks/5-discussion/discussion.html#plot-which-regression-line",
+    "href": "talks/5-discussion/discussion.html#plot-which-regression-line",
+    "title": "life hacking for educators",
+    "section": "plot which regression line?",
+    "text": "plot which regression line?\n\n\n\n\n\n\n\n\n\n\n\n\n... +\ncoord_cartesian(\n  xlim = c(60, 200)\n)\n\n... +\n  xlim(60, 200)"
+  },
+  {
+    "objectID": "talks/5-discussion/discussion.html#plot-which-regression-line-1",
+    "href": "talks/5-discussion/discussion.html#plot-which-regression-line-1",
+    "title": "life hacking for educators",
+    "section": "plot which regression line?",
+    "text": "plot which regression line?"
   },
   {
     "objectID": "talks/5-discussion/discussion.html#r-ggplotmod",
@@ -270,28 +291,28 @@
     "href": "talks/5-discussion/discussion.html#curl-assessment---hack",
     "title": "life hacking for educators",
     "section": "curl assessment --hack",
-    "text": "curl assessment --hack\n\n Adam :: stop repeating yourself\n\n\n\nDevise additional quiz questions for standards-based grading using LLMs\n\n\n\n\nMy experience…\n\nGenerate a lot more than you need \nPick a few good starting points and improve them\nThe hack: let AI give you raw material to sculpt"
+    "text": "curl assessment --hack\n\n Adam :: stop repeating yourself\n\n\n\nDevise additional quiz questions for standards-based grading using LLMs\n\n\n\n\nMy experience…\n\nGenerate a lot more than you need\nPick a few good starting points and improve them\nThe hack: let AI give you raw material to sculpt"
   },
   {
     "objectID": "talks/5-discussion/discussion.html#simulate---from-table",
     "href": "talks/5-discussion/discussion.html#simulate---from-table",
     "title": "life hacking for educators",
     "section": "simulate --from-table",
-    "text": "simulate --from-table\n\n Adam :: stop repeating yourself\n\n\nSimulating data to match examples in journal articles…\n…when all you have is a table or a plot\n\n\nneat idea!"
+    "text": "simulate --from-table\n\n Adam :: stop repeating yourself\n\n\n\nSimulating data to match examples in journal articles when all you have is a table or a plot.\n\n\n\n /"
   },
   {
-    "objectID": "talks/5-discussion/discussion.html#make--j2-colin-william",
-    "href": "talks/5-discussion/discussion.html#make--j2-colin-william",
+    "objectID": "talks/5-discussion/discussion.html#make-packages",
+    "href": "talks/5-discussion/discussion.html#make-packages",
     "title": "life hacking for educators",
-    "section": "make -j2 colin william",
-    "text": "make -j2 colin william\n\n Colin +  William\n\n\nproductivity as an R package\n\n\n\nColin – ghclass, q2r, markermd: the grind of course-ops, packaged\nWilliam – one instructor file → lab + template + solutions → Moodle\nThe pattern: wrap the annoying part, ship it, reuse it"
+    "section": "make packages",
+    "text": "make packages\n\n Colin +  William\n\n\nProductivity as an R package / the grind of course-ops, packaged\n\nColin – ghclass, q2r, markermd\nWilliam – moodleR\n\n\n\nThe pattern: wrap the annoying part, ship it, reuse it"
   },
   {
     "objectID": "talks/5-discussion/discussion.html#moodlequiz---deploy",
     "href": "talks/5-discussion/discussion.html#moodlequiz---deploy",
     "title": "life hacking for educators",
     "section": "moodlequiz --deploy",
-    "text": "moodlequiz --deploy\n\n William :: moodlequiz\n\n\nnumbats.github.io/moodlequiz\n\n\n\n Mitchell O’Hara-Wild\n\n\nReminds me of – author quizzes in Quarto, deploy to the LMS from R: the same “one source, many outputs” move, aimed straight at Moodle."
+    "text": "moodlequiz --deploy\n\n William :: moodlequiz\n\n\nmoodleR Interact with a Moodle Course Page via Headless Chrome\n\n\nReminds me of…\nnumbats.github.io/moodlequiz\n Mitchell O’Hara-Wild\nmoodlequiz package allows the creation of Moodle quiz questions using literate programming with R Markdown."
   },
   {
     "objectID": "talks/5-discussion/discussion.html#cat-themes.log",
@@ -301,11 +322,11 @@
     "text": "cat themes.log\n\nOne source of truth – write it once, render it everywhere (LTS, moodlequiz)\nWrap the drudgery – if you do it twice, make it a package (ghclass, q2r, markermd)\nAI as an intern, not an author – draft quizzes, sim data, alt text; you keep judgment\nCoding is the pedagogy – not a distraction from stats, but a deeper way in"
   },
   {
-    "objectID": "talks/5-discussion/discussion.html#hack-the-planet",
-    "href": "talks/5-discussion/discussion.html#hack-the-planet",
+    "objectID": "talks/5-discussion/discussion.html#life-hacking-for-educators",
+    "href": "talks/5-discussion/discussion.html#life-hacking-for-educators",
     "title": "life hacking for educators",
-    "section": "hack the planet",
-    "text": "hack the planet\n\nquestions?\n\n\n\nbeanumber.github.io/quarto-life-hacks-jsm26"
+    "section": "life hacking for educators",
+    "text": "life hacking for educators\n\nquestions?\n\n\n\nbeanumber.github.io/quarto-life-hacks-jsm26"
   },
   {
     "objectID": "talks/3-sry/index.html",

@@ -36,8 +36,74 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #97947a;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #97947a;  padding-left: 4px; }
+    div.sourceCode
+      { color: #f8f8f2; background-color: #2b2b2b; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #f8f8f2; } /* Normal */
+    code span.al { color: #dcc6e0; } /* Alert */
+    code span.an { color: #d4d0ab; } /* Annotation */
+    code span.at { color: #ffd700; } /* Attribute */
+    code span.bn { color: #dcc6e0; } /* BaseN */
+    code span.bu { color: #f5ab35; } /* BuiltIn */
+    code span.cf { color: #ffa07a; } /* ControlFlow */
+    code span.ch { color: #abe338; } /* Char */
+    code span.cn { color: #ffa07a; } /* Constant */
+    code span.co { color: #d4d0ab; } /* Comment */
+    code span.cv { color: #d4d0ab; font-style: italic; } /* CommentVar */
+    code span.do { color: #d4d0ab; font-style: italic; } /* Documentation */
+    code span.dt { color: #dcc6e0; } /* DataType */
+    code span.dv { color: #dcc6e0; } /* DecVal */
+    code span.er { color: #dcc6e0; } /* Error */
+    code span.ex { color: #ffd700; } /* Extension */
+    code span.fl { color: #f5ab35; } /* Float */
+    code span.fu { color: #ffd700; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #d4d0ab; } /* Information */
+    code span.kw { color: #ffa07a; } /* Keyword */
+    code span.op { color: #00e0e0; } /* Operator */
+    code span.ot { color: #ffa07a; } /* Other */
+    code span.pp { color: #dcc6e0; } /* Preprocessor */
+    code span.sc { color: #00e0e0; } /* SpecialChar */
+    code span.ss { color: #abe338; } /* SpecialString */
+    code span.st { color: #abe338; } /* String */
+    code span.va { color: #f5ab35; } /* Variable */
+    code span.vs { color: #abe338; } /* VerbatimString */
+    code span.wa { color: #d4d0ab; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-f26990177f8513eaf173298e960e65c5.css">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-ab3448e47092115146ee6baacfd87cb3.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -178,13 +244,90 @@ mine çetinkaya-rundel
 </blockquote>
 </div>
 </section>
-<section id="render-diagnostics.qmd" class="slide level2 prompt">
-<h2><code>render diagnostics.qmd</code></h2>
-<!-- TODO: [ggplot2 example from ICOTS talk] -- Mine to add -->
-<div class="center-align large cursor">
-<p>[ placeholder: ggplot2 example from ICOTS talk ]</p>
+<section id="plot-a-regression-line" class="slide level2 prompt">
+<h2><code>plot a regression line</code></h2>
+<div class="chat">
+<p>Create a scatterplot of miles per gallon (mpg) vs.&nbsp;displacement (disp) in mtcars, and overlay the regression line for predicting mpg from disp.</p>
+</div>
+<div class="fragment">
+<div class="cell columns column-output-location">
+<div class="column">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a aria-label="1"></a><span class="fu">ggplot</span>(</span>
+<span id="cb1-2"><a aria-label="2"></a>  mtcars,</span>
+<span id="cb1-3"><a aria-label="3"></a>  <span class="fu">aes</span>(<span class="at">x =</span> disp, <span class="at">y =</span> mpg)</span>
+<span id="cb1-4"><a aria-label="4"></a>) <span class="sc">+</span></span>
+<span id="cb1-5"><a aria-label="5"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb1-6"><a aria-label="6"></a>  <span class="fu">geom_smooth</span>(</span>
+<span id="cb1-7"><a aria-label="7"></a>    <span class="at">method =</span> <span class="st">"lm"</span>,</span>
+<span id="cb1-8"><a aria-label="8"></a>    <span class="at">se =</span> <span class="cn">FALSE</span></span>
+<span id="cb1-9"><a aria-label="9"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div><div class="column">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="discussion_files/figure-revealjs/unnamed-chunk-2-1.png" width="576"></p>
+</figure>
+</div>
+</div>
+</div></div>
+<p>With Claude Opus 4.8 (via Posit AI).</p>
 </div>
 </section>
+<section id="plot-a-regression-line-1" class="slide level2 prompt">
+<h2><code>plot a regression line</code></h2>
+<div class="chat">
+<p>Now limit to cars with displacement below 200.</p>
+</div>
+<div class="fragment">
+<div class="cell columns column-output-location">
+<div class="column">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a aria-label="1"></a>mtcars <span class="sc">|&gt;</span></span>
+<span id="cb2-2"><a aria-label="2"></a>  <span class="fu">filter</span>(disp <span class="sc">&lt;</span> <span class="dv">200</span>) <span class="sc">|&gt;</span></span>
+<span id="cb2-3"><a aria-label="3"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> disp, <span class="at">y =</span> mpg)) <span class="sc">+</span></span>
+<span id="cb2-4"><a aria-label="4"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb2-5"><a aria-label="5"></a>  <span class="fu">geom_smooth</span>(</span>
+<span id="cb2-6"><a aria-label="6"></a>    <span class="at">method =</span> <span class="st">"lm"</span>,</span>
+<span id="cb2-7"><a aria-label="7"></a>    <span class="at">se =</span> <span class="cn">FALSE</span></span>
+<span id="cb2-8"><a aria-label="8"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div><div class="column">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="discussion_files/figure-revealjs/unnamed-chunk-3-1.png" width="576"></p>
+</figure>
+</div>
+</div>
+</div></div>
+<p>With Claude Opus 4.8 (via Posit AI).</p>
+</div>
+</section>
+<section id="plot-which-regression-line" class="slide level2 prompt">
+<h2><code>plot which regression line?</code></h2>
+<div class="cell quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img data-src="discussion_files/figure-revealjs/unnamed-chunk-4-1.png" width="576"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img data-src="discussion_files/figure-revealjs/unnamed-chunk-4-2.png" width="576"></p>
+</div>
+</div>
+</div>
+<div class="columns">
+<div class="column fragment">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a aria-label="1"></a>... <span class="sc">+</span></span>
+<span id="cb3-2"><a aria-label="2"></a><span class="fu">coord_cartesian</span>(</span>
+<span id="cb3-3"><a aria-label="3"></a>  <span class="at">xlim =</span> <span class="fu">c</span>(<span class="dv">60</span>, <span class="dv">200</span>)</span>
+<span id="cb3-4"><a aria-label="4"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div><div class="column fragment">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a aria-label="1"></a>... <span class="sc">+</span></span>
+<span id="cb4-2"><a aria-label="2"></a>  <span class="fu">xlim</span>(<span class="dv">60</span>, <span class="dv">200</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div></div>
+</section>
+<section id="plot-which-regression-line-1" class="slide level2 prompt">
+<h2><code>plot which regression line?</code></h2>
+
+<img data-src="discussion_files/figure-revealjs/unnamed-chunk-5-1.png" class="quarto-figure quarto-figure-center r-stretch" width="576"></section>
 <section id="r-ggplotmod" class="slide level2 prompt">
 <h2><code>R ggplot(mod)</code></h2>
 <hr>
@@ -229,7 +372,7 @@ mine çetinkaya-rundel
 <div class="my-experience">
 <p>My experience…</p>
 <ul>
-<li class="fragment">Generate <em>a lot</em> more than you need <i class="fa-solid fa-robot" aria-label="robot"></i></li>
+<li class="fragment">Generate <em>a lot</em> more than you need</li>
 <li class="fragment">Pick a few good starting points and improve them</li>
 <li class="fragment">The hack: let AI give you raw material to sculpt</li>
 </ul>
@@ -241,43 +384,44 @@ mine çetinkaya-rundel
 <hr>
 <p><img src="https://www.carleton.edu/directory/photo/aloy/?resize=400" alt="Adam Loy" style="float:right;width:120px;height:120px;border-radius:50%;object-fit:cover;padding-left:20px;margin:0px"> Adam :: <strong>stop repeating yourself</strong></p>
 <hr>
-<ul>
-<li class="fragment"><p>Simulating data to match examples in journal articles…</p></li>
-<li class="fragment"><p>…when all you have is a <strong>table</strong> or a <strong>plot</strong></p></li>
-</ul>
-<div class="fragment hand-blue-large">
-<p>neat idea! <i class="fa-solid fa-lightbulb" aria-label="lightbulb"></i></p>
+<div class="hack">
+<blockquote>
+<p>Simulating data to match examples in journal articles when all you have is a table or a plot.</p>
+</blockquote>
+</div>
+<div class="my-experience larger">
+<p><span class="fragment"><i class="fa-solid fa-heart" aria-label="heart"></i></span> <span class="fragment">/ <i class="fa-solid fa-face-grimace" aria-label="face-grimace"></i></span></p>
 </div>
 </section>
-<section id="make--j2-colin-william" class="slide level2 prompt">
-<h2><code>make -j2 colin william</code></h2>
+<section id="make-packages" class="slide level2 prompt">
+<h2><code>make packages</code></h2>
 <hr>
 <p><img src="https://scholars.duke.edu/profile-images/thumbnail500/0576228.jpg" alt="Colin Rundel" style="float:right;width:120px;height:120px;border-radius:50%;object-fit:cover;padding-left:20px;margin:0px"> Colin + <img src="https://www.smith.edu/sites/default/files/styles/content_faculty_profile_full_large/public/2025-09/will-hopper-25.jpg.webp?itok=xsaslWSL" alt="Will Hopper" style="float:right;width:120px;height:120px;border-radius:50%;object-fit:cover;padding-left:20px;margin:0px"> William</p>
 <hr>
-<div class="center-align hand-blue-large">
-<p>productivity as an R package</p>
-</div>
-<p><br></p>
+<div class="hack">
+<p>Productivity as an R package / the grind of course-ops, packaged</p>
 <ul>
-<li class="fragment"><p>Colin – <code>ghclass</code>, <code>q2r</code>, <code>markermd</code>: the grind of course-ops, packaged</p></li>
-<li class="fragment"><p>William – one instructor file → lab + template + solutions → Moodle</p></li>
-<li class="fragment"><p>The pattern: <strong>wrap the annoying part, ship it, reuse it</strong></p></li>
+<li>Colin – <code>ghclass</code>, <code>q2r</code>, <code>markermd</code></li>
+<li>William – <code>moodleR</code></li>
 </ul>
+</div>
+<div class="my-experience">
+<p>The pattern: <strong>wrap the annoying part, ship it, reuse it</strong></p>
+</div>
 </section>
 <section id="moodlequiz---deploy" class="slide level2 prompt">
 <h2><code>moodlequiz --deploy</code></h2>
 <hr>
 <p><img src="https://www.smith.edu/sites/default/files/styles/content_faculty_profile_full_large/public/2025-09/will-hopper-25.jpg.webp?itok=xsaslWSL" alt="Will Hopper" style="float:right;width:120px;height:120px;border-radius:50%;object-fit:cover;padding-left:20px;margin:0px"> William :: <strong>moodlequiz</strong></p>
 <hr>
-<div class="center-align large">
+<div class="hack">
+<p><strong>moodleR</strong> Interact with a Moodle Course Page via Headless Chrome</p>
+</div>
+<div class="similar fragment">
+<p>Reminds me of…</p>
 <p><a href="https://numbats.github.io/moodlequiz/">numbats.github.io/moodlequiz</a></p>
-</div>
-<p><br></p>
-<div class="center-align medium">
 <p><img src="https://avatars.githubusercontent.com/u/16127127?v=4" alt="Mitchell O'Hara-Wild" style="width:90px;height:90px;border-radius:50%;object-fit:cover;margin:0 10px"><br> <a href="https://github.com/mitchelloharawild">Mitchell O’Hara-Wild</a></p>
-</div>
-<div class="fragment medium">
-<p>Reminds me of – author quizzes in Quarto, deploy to the LMS from R: the same “one source, many outputs” move, aimed straight at Moodle.</p>
+<p><strong>moodlequiz</strong> package allows the creation of Moodle quiz questions using literate programming with R Markdown.</p>
 </div>
 </section>
 <section id="cat-themes.log" class="slide level2 prompt">
@@ -289,8 +433,8 @@ mine çetinkaya-rundel
 <li class="fragment"><p><strong>Coding <em>is</em> the pedagogy</strong> – not a distraction from stats, but a deeper way in</p></li>
 </ul>
 </section>
-<section id="hack-the-planet" class="slide level2 prompt" data-background-color="#04060d">
-<h2><code>hack the planet</code></h2>
+<section id="life-hacking-for-educators" class="slide level2 prompt" data-background-color="#04060d">
+<h2><code>life hacking for educators</code></h2>
 <div class="center-align large neon-green cursor">
 <p>questions?</p>
 </div>
@@ -518,6 +662,44 @@ mine çetinkaya-rundel
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
         const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
