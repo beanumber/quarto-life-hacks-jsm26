@@ -286,37 +286,22 @@ Will Hopper
 <span id="cb1-27"><a aria-hidden="true" tabindex="-1"></a>::: question</span>
 <span id="cb1-28"><a aria-hidden="true" tabindex="-1"></a>In your template file, locate the code chunk that looks like this:</span>
 <span id="cb1-29"><a aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-30"><a aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-31"><a aria-hidden="true" tabindex="-1"></a>::: {.cell}</span>
-<span id="cb1-32"><a aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-33"><a aria-hidden="true" tabindex="-1"></a><span class="in">````{.cell-code}</span></span>
-<span id="cb1-34"><a aria-hidden="true" tabindex="-1"></a>```<span class="op">{</span>r<span class="op">}</span></span>
-<span id="cb1-35"><a aria-hidden="true" tabindex="-1"></a>result <span class="op">&lt;-</span> <span class="dv">5</span> <span class="op">+</span> <span class="dv">2</span></span>
-<span id="cb1-36"><a aria-hidden="true" tabindex="-1"></a>applesauce <span class="op">&lt;-</span> <span class="dv">10</span> <span class="op">*</span> <span class="dv">3</span></span>
-<span id="cb1-37"><a aria-hidden="true" tabindex="-1"></a>```</span>
-<span id="cb1-38"><a aria-hidden="true" tabindex="-1"></a><span class="in">````</span></span>
-<span id="cb1-39"><a aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-40"><a aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-41"><a aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-42"><a aria-hidden="true" tabindex="-1"></a>Enter a blank line at the end of this code chunk, and write the command <span class="in">`result + applesauce`</span> on the blank line. Then click the green triangle "play" button in the upper right hand corner of the code chunk to execute the code in the chunk. What is the result?</span>
-<span id="cb1-43"><a aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-44"><a aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-45"><a aria-hidden="true" tabindex="-1"></a>::: solution</span>
-<span id="cb1-46"><a aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-47"><a aria-hidden="true" tabindex="-1"></a>::: {.cell}</span>
-<span id="cb1-48"><a aria-hidden="true" tabindex="-1"></a>::: {.cell-output .cell-output-stdout}</span>
-<span id="cb1-49"><a aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-50"><a aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb1-51"><a aria-hidden="true" tabindex="-1"></a><span class="in">[1] 37</span></span>
-<span id="cb1-52"><a aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb1-53"><a aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-54"><a aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-55"><a aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-56"><a aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-57"><a aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-58"><a aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-59"><a aria-hidden="true" tabindex="-1"></a>The output is 37 - the same value you would get if you ran <span class="in">`5 + 2`</span> + <span class="in">`10 * 3`</span> in the console!</span>
-<span id="cb1-60"><a aria-hidden="true" tabindex="-1"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb1-30"><a aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb1-31"><a aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: fenced</span></span>
+<span id="cb1-32"><a aria-hidden="true" tabindex="-1"></a>result <span class="ot">&lt;-</span> <span class="dv">5</span> <span class="sc">+</span> <span class="dv">2</span></span>
+<span id="cb1-33"><a aria-hidden="true" tabindex="-1"></a>applesauce <span class="ot">&lt;-</span> <span class="dv">10</span> <span class="sc">*</span> <span class="dv">3</span></span>
+<span id="cb1-34"><a aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb1-35"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-36"><a aria-hidden="true" tabindex="-1"></a>Enter a blank line at the end of this code chunk, and write the command <span class="in">`result + applesauce`</span> on the blank line. Then click the green triangle "play" button in the upper right hand corner of the code chunk to execute the code in the chunk. What is the result?</span>
+<span id="cb1-37"><a aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-38"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-39"><a aria-hidden="true" tabindex="-1"></a>::: solution</span>
+<span id="cb1-40"><a aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb1-41"><a aria-hidden="true" tabindex="-1"></a>result <span class="sc">+</span> applesauce</span>
+<span id="cb1-42"><a aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb1-43"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-44"><a aria-hidden="true" tabindex="-1"></a>The output is 37 - the same value you would get if you ran <span class="in">`5 + 2`</span> + <span class="in">`10 * 3`</span> in the console!</span>
+<span id="cb1-45"><a aria-hidden="true" tabindex="-1"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="how-does-it-work" class="slide level2">
 <h2>How Does it Work?</h2>
@@ -388,37 +373,36 @@ Will Hopper
 </section>
 <section id="the-template-lab1_template.qmd" class="slide level2">
 <h2>The Template: <code>lab1_template.qmd</code></h2>
-<pre><code>---
-title: "Lab 1: Getting Acquainted with R, RStudio and Quarto"
-format: html
----
-
-## Question 1
-
-In the Console, enter 5 + 2 and press Enter to run the code.
-
-## Question 2
-
-In the console, type in result &lt;- 5 + 2 and press Enter to run the code.
-
-Then, type in applesauce &lt;- 10 * 3 in the console and press Enter to run the code.
-
-Then, write an answer the following questions in your Lab 1 Quarto document:
-
-- What happens in the RStudio "Environment" pane when you use the assignment operator to create a new object?
-- What doesn't happen in the console when you use the assignment operator to create a new object?
-
-## Question 3
-
-In your template file, locate the code chunk that looks like this:
-
-
-::: {.cell}
-
-:::
-
-
-Enter a blank line at the end of this code chunk, and write the command result + applesauce on the blank line. Then click the green triangle "play" button in the upper right hand corner of the code chunk to execute the code in the chunk. What is the result?</code></pre>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb8-2"><a aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Lab 1: Getting Acquainted with R, RStudio and Quarto"</span></span>
+<span id="cb8-3"><a aria-hidden="true" tabindex="-1"></a><span class="an">format:</span><span class="co"> html</span></span>
+<span id="cb8-4"><a aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb8-5"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-6"><a aria-hidden="true" tabindex="-1"></a><span class="fu">## Question 1</span></span>
+<span id="cb8-7"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-8"><a aria-hidden="true" tabindex="-1"></a>In the Console, enter 5 + 2 and press Enter to run the code.</span>
+<span id="cb8-9"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-10"><a aria-hidden="true" tabindex="-1"></a><span class="fu">## Question 2</span></span>
+<span id="cb8-11"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-12"><a aria-hidden="true" tabindex="-1"></a>In the console, type in result &lt;- 5 + 2 and press Enter to run the code.</span>
+<span id="cb8-13"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-14"><a aria-hidden="true" tabindex="-1"></a>Then, type in applesauce &lt;- 10 * 3 in the console and press Enter to run the code.</span>
+<span id="cb8-15"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-16"><a aria-hidden="true" tabindex="-1"></a>Then, write an answer the following questions in your Lab 1 Quarto document:</span>
+<span id="cb8-17"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-18"><a aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>What happens in the RStudio "Environment" pane when you use the assignment operator to create a new object?</span>
+<span id="cb8-19"><a aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>What doesn't happen in the console when you use the assignment operator to create a new object?</span>
+<span id="cb8-20"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-21"><a aria-hidden="true" tabindex="-1"></a><span class="fu">## Question 3</span></span>
+<span id="cb8-22"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-23"><a aria-hidden="true" tabindex="-1"></a>In your template file, locate the code chunk that looks like this:</span>
+<span id="cb8-24"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-25"><a aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb8-26"><a aria-hidden="true" tabindex="-1"></a>result <span class="ot">&lt;-</span> <span class="dv">5</span> <span class="sc">+</span> <span class="dv">2</span></span>
+<span id="cb8-27"><a aria-hidden="true" tabindex="-1"></a>applesauce <span class="ot">&lt;-</span> <span class="dv">10</span> <span class="sc">*</span> <span class="dv">3</span></span>
+<span id="cb8-28"><a aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb8-29"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-30"><a aria-hidden="true" tabindex="-1"></a>Enter a blank line at the end of this code chunk, and write the command result + applesauce on the blank line. Then click the green triangle "play" button in the upper right hand corner of the code chunk to execute the code in the chunk. What is the result?</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="the-solutions-lab1_solutions.qmd" class="slide level2">
 <h2>The Solutions: <code>lab1_solutions.qmd</code></h2>
