@@ -441,7 +441,47 @@ Lots of great examples:
 ![](figs/infer.png)
 :::
 
-::: {.column .fragment width='25%' .center}
+::: {.column .fragment width='75%' .center}
+![](figs/infer-diagram-2.png){width='70%'}
+:::
+
+
+
+::::
+
+
+------------------------------------------------------------------------
+
+
+### What should we do instead? 
+
+<br>
+
+
+::: {.midi .center}
+
+Provide students with the **tools to learn code** that have both a
+
+design language and syntax that is **consistent** & **intuitive**. 
+
+:::
+
+<br> 
+
+::: {}
+
+Lots of great examples: 
+
+:::
+
+:::: .columns
+
+
+::: {.column width='25%' .center}
+![](figs/infer.png)
+:::
+
+::: {.column width='25%' .center}
 ![](figs/tidymodels.png)
 :::
 
