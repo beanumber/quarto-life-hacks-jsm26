@@ -265,30 +265,58 @@ Will Hopper
 <span id="cb1-6"><a aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-7"><a aria-hidden="true" tabindex="-1"></a><span class="fu">## Creating Objects</span></span>
 <span id="cb1-8"><a aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-9"><a aria-hidden="true" tabindex="-1"></a>You can think of *objects* as boxes that store things. To create an object, we have to ask R to take the results of some code and *assign* those results to an object. We can do this using the **assignment operator** <span class="in">`&lt;-`</span>, which is often called the arrow. In your code, you write the assignment operator by typing in the "less than" symbol, followed by a dash.</span>
+<span id="cb1-9"><a aria-hidden="true" tabindex="-1"></a>You can think of *objects* as boxes that store things. To create an object, we have to ask R to take the results of some code and *assign* those results to an object. We can do this using the **assignment operator** <span class="in">`&lt;-`</span>, which is often called the arrow. In your code, you write the assignment operator iby typing in the "less than" symbol, followed by a dash.</span>
 <span id="cb1-10"><a aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-11"><a aria-hidden="true" tabindex="-1"></a>::: question</span>
-<span id="cb1-12"><a aria-hidden="true" tabindex="-1"></a>In your template file, locate the code chunk that looks like this:</span>
+<span id="cb1-12"><a aria-hidden="true" tabindex="-1"></a>In the console, type in <span class="in">`result &lt;- 5 + 2`</span> and press <span class="dt">&lt;</span><span class="kw">kbd</span><span class="dt">&gt;</span>Enter<span class="dt">&lt;/</span><span class="kw">kbd</span><span class="dt">&gt;</span> to run the code.</span>
 <span id="cb1-13"><a aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-14"><a aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb1-15"><a aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: fenced</span></span>
-<span id="cb1-16"><a aria-hidden="true" tabindex="-1"></a>result <span class="ot">&lt;-</span> <span class="dv">5</span> <span class="sc">+</span> <span class="dv">2</span></span>
-<span id="cb1-17"><a aria-hidden="true" tabindex="-1"></a>applesauce <span class="ot">&lt;-</span> <span class="dv">10</span> <span class="sc">*</span> <span class="dv">3</span></span>
-<span id="cb1-18"><a aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb1-19"><a aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-20"><a aria-hidden="true" tabindex="-1"></a>Write the command <span class="in">`result + applesauce`</span> on the blank line at the end of the code chunk. Then click the green triangle "play" button in the upper right hand corner of the code chunk to execute the code in the chunk.</span>
-<span id="cb1-21"><a aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-22"><a aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-23"><a aria-hidden="true" tabindex="-1"></a>::: solution</span>
-<span id="cb1-24"><a aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-25"><a aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb1-26"><a aria-hidden="true" tabindex="-1"></a>result <span class="ot">&lt;-</span> <span class="dv">5</span> <span class="sc">+</span> <span class="dv">2</span></span>
-<span id="cb1-27"><a aria-hidden="true" tabindex="-1"></a>applesauce <span class="ot">&lt;-</span> <span class="dv">10</span> <span class="sc">*</span> <span class="dv">3</span></span>
-<span id="cb1-28"><a aria-hidden="true" tabindex="-1"></a>result <span class="sc">+</span> applesauce</span>
-<span id="cb1-29"><a aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb1-14"><a aria-hidden="true" tabindex="-1"></a>Then, type in <span class="in">`applesauce &lt;- 10 * 3`</span> in the console and press <span class="dt">&lt;</span><span class="kw">kbd</span><span class="dt">&gt;</span>Enter<span class="dt">&lt;/</span><span class="kw">kbd</span><span class="dt">&gt;</span> to run the code.</span>
+<span id="cb1-15"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-16"><a aria-hidden="true" tabindex="-1"></a>Then, write an answer the following questions in your Lab 1 Quarto document:</span>
+<span id="cb1-17"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-18"><a aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>What happens in the RStudio "Environment" pane when you use the assignment operator to create a new object?</span>
+<span id="cb1-19"><a aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>What *doesn't* happen in the console when you use the assignment operator to create a new object?</span>
+<span id="cb1-20"><a aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-21"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-22"><a aria-hidden="true" tabindex="-1"></a>::: solution</span>
+<span id="cb1-23"><a aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The name of each object is shown, along with its computed value.</span>
+<span id="cb1-24"><a aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The computed result is *not* printed out</span>
+<span id="cb1-25"><a aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-26"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-27"><a aria-hidden="true" tabindex="-1"></a>::: question</span>
+<span id="cb1-28"><a aria-hidden="true" tabindex="-1"></a>In your template file, locate the code chunk that looks like this:</span>
+<span id="cb1-29"><a aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-30"><a aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-31"><a aria-hidden="true" tabindex="-1"></a>You should see the number 37 printed out in the console, just as it is shown above.</span>
-<span id="cb1-32"><a aria-hidden="true" tabindex="-1"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb1-31"><a aria-hidden="true" tabindex="-1"></a>::: {.cell}</span>
+<span id="cb1-32"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-33"><a aria-hidden="true" tabindex="-1"></a><span class="in">````{.cell-code}</span></span>
+<span id="cb1-34"><a aria-hidden="true" tabindex="-1"></a>```<span class="op">{</span>r<span class="op">}</span></span>
+<span id="cb1-35"><a aria-hidden="true" tabindex="-1"></a>result <span class="op">&lt;-</span> <span class="dv">5</span> <span class="op">+</span> <span class="dv">2</span></span>
+<span id="cb1-36"><a aria-hidden="true" tabindex="-1"></a>applesauce <span class="op">&lt;-</span> <span class="dv">10</span> <span class="op">*</span> <span class="dv">3</span></span>
+<span id="cb1-37"><a aria-hidden="true" tabindex="-1"></a>```</span>
+<span id="cb1-38"><a aria-hidden="true" tabindex="-1"></a><span class="in">````</span></span>
+<span id="cb1-39"><a aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-40"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-41"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-42"><a aria-hidden="true" tabindex="-1"></a>Enter a blank line at the end of this code chunk, and write the command <span class="in">`result + applesauce`</span> on the blank line. Then click the green triangle "play" button in the upper right hand corner of the code chunk to execute the code in the chunk. What is the result?</span>
+<span id="cb1-43"><a aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-44"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-45"><a aria-hidden="true" tabindex="-1"></a>::: solution</span>
+<span id="cb1-46"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-47"><a aria-hidden="true" tabindex="-1"></a>::: {.cell}</span>
+<span id="cb1-48"><a aria-hidden="true" tabindex="-1"></a>::: {.cell-output .cell-output-stdout}</span>
+<span id="cb1-49"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-50"><a aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb1-51"><a aria-hidden="true" tabindex="-1"></a><span class="in">[1] 37</span></span>
+<span id="cb1-52"><a aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb1-53"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-54"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-55"><a aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-56"><a aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-57"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-58"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-59"><a aria-hidden="true" tabindex="-1"></a>The output is 37 - the same value you would get if you ran <span class="in">`5 + 2`</span> + <span class="in">`10 * 3`</span> in the console!</span>
+<span id="cb1-60"><a aria-hidden="true" tabindex="-1"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="how-does-it-work" class="slide level2">
 <h2>How Does it Work?</h2>
@@ -308,23 +336,100 @@ Will Hopper
 <h2>Getting Started with LTS</h2>
 <h4 id="to-start-a-new-project">To start a new project:</h4>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> use template wjhopper/lts</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="fragment">
 <p><br></p>
+<div class="fragment">
 <h4 id="within-an-existing-project">Within an existing project:</h4>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> add wjhopper/lts</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <div class="fragment">
-<p>Then manually add</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb4-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">pre-render</span><span class="kw">:</span><span class="at"> _extensions/wjhopper/lts/setup.lua</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>to the project’s <code>_quarto.yml</code> configuration file</p>
+<p>Then manually add the pre-render script to the project’s <code>_quarto.yml</code> configuration file, e.g.,</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb4-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">project</span><span class="kw">:</span></span>
+<span id="cb4-2"><a aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> website</span></span>
+<span id="cb4-3"><a aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">pre-render</span><span class="kw">:</span><span class="at"> _extensions/wjhopper/lts/setup.lua</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
+</section>
+<section id="lts-in-action" class="slide level2">
+<h2>LTS in Action</h2>
+<div class="columns">
+<div class="column">
+<h4 id="how-it-started">How It Started</h4>
+<pre><code>demo/
+├── _extensions
+│   └── wjhopper
+│       └── lts
+├── _quarto.yml
+└── lab1.qmd</code></pre>
+<div class="fragment">
+<p><code>_quarto.yml</code></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb6-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">project</span><span class="kw">:</span></span>
+<span id="cb6-2"><a aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> lts</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div><div class="column fragment">
+<h4 id="how-its-going">How It’s Going</h4>
+<p><code>quarto render</code></p>
+<div class="frag">
+<pre><code>demo/
+├── _extensions
+│   └── wjhopper
+│       └── lts
+├── _quarto.yml
+├── lab1.html           &lt;-
+├── lab1.qmd
+├── lab1_solutions.html &lt;-
+├── lab1_solutions.qmd
+├── lab1_template.html
+├── lab1_template.qmd   &lt;-</code></pre>
+</div>
+</div></div>
+</section>
+<section id="the-lab-lab1.html" class="slide level2">
+<h2>The Lab: <code>lab1.html</code></h2>
+<iframe src="https://www.science.smith.edu/~whopper/Talks/JSM_2026/demo/demo.html" height="600" width="850"></iframe>
+</section>
+<section id="the-template-lab1_template.qmd" class="slide level2">
+<h2>The Template: <code>lab1_template.qmd</code></h2>
+<pre><code>---
+title: "Lab 1: Getting Acquainted with R, RStudio and Quarto"
+format: html
+---
+
+## Question 1
+
+In the Console, enter 5 + 2 and press Enter to run the code.
+
+## Question 2
+
+In the console, type in result &lt;- 5 + 2 and press Enter to run the code.
+
+Then, type in applesauce &lt;- 10 * 3 in the console and press Enter to run the code.
+
+Then, write an answer the following questions in your Lab 1 Quarto document:
+
+- What happens in the RStudio "Environment" pane when you use the assignment operator to create a new object?
+- What doesn't happen in the console when you use the assignment operator to create a new object?
+
+## Question 3
+
+In your template file, locate the code chunk that looks like this:
+
+
+::: {.cell}
+
+:::
+
+
+Enter a blank line at the end of this code chunk, and write the command result + applesauce on the blank line. Then click the green triangle "play" button in the upper right hand corner of the code chunk to execute the code in the chunk. What is the result?</code></pre>
+</section>
+<section id="the-solutions-lab1_solutions.qmd" class="slide level2">
+<h2>The Solutions: <code>lab1_solutions.qmd</code></h2>
+<iframe src="https://www.science.smith.edu/~whopper/Talks/JSM_2026/demo/demo_solutions.html" height="600" width="850"></iframe>
 </section>
 <section id="meet-the-moodler-package" class="slide level2">
 <h2>Meet the <code>moodleR</code> Package!</h2>
 <p>Let’s upload these to our course’s Moodle using the <code>moodleR</code> package!</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a aria-hidden="true" tabindex="-1"></a><span class="co"># remotes::install_github("wjhopper/moodleR)</span></span>
-<span id="cb5-2"><a aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(moodleR)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a aria-hidden="true" tabindex="-1"></a><span class="co"># remotes::install_github("wjhopper/moodleR)</span></span>
+<span id="cb9-2"><a aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(moodleR)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <div class="fragment">
 <p><code>moodleR</code> speeds up common but repetitive and click-heavy tasks in Moodle by allowing you to script them from <svg aria-hidden="true" role="img" viewbox="0 0 581 512" style="height:1em;width:1.13em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M581 226.6C581 119.1 450.9 32 290.5 32S0 119.1 0 226.6C0 322.4 103.3 402 239.4 418.1V480h99.1v-61.5c24.3-2.7 47.6-7.4 69.4-13.9L448 480h112l-67.4-113.7c54.5-35.4 88.4-84.9 88.4-139.7zm-466.8 14.5c0-73.5 98.9-133 220.8-133s211.9 40.7 211.9 133c0 50.1-26.5 85-70.3 106.4-2.4-1.6-4.7-2.9-6.4-3.7-10.2-5.2-27.8-10.5-27.8-10.5s86.6-6.4 86.6-92.7-90.6-87.9-90.6-87.9h-199V361c-74.1-21.5-125.2-67.1-125.2-119.9zm225.1 38.3v-55.6c57.8 0 87.8-6.8 87.8 27.3 0 36.5-38.2 28.3-87.8 28.3zm-.9 72.5H365c10.8 0 18.9 11.7 24 19.2-16.1 1.9-33 2.8-50.6 2.9v-22.1z"></path></svg></p>
@@ -343,10 +448,10 @@ Will Hopper
 <div class="column">
 <p>First, open a browser for authentication</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a aria-hidden="true" tabindex="-1"></a>tab <span class="ot">&lt;-</span> moodleR<span class="sc">::</span><span class="fu">open_moodle</span>(</span>
-<span id="cb6-2"><a aria-hidden="true" tabindex="-1"></a>  <span class="st">"https://moodle.smith.edu"</span>,</span>
-<span id="cb6-3"><a aria-hidden="true" tabindex="-1"></a>  <span class="at">graphical =</span> <span class="cn">TRUE</span></span>
-<span id="cb6-4"><a aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a aria-hidden="true" tabindex="-1"></a>tab <span class="ot">&lt;-</span> moodleR<span class="sc">::</span><span class="fu">open_moodle</span>(</span>
+<span id="cb10-2"><a aria-hidden="true" tabindex="-1"></a>  <span class="st">"https://moodle.smith.edu"</span>,</span>
+<span id="cb10-3"><a aria-hidden="true" tabindex="-1"></a>  <span class="at">graphical =</span> <span class="cn">TRUE</span></span>
+<span id="cb10-4"><a aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <div class="fragment">
 <p>After authentication, browser switches into “headless” mode</p>
@@ -355,38 +460,42 @@ Will Hopper
 <p><video data-src="img/login%20video.mp4" controls=""><a href="img/login video.mp4">Video</a></video></p>
 </div></div>
 </section>
-<section id="uploading-to-moodle" class="slide level2">
-<h2>Uploading to Moodle</h2>
+<section id="every-file-needs-a-home" class="slide level2">
+<h2>Every File Needs a Home</h2>
+<p>Navigate to the course using it’s ID, and create a new section</p>
 <div class="columns">
-<div class="column">
-<p>Navigate to the course, and create a new section</p>
+<div class="column" style="padding-top: 20px;">
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a aria-hidden="true" tabindex="-1"></a>tab<span class="sc">$</span>course <span class="ot">&lt;-</span> <span class="dv">57135</span> <span class="co"># ID number from course page URL</span></span>
-<span id="cb7-2"><a aria-hidden="true" tabindex="-1"></a>section_info <span class="ot">&lt;-</span> <span class="fu">create_section</span>(</span>
-<span id="cb7-3"><a aria-hidden="true" tabindex="-1"></a>  tab,</span>
-<span id="cb7-4"><a aria-hidden="true" tabindex="-1"></a>  <span class="at">section_name =</span> <span class="st">"Lab 1"</span></span>
-<span id="cb7-5"><a aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a aria-hidden="true" tabindex="-1"></a>tab<span class="sc">$</span>course <span class="ot">&lt;-</span> <span class="dv">57135</span> <span class="co"># ID number from course page URL</span></span>
+<span id="cb11-2"><a aria-hidden="true" tabindex="-1"></a>section_info <span class="ot">&lt;-</span> <span class="fu">create_section</span>(</span>
+<span id="cb11-3"><a aria-hidden="true" tabindex="-1"></a>  tab,</span>
+<span id="cb11-4"><a aria-hidden="true" tabindex="-1"></a>  <span class="at">section_name =</span> <span class="st">"Lab 1"</span></span>
+<span id="cb11-5"><a aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div><div class="column">
 <p><img data-src="img/course_id.png"></p>
 </div></div>
-<div class="fragment">
+</section>
+<section id="uploading-to-moodle" class="slide level2">
+<h2>Uploading to Moodle</h2>
 <p>Add each file to the page using <code>moodleR::upload_file()</code></p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a aria-hidden="true" tabindex="-1"></a>moodleR<span class="sc">::</span><span class="fu">upload_file</span>(tab, <span class="at">section =</span> <span class="st">"Lab 1"</span>, <span class="at">title =</span> <span class="st">"Lab 1: Welcome to R"</span>, <span class="at">path =</span> <span class="st">"lab1.html"</span>)</span>
-<span id="cb8-2"><a aria-hidden="true" tabindex="-1"></a>moodleR<span class="sc">::</span><span class="fu">upload_file</span>(tab, <span class="at">section =</span> <span class="st">"Lab 1"</span>, <span class="at">title =</span> <span class="st">"Lab 1 Template"</span>, <span class="at">path =</span> <span class="st">"lab1_template.qmd"</span>)</span>
-<span id="cb8-3"><a aria-hidden="true" tabindex="-1"></a>moodleR<span class="sc">::</span><span class="fu">upload_file</span>(tab, <span class="at">section =</span> <span class="st">"Lab 1"</span>, <span class="at">title =</span> <span class="st">"Lab 1 Answer Key"</span>, <span class="at">path =</span> <span class="st">"lab1_solutions.html"</span>,</span>
-<span id="cb8-4"><a aria-hidden="true" tabindex="-1"></a>                     <span class="at">visible =</span> <span class="cn">FALSE</span> <span class="co"># Keep solutions hidden until after class</span></span>
-<span id="cb8-5"><a aria-hidden="true" tabindex="-1"></a>                     )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a aria-hidden="true" tabindex="-1"></a>moodleR<span class="sc">::</span><span class="fu">upload_file</span>(tab, <span class="at">section =</span> <span class="st">"Lab 1"</span>, <span class="at">title =</span> <span class="st">"Lab 1: Welcome to R"</span>, <span class="at">path =</span> <span class="st">"lab1.html"</span>)</span>
+<span id="cb12-2"><a aria-hidden="true" tabindex="-1"></a>moodleR<span class="sc">::</span><span class="fu">upload_file</span>(tab, <span class="at">section =</span> <span class="st">"Lab 1"</span>, <span class="at">title =</span> <span class="st">"Lab 1 Template"</span>, <span class="at">path =</span> <span class="st">"lab1_template.qmd"</span>)</span>
+<span id="cb12-3"><a aria-hidden="true" tabindex="-1"></a>moodleR<span class="sc">::</span><span class="fu">upload_file</span>(tab, <span class="at">section =</span> <span class="st">"Lab 1"</span>, <span class="at">title =</span> <span class="st">"Lab 1 Answer Key"</span>, <span class="at">path =</span> <span class="st">"lab1_solutions.html"</span>,</span>
+<span id="cb12-4"><a aria-hidden="true" tabindex="-1"></a>                     <span class="at">visible =</span> <span class="cn">FALSE</span> <span class="co"># Keep solutions hidden until after class</span></span>
+<span id="cb12-5"><a aria-hidden="true" tabindex="-1"></a>                     )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
+<div class="fragment">
+<p><img data-src="img/uploaded_files.png"></p>
 </div>
 </section>
 <section id="moodler-spotlight-creating-and-populating-groups" class="slide level2">
 <h2><code>MoodleR</code> Spotlight: Creating and Populating Groups</h2>
-<p>You have a group project coming up, and want teams to submit their work on Moodle</p>
+<p>You have a group project coming up, and want team to submit their work on Moodle</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a aria-hidden="true" tabindex="-1"></a>groups <span class="ot">&lt;-</span> googlesheets4<span class="sc">::</span><span class="fu">read_sheet</span>(<span class="st">"197hRqQ-Ul3w2IhTDb8iJd8ip6IK4BPB0PT9otJSLPLw"</span>)</span>
-<span id="cb9-2"><a aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(groups)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a aria-hidden="true" tabindex="-1"></a>groups <span class="ot">&lt;-</span> googlesheets4<span class="sc">::</span><span class="fu">read_sheet</span>(<span class="st">"197hRqQ-Ul3w2IhTDb8iJd8ip6IK4BPB0PT9otJSLPLw"</span>)</span>
+<span id="cb13-2"><a aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(groups)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 15 × 3
    group_name    name          email_address   
@@ -416,11 +525,11 @@ Will Hopper
 <div class="column fragment">
 <p>But with <code>moodleR</code>, it’s two lines of code =)</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a aria-hidden="true" tabindex="-1"></a>moodleR<span class="sc">::</span><span class="fu">create_groups</span>(</span>
-<span id="cb11-2"><a aria-hidden="true" tabindex="-1"></a>  tab,</span>
-<span id="cb11-3"><a aria-hidden="true" tabindex="-1"></a>  <span class="at">groups =</span> <span class="fu">unique</span>(groups<span class="sc">$</span>group_name)</span>
-<span id="cb11-4"><a aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb11-5"><a aria-hidden="true" tabindex="-1"></a>moodleR<span class="sc">::</span><span class="fu">populate_groups</span>(tab, groups)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a aria-hidden="true" tabindex="-1"></a>moodleR<span class="sc">::</span><span class="fu">create_groups</span>(</span>
+<span id="cb15-2"><a aria-hidden="true" tabindex="-1"></a>  tab,</span>
+<span id="cb15-3"><a aria-hidden="true" tabindex="-1"></a>  <span class="at">groups =</span> <span class="fu">unique</span>(groups<span class="sc">$</span>group_name)</span>
+<span id="cb15-4"><a aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb15-5"><a aria-hidden="true" tabindex="-1"></a>moodleR<span class="sc">::</span><span class="fu">populate_groups</span>(tab, groups)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div><div class="column fragment">
 <p><img data-src="img/Moodle Groups.png"></p>
@@ -470,15 +579,15 @@ Will Hopper
 <div class="column">
 <h4 id="step-1-create-the-schedule">Step 1: Create the Schedule</h4>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a aria-hidden="true" tabindex="-1"></a>schedule <span class="ot">&lt;-</span> <span class="fu">split</span>(groups, groups<span class="sc">$</span>group_name) <span class="sc">|&gt;</span></span>
-<span id="cb12-2"><a aria-hidden="true" tabindex="-1"></a>  <span class="fu">lapply</span>(\(x) {</span>
-<span id="cb12-3"><a aria-hidden="true" tabindex="-1"></a>    sds100<span class="sc">::</span><span class="fu">create_rotation_table</span>(</span>
-<span id="cb12-4"><a aria-hidden="true" tabindex="-1"></a>      <span class="at">group_members =</span> x<span class="sc">$</span>name,</span>
-<span id="cb12-5"><a aria-hidden="true" tabindex="-1"></a>      <span class="at">row_names =</span> <span class="fu">paste</span>(<span class="st">"Phase"</span>, <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>)</span>
-<span id="cb12-6"><a aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">|&gt;</span></span>
-<span id="cb12-7"><a aria-hidden="true" tabindex="-1"></a>    sds100<span class="sc">::</span><span class="fu">write_rotation_schedule</span>()</span>
-<span id="cb12-8"><a aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb12-9"><a aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a aria-hidden="true" tabindex="-1"></a>schedule <span class="ot">&lt;-</span> <span class="fu">split</span>(groups, groups<span class="sc">$</span>group_name) <span class="sc">|&gt;</span></span>
+<span id="cb16-2"><a aria-hidden="true" tabindex="-1"></a>  <span class="fu">lapply</span>(\(x) {</span>
+<span id="cb16-3"><a aria-hidden="true" tabindex="-1"></a>    sds100<span class="sc">::</span><span class="fu">create_rotation</span>(</span>
+<span id="cb16-4"><a aria-hidden="true" tabindex="-1"></a>      <span class="at">group_members =</span> x<span class="sc">$</span>name,</span>
+<span id="cb16-5"><a aria-hidden="true" tabindex="-1"></a>      <span class="at">rotations =</span> <span class="fu">paste</span>(<span class="st">"Phase"</span>, <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>)</span>
+<span id="cb16-6"><a aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">|&gt;</span></span>
+<span id="cb16-7"><a aria-hidden="true" tabindex="-1"></a>    sds100<span class="sc">::</span><span class="fu">write_rotation_schedule</span>()</span>
+<span id="cb16-8"><a aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb16-9"><a aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <div class="fragment">
 <p><code>{ifingroup 63501}</code> is a Moodle <a href="https://marketplace.moodle.com/plugins/filter_filtercodes">FilterCodes</a> that restricts visibility to members of a specific group</p>
@@ -494,15 +603,15 @@ Will Hopper
   &lt;/ul&gt;
 &lt;h5 id="phase-2"&gt;Phase 2&lt;/h5&gt;
   &lt;ul&gt;
-    &lt;li&gt;&lt;strong&gt;Zam A. Zenta&lt;/strong&gt; will pick up where Chan D. Lure left off in the prior phase, and summarize Art’s Data. They will send all the neccesary materials to Drake O. Vish when the summaries are fully complete.&lt;/li&gt;
-    &lt;li&gt;&lt;strong&gt;Drake O. Vish&lt;/strong&gt; will pick up where Zam A. Zenta left off in the prior phase, and summarize Drag’s Data. They will send all the neccesary materials to Chan D. Lure when the summaries are fully complete.&lt;/li&gt;
-    &lt;li&gt;&lt;strong&gt;Chan D. Lure&lt;/strong&gt; will pick up where Drake O. Vish left off in the prior phase, and summarize Rose’s Data. They will send all the neccesary materials to Zam A. Zenta when the summaries are fully complete.&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Zam A. Zenta&lt;/strong&gt; will pick up where Chan D. Lure left off in the prior phase, and summarize Chan’s Data. They will send all the neccesary materials to Drake O. Vish when the summaries are fully complete.&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Drake O. Vish&lt;/strong&gt; will pick up where Zam A. Zenta left off in the prior phase, and summarize Zam’s Data. They will send all the neccesary materials to Chan D. Lure when the summaries are fully complete.&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Chan D. Lure&lt;/strong&gt; will pick up where Drake O. Vish left off in the prior phase, and summarize Drake’s Data. They will send all the neccesary materials to Zam A. Zenta when the summaries are fully complete.&lt;/li&gt;
   &lt;/ul&gt;
 &lt;h5 id="phase-3"&gt;Phase 3&lt;/h5&gt;
   &lt;ul&gt;
-    &lt;li&gt;&lt;strong&gt;Drake O. Vish&lt;/strong&gt; will pick up where Zam A. Zenta left off in the prior phase, and visualize Art’s Data. They will send all the neccesary materials to Chan D. Lure when the visualizations are fully complete.&lt;/li&gt;
-    &lt;li&gt;&lt;strong&gt;Chan D. Lure&lt;/strong&gt; will pick up where Drake O. Vish left off in the prior phase, and visualize Drag’s Data. They will send all the neccesary materials to Zam A. Zenta when the visualizations are fully complete.&lt;/li&gt;
-    &lt;li&gt;&lt;strong&gt;Zam A. Zenta&lt;/strong&gt; will pick up where Chan D. Lure left off in the prior phase, and visualize Rose’s Data. They will send all the neccesary materials to Drake O. Vish when the visualizations are fully complete.&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Drake O. Vish&lt;/strong&gt; will pick up where Zam A. Zenta left off in the prior phase, and visualize Chan’s Data. They will send all the neccesary materials to Chan D. Lure when the visualizations are fully complete.&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Chan D. Lure&lt;/strong&gt; will pick up where Drake O. Vish left off in the prior phase, and visualize Zam’s Data. They will send all the neccesary materials to Zam A. Zenta when the visualizations are fully complete.&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Zam A. Zenta&lt;/strong&gt; will pick up where Chan D. Lure left off in the prior phase, and visualize Drake’s Data. They will send all the neccesary materials to Drake O. Vish when the visualizations are fully complete.&lt;/li&gt;
   &lt;/ul&gt;
 &lt;h5 id="phase-4"&gt;Phase 4&lt;/h5&gt;
   &lt;ul&gt;
@@ -520,14 +629,14 @@ Will Hopper
 <div class="column">
 <h4 id="step-2-post-the-schedule">Step 2: Post the Schedule</h4>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a aria-hidden="true" tabindex="-1"></a>moodleR<span class="sc">::</span><span class="fu">create_section</span>(</span>
-<span id="cb14-2"><a aria-hidden="true" tabindex="-1"></a>  tab,</span>
-<span id="cb14-3"><a aria-hidden="true" tabindex="-1"></a>  <span class="at">section_name =</span> <span class="st">"Rotation Schedule"</span></span>
-<span id="cb14-4"><a aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb14-5"><a aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-6"><a aria-hidden="true" tabindex="-1"></a>schedule <span class="sc">|&gt;</span></span>
-<span id="cb14-7"><a aria-hidden="true" tabindex="-1"></a>  <span class="fu">paste</span>(<span class="at">collapse =</span> <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>) <span class="sc">|&gt;</span></span>
-<span id="cb14-8"><a aria-hidden="true" tabindex="-1"></a>  moodleR<span class="sc">::</span><span class="fu">add_text</span>(<span class="at">section =</span> <span class="st">"Rotation Schedule"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a aria-hidden="true" tabindex="-1"></a>moodleR<span class="sc">::</span><span class="fu">create_section</span>(</span>
+<span id="cb18-2"><a aria-hidden="true" tabindex="-1"></a>  tab,</span>
+<span id="cb18-3"><a aria-hidden="true" tabindex="-1"></a>  <span class="at">section_name =</span> <span class="st">"Rotation Schedule"</span></span>
+<span id="cb18-4"><a aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb18-5"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-6"><a aria-hidden="true" tabindex="-1"></a>schedule <span class="sc">|&gt;</span></span>
+<span id="cb18-7"><a aria-hidden="true" tabindex="-1"></a>  <span class="fu">paste</span>(<span class="at">collapse =</span> <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb18-8"><a aria-hidden="true" tabindex="-1"></a>  moodleR<span class="sc">::</span><span class="fu">add_text</span>(<span class="at">section =</span> <span class="st">"Rotation Schedule"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div><div class="column">
 <p><img data-src="img/Moodle Schedule.png"></p>
@@ -536,12 +645,12 @@ Will Hopper
 <section id="moodler-honorable-mentions" class="slide level2">
 <h2><code>moodleR</code> Honorable Mentions</h2>
 <ul>
-<li><code>moodler::download_quiz_responses()</code>
+<li class="fragment"><code>moodleR::download_quiz_responses()</code>
 <ul>
-<li>Downloads quiz responses <em>and</em> file attachments in one batch (similar to how Moodle allows you to download all submissions for an assignment)</li>
+<li class="fragment">Downloads quiz responses <em>and</em> file attachments in one batch (similar to how Moodle allows you to download all submissions for an assignment)</li>
 </ul></li>
-<li><code>moodleR::get_course_roster()</code></li>
-<li><code>moodleR::export_gradebook()</code></li>
+<li class="fragment"><code>moodleR::get_course_roster()</code></li>
+<li class="fragment"><code>moodleR::export_gradebook()</code></li>
 </ul>
 
 

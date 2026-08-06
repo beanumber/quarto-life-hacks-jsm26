@@ -53,84 +53,182 @@
     "href": "talks/4-lts/index.html#speaker",
     "title": "The LTS Document: Lab, Template and Solutions All in One",
     "section": "Speaker",
-    "text": "Speaker\n\nWill Hopper is…"
+    "text": "Speaker\n\nWill’s academic career began in the field of psychology, and his research focused on developing mathematical models of episodic memory retrieval with mechanistic explanations of why successfully remembering information (e.g., during a test) produces much more durable memories than any form of restudying. In his statistics and data science teaching, Will integrates real-world applications and computational simulations to reveal the concepts and meaning behind the opaque formulas and recipes that seem to permeate statistics courses, so that students understand not only the what and the how, but the why as well."
   },
   {
-    "objectID": "talks/4-lts/demo/demo_solutions.html",
-    "href": "talks/4-lts/demo/demo_solutions.html",
-    "title": "Lab 1: Getting Acquainted with R, RStudio and Quarto",
+    "objectID": "talks/3-sry/sry.html#about-me",
+    "href": "talks/3-sry/sry.html#about-me",
+    "title": "Stop Repeating Yourself",
+    "section": "About me",
+    "text": "About me\n\nStarted teaching as the only statistician in a small math department\nTransitioned to a larger department, become one of four (now five) TT statisticians"
+  },
+  {
+    "objectID": "talks/3-sry/sry.html#about-carleton",
+    "href": "talks/3-sry/sry.html#about-carleton",
+    "title": "Stop Repeating Yourself",
+    "section": "About Carleton",
+    "text": "About Carleton\n\nUndergraduate liberal arts college\n2000 students\n20-25 statistics majors per year\n10 sections of intro per year across 3 academic terms\nIntro often taught by visitors, sometimes by mathematicians"
+  },
+  {
+    "objectID": "talks/3-sry/sry.html#stat-1-at-carleton",
+    "href": "talks/3-sry/sry.html#stat-1-at-carleton",
+    "title": "Stop Repeating Yourself",
+    "section": "Stat 1 at Carleton",
+    "text": "Stat 1 at Carleton\n\nTaught out of Lock5\nR is used and supported throughout course\nOnly intro on campus → diverse interests and backgrounds\nMeets 3x/week"
+  },
+  {
+    "objectID": "talks/3-sry/sry.html#rapid-overview-of-a-quarto-book",
+    "href": "talks/3-sry/sry.html#rapid-overview-of-a-quarto-book",
+    "title": "Stop Repeating Yourself",
+    "section": "Rapid Overview of a Quarto Book",
+    "text": "Rapid Overview of a Quarto Book\n\nStart with a Quarto book project in RStudio or Positron\nSeparate .qmd files for each chapter + a landing page (index.qmd)\n_quarto.yml configures the book — edit it to add chapters\nRender just like any Quarto file\nHost on GitHub Pages, your campus website, etc.\n\n\nIf you can write a Quarto document, you can build a book\n\n\nLearn more: https://quarto.org/docs/books/"
+  },
+  {
+    "objectID": "talks/3-sry/sry.html#section-1",
+    "href": "talks/3-sry/sry.html#section-1",
+    "title": "Stop Repeating Yourself",
     "section": "",
-    "text": "You should see the following output in your console:\n\n\n[1] 7"
+    "text": "Benefits\n\nAdapted for our Stat 1\n\nVisitors can quickly see what tools we use\nMathematicians can use it to learn R\n\nCan use it during class for activities, or for homework\nCan use GitHub to help track issues and requests from your department/team\nOnly one person needs to maintain\n\n\n\n\nChallenges\n\nWhat happens if someone wants to use a different toolkit?  (e.g., ggformula vs. ggplot2)\nOne person needs to agree to maintain it (during the summer)"
   },
   {
-    "objectID": "talks/4-lts/demo/demo_solutions.html#question-1",
-    "href": "talks/4-lts/demo/demo_solutions.html#question-1",
-    "title": "Lab 1: Getting Acquainted with R, RStudio and Quarto",
+    "objectID": "talks/3-sry/sry.html#carletonstats-r-package",
+    "href": "talks/3-sry/sry.html#carletonstats-r-package",
+    "title": "Stop Repeating Yourself",
+    "section": "CarletonStats R package",
+    "text": "CarletonStats R package\n\nSBI intro taught with R can be overwhelming to students\nLaura Chihara developed {CarletonStats} in 2014 when Stat 1 shifted to SBI\nImplements simulation-based inference via permTest*() and boot*() commands\nNow, there are numerous other ways to reduce the cognitive load\n\nTurn to apps (shiny, StatKey, etc.)\n{mosaic}\n{infer}"
+  },
+  {
+    "objectID": "talks/3-sry/sry.html#rapid-overview-of-an-r-package",
+    "href": "talks/3-sry/sry.html#rapid-overview-of-an-r-package",
+    "title": "Stop Repeating Yourself",
+    "section": "Rapid Overview of an R Package",
+    "text": "Rapid Overview of an R Package\n\nAn R package is just a folder with a specific structure\nTwo ingredients: code + documentation\nR/RStudio tools (like devtools) know how to read that structure\n\n\nmypackage/\n├── DESCRIPTION          &lt;- metadata: name, version, author, dependencies\n├── NAMESPACE            &lt;- what functions are exported to users\n├── R/\n│   ├── clean_data.R     &lt;- your functions live here\n│   └── plot_helper.R\n├── man/\n│   ├── clean_data.Rd    &lt;- help files (auto-generated!)\n│   └── plot_helper.Rd\n├── data/\n│   └── class_survey.rda &lt;- optional: built-in datasets\n└── vignettes/\n    └── intro.Rmd        &lt;- optional: long-form tutorials\n\n\nIf you can organize files into folders and comment your code, you can build a package\n\n\nLearn more: https://r-pkgs.org"
+  },
+  {
+    "objectID": "talks/3-sry/sry.html#why-consider-an-r-package",
+    "href": "talks/3-sry/sry.html#why-consider-an-r-package",
+    "title": "Stop Repeating Yourself",
+    "section": "Why consider an R package?",
+    "text": "Why consider an R package?\n\nYou have a lot of custom R functions for a course\nYou can learn a new skill that will help you teach your students!\nremotes::install_github() or pak::pak() are easier than loading scripts\ninstall.packages() is even easier, but required extra planning to get things on CRAN"
+  },
+  {
+    "objectID": "talks/3-sry/sry.html#section-2",
+    "href": "talks/3-sry/sry.html#section-2",
+    "title": "Stop Repeating Yourself",
     "section": "",
-    "text": "You should see the following output in your console:\n\n\n[1] 7"
+    "text": "Benefits\n\nAdapted for our Stat 1, has the features we need to complement the rest of our toolkit\nReadily available on CRAN\nOnly one person needs to maintain\n\n\n\n\nChallenges\n\nOne person needs to agree to maintain it (during the summer)"
   },
   {
-    "objectID": "talks/4-lts/demo/demo_solutions.html#question-2",
-    "href": "talks/4-lts/demo/demo_solutions.html#question-2",
-    "title": "Lab 1: Getting Acquainted with R, RStudio and Quarto",
-    "section": "Question 2",
-    "text": "Question 2\n\nThe name of each object is shown, along with its computed value.\nThe computed result is not printed out"
+    "objectID": "talks/3-sry/sry.html#generating-alt-text",
+    "href": "talks/3-sry/sry.html#generating-alt-text",
+    "title": "Stop Repeating Yourself",
+    "section": "Generating alt text",
+    "text": "Generating alt text\n\nThe DOJ requires all digital content — including password-protected content — to meet WCAG 2.1 AA standards by April 2027 (deadline pushed back from 2026)\nHow can I quickly generate alt text for the lab manual, my websites, slides, etc.?"
   },
   {
-    "objectID": "talks/2-gglm/index.html",
-    "href": "talks/2-gglm/index.html",
-    "title": "gglm: A tool for teaching linear model diagnostics while adhering to the grammar of graphics",
+    "objectID": "talks/3-sry/sry.html#generating-alt-text-1",
+    "href": "talks/3-sry/sry.html#generating-alt-text-1",
+    "title": "Stop Repeating Yourself",
+    "section": "Generating alt text",
+    "text": "Generating alt text\nMy idea: Use LLM to generate the alt text for my slides, notes, etc."
+  },
+  {
+    "objectID": "talks/3-sry/sry.html#generating-alt-text-2",
+    "href": "talks/3-sry/sry.html#generating-alt-text-2",
+    "title": "Stop Repeating Yourself",
+    "section": "Generating alt text",
+    "text": "Generating alt text\n\nPrompt:\nPlease create alt text for this set of box plots for the number of seconds songs in the top 100 of the billboard charts last (duration).\n\n\nResult:\nThis image features a series of vertical box-and-whisker plots titled “Length of #1 hits by decade,” illustrating the duration of top-charting songs in seconds from the 1950s through the 2020s.\nThe chart shows a clear historical trend where the median song length gradually increased from approximately 150 seconds in the 1950s to a peak of about 250 seconds in the 1990s, followed by a steady decline back toward 200 seconds in the 2020s. The 1970s and 1980s exhibit significant upward outliers, with some tracks reaching between 400 and 500 seconds, while the 2020s include an extreme outlier extending above 600 seconds. Overall, the 1950s have the most compact distribution with the shortest durations, while the 1990s show the highest consistent song lengths with the fewest outliers."
+  },
+  {
+    "objectID": "talks/3-sry/sry.html#alt-text-for-the-lab-manual",
+    "href": "talks/3-sry/sry.html#alt-text-for-the-lab-manual",
+    "title": "Stop Repeating Yourself",
+    "section": "Alt text for the lab manual",
+    "text": "Alt text for the lab manual\n\n\n\nIn January, student worker wrote program to produce alt text for every image in the lab manual using Gemini\nThat worked, but I don’t have the program…\nCan Posit Assistant help me do the same thing?"
+  },
+  {
+    "objectID": "talks/3-sry/sry.html#alt-text-via-posit-assistant",
+    "href": "talks/3-sry/sry.html#alt-text-via-posit-assistant",
+    "title": "Stop Repeating Yourself",
+    "section": "Alt text via Posit Assistant",
+    "text": "Alt text via Posit Assistant\nModel: Claude Sonnet 4.6 (free trial)\n\nPrompt:"
+  },
+  {
+    "objectID": "talks/3-sry/sry.html#alt-text-via-posit-assistant-1",
+    "href": "talks/3-sry/sry.html#alt-text-via-posit-assistant-1",
+    "title": "Stop Repeating Yourself",
+    "section": "Alt text via Posit Assistant",
+    "text": "Alt text via Posit Assistant\n\nScatterplot of average math SAT score (y-axis) against the percent of high school students who took the SAT (x-axis) for 51 U.S. states and D.C. The relationship is negative: states where a smaller share of students take the SAT tend to have higher average math scores."
+  },
+  {
+    "objectID": "talks/3-sry/sry.html#other-hacks-with-llms",
+    "href": "talks/3-sry/sry.html#other-hacks-with-llms",
+    "title": "Stop Repeating Yourself",
+    "section": "Other “hacks” with LLMs",
+    "text": "Other “hacks” with LLMs\n\nConverting tex to typst\nExtracting information from PDFs (better OCR)\nDevising additional quiz questions for standards-based grading\nSimulating data to match examples in journal articles when you only have a table or plot\nSupercharged find and replace (switch from %&gt;% to |&gt; in all resources for a course)\nMaking school-specific quarto slide themes"
+  },
+  {
+    "objectID": "talks/3-sry/sry.html#rapid-overview-of-quarto-live",
+    "href": "talks/3-sry/sry.html#rapid-overview-of-quarto-live",
+    "title": "Stop Repeating Yourself",
+    "section": "Rapid Overview of Quarto Live",
+    "text": "Rapid Overview of Quarto Live\n\nQuarto Live is an extension that lets you embed live, runnable R (or Python) code cells directly into a Quarto reveal.js slide or webpage\nPowered by WebR — R runs entirely in the student’s browser, no server or install required\nStudents can edit code and see results instantly, right on the slide or page\n\n\nThe only syntax change: swap the chunk engine\n\n\nRegular R chunk:\n```{r}\nlm(rating ~ complaints, data = attitude)\n```\n\n\n\nQuarto Live R chunk:\n```{webr}\nlm(rating ~ complaints, data = attitude)\n```\n\n\n\n\nIf you can write a normal Quarto code chunk, you can make it interactive — just change r to webr."
+  },
+  {
+    "objectID": "talks/3-sry/sry.html#scaffolded-example",
+    "href": "talks/3-sry/sry.html#scaffolded-example",
+    "title": "Stop Repeating Yourself",
+    "section": "Scaffolded example",
+    "text": "Scaffolded example\nFill in the blanks to fit an SLR model with rating as the response and complaints as the explanatory variable. Then print the model summary."
+  },
+  {
+    "objectID": "talks/5-discussion/index.html",
+    "href": "talks/5-discussion/index.html",
+    "title": "Looking back and looking beyond",
     "section": "",
-    "text": "In this talk, I’ll discuss the gglm R package, which allows for easy creation of linear model diagnostic plots using the grammar of the graphics and ggplot2. More specifically, gglm provides a consistent and intuitive syntax to produce residual diagnostic plots for a variety of model types. We’ll cover the basics of the package, along with motivation and use cases for a modern statistics, statistical learning, or data science classroom. We’ll compare gglm’s diagnostic plot solution to solutions provided by base R and others. We’ll then discuss features of the package that allow for more robust analysis of residuals than typical model diagnostic tools, including different model types (i.e., engines) and multivariate diagnostics. Finally, I’ll showcase a shiny dashboard that allows the user to upload data, build a statistical model, and produce diagnostics powered by gglm, aimed at introductory statistics courses that don’t cover programming, but still want to use real data."
+    "text": "Source code for slides\nFull screen slides"
   },
   {
-    "objectID": "talks/2-gglm/index.html#abstract",
-    "href": "talks/2-gglm/index.html#abstract",
-    "title": "gglm: A tool for teaching linear model diagnostics while adhering to the grammar of graphics",
+    "objectID": "talks/5-discussion/index.html#slides",
+    "href": "talks/5-discussion/index.html#slides",
+    "title": "Looking back and looking beyond",
     "section": "",
-    "text": "In this talk, I’ll discuss the gglm R package, which allows for easy creation of linear model diagnostic plots using the grammar of the graphics and ggplot2. More specifically, gglm provides a consistent and intuitive syntax to produce residual diagnostic plots for a variety of model types. We’ll cover the basics of the package, along with motivation and use cases for a modern statistics, statistical learning, or data science classroom. We’ll compare gglm’s diagnostic plot solution to solutions provided by base R and others. We’ll then discuss features of the package that allow for more robust analysis of residuals than typical model diagnostic tools, including different model types (i.e., engines) and multivariate diagnostics. Finally, I’ll showcase a shiny dashboard that allows the user to upload data, build a statistical model, and produce diagnostics powered by gglm, aimed at introductory statistics courses that don’t cover programming, but still want to use real data."
+    "text": "Source code for slides\nFull screen slides"
   },
   {
-    "objectID": "talks/2-gglm/index.html#slides",
-    "href": "talks/2-gglm/index.html#slides",
-    "title": "gglm: A tool for teaching linear model diagnostics while adhering to the grammar of graphics",
+    "objectID": "talks/5-discussion/index.html#speaker",
+    "href": "talks/5-discussion/index.html#speaker",
+    "title": "Looking back and looking beyond",
+    "section": "Speaker",
+    "text": "Speaker\n\nMine Çetinkaya-Rundel is a Professor of the Practice and Associate Director of Undergraduate Studies in the Department of Statistical Science as well as the Director of First-Year Experience in Trinity College of Arts & Sciences at Duke University. She is also Senior Developer Advocate at Posit. Mine is a leading voice in modern statistics and data science education. Her work focuses on integrating reproducible computing, open-source tools, and real-world data into the statistics curriculum, transforming how students engage with data and statistical thinking. She is a co-author of R for Data Science, the creator and maintainer of Data Science in a Box, and she teaches popular data analysis and data science with R courses on Coursera.. She is also a core contributor to the OpenIntro project and an advocate for open educational resources and statistical computing in R. A Fellow of the American Statistical Association and an Elected Member of the International Statistical Institute, she has received numerous honors, including the ASA’s Waller Education Award and the Robert V. Hogg Award for Excellence in Teaching Introductory Statistics. She currently serves as Vice President of the International Association for Statistical Education (IASE) and as co-chair of the ASA’s DataFest Steering Committee. Through her teaching, writing, and advocacy, Dr. ÇetinkayaRundel has advanced accessible, computation-rich, and reproducible data science education worldwide."
+  },
+  {
+    "objectID": "talks/1-automate/index.html",
+    "href": "talks/1-automate/index.html",
+    "title": "Automate all the things",
+    "section": "",
+    "text": "Teaching modern data science and statistics courses presents numerous logistical challenges—from building and distributing assignments and other course materials to providing timely, consistent feedback. In this talk, we explore tools for automating the repetitive aspects of course administration, building on the core reproducible infrastructure of Git, GitHub, and Quarto. Examples will include the ghclass package, which streamlines classroom management on GitHub, enabling automated repository creation, assignment distribution, and collection. GitHub Actions, which extends this ecosystem with CI pipelines that automatically render documents, run checks, and provide feedback on student submissions. The q2r and markermd packages, which offer programmatic tools for parsing and manipulating Quarto and R Markdown documents, enabling both automated and more efficient manual assessment of student work. Finally, we look ahead to the emerging role of agentic AI tools in teaching, discussing both the opportunities and considerations for AI-driven automation in course management."
+  },
+  {
+    "objectID": "talks/1-automate/index.html#abstract",
+    "href": "talks/1-automate/index.html#abstract",
+    "title": "Automate all the things",
+    "section": "",
+    "text": "Teaching modern data science and statistics courses presents numerous logistical challenges—from building and distributing assignments and other course materials to providing timely, consistent feedback. In this talk, we explore tools for automating the repetitive aspects of course administration, building on the core reproducible infrastructure of Git, GitHub, and Quarto. Examples will include the ghclass package, which streamlines classroom management on GitHub, enabling automated repository creation, assignment distribution, and collection. GitHub Actions, which extends this ecosystem with CI pipelines that automatically render documents, run checks, and provide feedback on student submissions. The q2r and markermd packages, which offer programmatic tools for parsing and manipulating Quarto and R Markdown documents, enabling both automated and more efficient manual assessment of student work. Finally, we look ahead to the emerging role of agentic AI tools in teaching, discussing both the opportunities and considerations for AI-driven automation in course management."
+  },
+  {
+    "objectID": "talks/1-automate/index.html#slides",
+    "href": "talks/1-automate/index.html#slides",
+    "title": "Automate all the things",
     "section": "Slides",
     "text": "Slides\n\nSource code for slides\nFull screen slides"
   },
   {
-    "objectID": "talks/2-gglm/index.html#speaker",
-    "href": "talks/2-gglm/index.html#speaker",
-    "title": "gglm: A tool for teaching linear model diagnostics while adhering to the grammar of graphics",
+    "objectID": "talks/1-automate/index.html#speaker",
+    "href": "talks/1-automate/index.html#speaker",
+    "title": "Automate all the things",
     "section": "Speaker",
-    "text": "Speaker\n\nGrayson White is a Visiting Assistant Professor of Statistics at Reed College. His research interests are in small area estimation, hierarchical Bayesian modeling, environmental statistics applied to forestry and natural resources problems, and statistical software development. More specifically, his research focuses on implementing model-based statistical methods for small area estimation of forest attributes, and developing methodologies for formal assessment of those estimators."
-  },
-  {
-    "objectID": "talks/3-sry/index.html",
-    "href": "talks/3-sry/index.html",
-    "title": "Stop Repeating Yourself: Shared R Resources to Reduce Duplicated Prep",
-    "section": "",
-    "text": "For introductory statistics courses that incorporate programming, a lot of time is spent creating and maintaining how-to guides and design class activities that introduce help students get up and running with the language, navigating the IDE, fundamental building blocks of the programming language, and practicing the commands to carryout analyses. This takes a lot of time and effort, which can be duplicated across faculty when there are many sections of the same course taught in a term. In this talk, we explore the use of an R “lab manual” paired with an R package that serves as a shared resource for the introductory statistics courses at Carleton College. We’ll discuss its usage, maintenance, and frustration-saving features. Along the way we’ll also discus a smattering of other “life hacks”, such as generating alternative text with AI and using quarto-live for class activities."
-  },
-  {
-    "objectID": "talks/3-sry/index.html#abstract",
-    "href": "talks/3-sry/index.html#abstract",
-    "title": "Stop Repeating Yourself: Shared R Resources to Reduce Duplicated Prep",
-    "section": "",
-    "text": "For introductory statistics courses that incorporate programming, a lot of time is spent creating and maintaining how-to guides and design class activities that introduce help students get up and running with the language, navigating the IDE, fundamental building blocks of the programming language, and practicing the commands to carryout analyses. This takes a lot of time and effort, which can be duplicated across faculty when there are many sections of the same course taught in a term. In this talk, we explore the use of an R “lab manual” paired with an R package that serves as a shared resource for the introductory statistics courses at Carleton College. We’ll discuss its usage, maintenance, and frustration-saving features. Along the way we’ll also discus a smattering of other “life hacks”, such as generating alternative text with AI and using quarto-live for class activities."
-  },
-  {
-    "objectID": "talks/3-sry/index.html#slides",
-    "href": "talks/3-sry/index.html#slides",
-    "title": "Stop Repeating Yourself: Shared R Resources to Reduce Duplicated Prep",
-    "section": "Slides",
-    "text": "Slides\n\nSource code for slides\nFull screen slides"
-  },
-  {
-    "objectID": "talks/3-sry/index.html#speaker",
-    "href": "talks/3-sry/index.html#speaker",
-    "title": "Stop Repeating Yourself: Shared R Resources to Reduce Duplicated Prep",
-    "section": "Speaker",
-    "text": "Speaker\n\nAdam Loy is an associate professor of statistics in the Department of Mathematics and Statistics at Carleton College. He teaches statistics at all levels of the curriculum and is passionate about communicating the beauty and power of modern statistical methods to his students. Adam’s research focuses on incorporating realistic computation and visualization into the classroom, exploring the potential of visual inference, developing better visualizations to explore complex models, and developing useful and useable R packages."
+    "text": "Speaker\n\nColin Rundel is Associate Professor of the Practice at Duke University where he has been teaching since 2012. His work focuses on teaching statistical computing to both undergraduate and graduate students in both R and Python."
   },
   {
     "objectID": "talks/5-discussion/discussion.html#one-stop-shop",
@@ -273,228 +371,60 @@
     "text": "questions?"
   },
   {
-    "objectID": "talks/1-automate/index.html",
-    "href": "talks/1-automate/index.html",
-    "title": "Automate all the things",
+    "objectID": "talks/3-sry/index.html",
+    "href": "talks/3-sry/index.html",
+    "title": "Stop Repeating Yourself: Shared R Resources to Reduce Duplicated Prep",
     "section": "",
-    "text": "Teaching modern data science and statistics courses presents numerous logistical challenges—from building and distributing assignments and other course materials to providing timely, consistent feedback. In this talk, we explore tools for automating the repetitive aspects of course administration, building on the core reproducible infrastructure of Git, GitHub, and Quarto. Examples will include the ghclass package, which streamlines classroom management on GitHub, enabling automated repository creation, assignment distribution, and collection. GitHub Actions, which extends this ecosystem with CI pipelines that automatically render documents, run checks, and provide feedback on student submissions. The q2r and markermd packages, which offer programmatic tools for parsing and manipulating Quarto and R Markdown documents, enabling both automated and more efficient manual assessment of student work. Finally, we look ahead to the emerging role of agentic AI tools in teaching, discussing both the opportunities and considerations for AI-driven automation in course management."
+    "text": "For introductory statistics courses that incorporate programming, a lot of time is spent creating and maintaining how-to guides and design class activities that introduce help students get up and running with the language, navigating the IDE, fundamental building blocks of the programming language, and practicing the commands to carryout analyses. This takes a lot of time and effort, which can be duplicated across faculty when there are many sections of the same course taught in a term. In this talk, we explore the use of an R “lab manual” paired with an R package that serves as a shared resource for the introductory statistics courses at Carleton College. We’ll discuss its usage, maintenance, and frustration-saving features. Along the way we’ll also discus a smattering of other “life hacks”, such as generating alternative text with AI and using quarto-live for class activities."
   },
   {
-    "objectID": "talks/1-automate/index.html#abstract",
-    "href": "talks/1-automate/index.html#abstract",
-    "title": "Automate all the things",
+    "objectID": "talks/3-sry/index.html#abstract",
+    "href": "talks/3-sry/index.html#abstract",
+    "title": "Stop Repeating Yourself: Shared R Resources to Reduce Duplicated Prep",
     "section": "",
-    "text": "Teaching modern data science and statistics courses presents numerous logistical challenges—from building and distributing assignments and other course materials to providing timely, consistent feedback. In this talk, we explore tools for automating the repetitive aspects of course administration, building on the core reproducible infrastructure of Git, GitHub, and Quarto. Examples will include the ghclass package, which streamlines classroom management on GitHub, enabling automated repository creation, assignment distribution, and collection. GitHub Actions, which extends this ecosystem with CI pipelines that automatically render documents, run checks, and provide feedback on student submissions. The q2r and markermd packages, which offer programmatic tools for parsing and manipulating Quarto and R Markdown documents, enabling both automated and more efficient manual assessment of student work. Finally, we look ahead to the emerging role of agentic AI tools in teaching, discussing both the opportunities and considerations for AI-driven automation in course management."
+    "text": "For introductory statistics courses that incorporate programming, a lot of time is spent creating and maintaining how-to guides and design class activities that introduce help students get up and running with the language, navigating the IDE, fundamental building blocks of the programming language, and practicing the commands to carryout analyses. This takes a lot of time and effort, which can be duplicated across faculty when there are many sections of the same course taught in a term. In this talk, we explore the use of an R “lab manual” paired with an R package that serves as a shared resource for the introductory statistics courses at Carleton College. We’ll discuss its usage, maintenance, and frustration-saving features. Along the way we’ll also discus a smattering of other “life hacks”, such as generating alternative text with AI and using quarto-live for class activities."
   },
   {
-    "objectID": "talks/1-automate/index.html#slides",
-    "href": "talks/1-automate/index.html#slides",
-    "title": "Automate all the things",
+    "objectID": "talks/3-sry/index.html#slides",
+    "href": "talks/3-sry/index.html#slides",
+    "title": "Stop Repeating Yourself: Shared R Resources to Reduce Duplicated Prep",
     "section": "Slides",
     "text": "Slides\n\nSource code for slides\nFull screen slides"
   },
   {
-    "objectID": "talks/1-automate/index.html#speaker",
-    "href": "talks/1-automate/index.html#speaker",
-    "title": "Automate all the things",
+    "objectID": "talks/3-sry/index.html#speaker",
+    "href": "talks/3-sry/index.html#speaker",
+    "title": "Stop Repeating Yourself: Shared R Resources to Reduce Duplicated Prep",
     "section": "Speaker",
-    "text": "Speaker\n\nColin Rundel is Associate Professor of the Practice at Duke University where he has been teaching since 2012. His work focuses on teaching statistical computing to both undergraduate and graduate students in both R and Python."
+    "text": "Speaker\n\nAdam Loy is an associate professor of statistics in the Department of Mathematics and Statistics at Carleton College. He teaches statistics at all levels of the curriculum and is passionate about communicating the beauty and power of modern statistical methods to his students. Adam’s research focuses on incorporating realistic computation and visualization into the classroom, exploring the potential of visual inference, developing better visualizations to explore complex models, and developing useful and useable R packages."
   },
   {
-    "objectID": "talks/5-discussion/index.html",
-    "href": "talks/5-discussion/index.html",
-    "title": "Looking back and looking beyond",
+    "objectID": "talks/2-gglm/index.html",
+    "href": "talks/2-gglm/index.html",
+    "title": "gglm: A tool for teaching linear model diagnostics while adhering to the grammar of graphics",
     "section": "",
-    "text": "Source code for slides\nFull screen slides"
+    "text": "In this talk, I’ll discuss the gglm R package, which allows for easy creation of linear model diagnostic plots using the grammar of the graphics and ggplot2. More specifically, gglm provides a consistent and intuitive syntax to produce residual diagnostic plots for a variety of model types. We’ll cover the basics of the package, along with motivation and use cases for a modern statistics, statistical learning, or data science classroom. We’ll compare gglm’s diagnostic plot solution to solutions provided by base R and others. We’ll then discuss features of the package that allow for more robust analysis of residuals than typical model diagnostic tools, including different model types (i.e., engines) and multivariate diagnostics. Finally, I’ll showcase a shiny dashboard that allows the user to upload data, build a statistical model, and produce diagnostics powered by gglm, aimed at introductory statistics courses that don’t cover programming, but still want to use real data."
   },
   {
-    "objectID": "talks/5-discussion/index.html#slides",
-    "href": "talks/5-discussion/index.html#slides",
-    "title": "Looking back and looking beyond",
+    "objectID": "talks/2-gglm/index.html#abstract",
+    "href": "talks/2-gglm/index.html#abstract",
+    "title": "gglm: A tool for teaching linear model diagnostics while adhering to the grammar of graphics",
     "section": "",
-    "text": "Source code for slides\nFull screen slides"
+    "text": "In this talk, I’ll discuss the gglm R package, which allows for easy creation of linear model diagnostic plots using the grammar of the graphics and ggplot2. More specifically, gglm provides a consistent and intuitive syntax to produce residual diagnostic plots for a variety of model types. We’ll cover the basics of the package, along with motivation and use cases for a modern statistics, statistical learning, or data science classroom. We’ll compare gglm’s diagnostic plot solution to solutions provided by base R and others. We’ll then discuss features of the package that allow for more robust analysis of residuals than typical model diagnostic tools, including different model types (i.e., engines) and multivariate diagnostics. Finally, I’ll showcase a shiny dashboard that allows the user to upload data, build a statistical model, and produce diagnostics powered by gglm, aimed at introductory statistics courses that don’t cover programming, but still want to use real data."
   },
   {
-    "objectID": "talks/5-discussion/index.html#speaker",
-    "href": "talks/5-discussion/index.html#speaker",
-    "title": "Looking back and looking beyond",
+    "objectID": "talks/2-gglm/index.html#slides",
+    "href": "talks/2-gglm/index.html#slides",
+    "title": "gglm: A tool for teaching linear model diagnostics while adhering to the grammar of graphics",
+    "section": "Slides",
+    "text": "Slides\n\nSource code for slides\nFull screen slides"
+  },
+  {
+    "objectID": "talks/2-gglm/index.html#speaker",
+    "href": "talks/2-gglm/index.html#speaker",
+    "title": "gglm: A tool for teaching linear model diagnostics while adhering to the grammar of graphics",
     "section": "Speaker",
-    "text": "Speaker\n\nMine Çetinkaya-Rundel is a Professor of the Practice and Associate Director of Undergraduate Studies in the Department of Statistical Science as well as the Director of First-Year Experience in Trinity College of Arts & Sciences at Duke University. She is also Senior Developer Advocate at Posit. Mine is a leading voice in modern statistics and data science education. Her work focuses on integrating reproducible computing, open-source tools, and real-world data into the statistics curriculum, transforming how students engage with data and statistical thinking. She is a co-author of R for Data Science, the creator and maintainer of Data Science in a Box, and she teaches popular data analysis and data science with R courses on Coursera.. She is also a core contributor to the OpenIntro project and an advocate for open educational resources and statistical computing in R. A Fellow of the American Statistical Association and an Elected Member of the International Statistical Institute, she has received numerous honors, including the ASA’s Waller Education Award and the Robert V. Hogg Award for Excellence in Teaching Introductory Statistics. She currently serves as Vice President of the International Association for Statistical Education (IASE) and as co-chair of the ASA’s DataFest Steering Committee. Through her teaching, writing, and advocacy, Dr. ÇetinkayaRundel has advanced accessible, computation-rich, and reproducible data science education worldwide."
-  },
-  {
-    "objectID": "talks/3-sry/sry.html#about-me",
-    "href": "talks/3-sry/sry.html#about-me",
-    "title": "Stop Repeating Yourself",
-    "section": "About me",
-    "text": "About me\n\nStarted teaching as the only statistician in a small math department\nTransitioned to a larger department, become one of four (now five) TT statisticians"
-  },
-  {
-    "objectID": "talks/3-sry/sry.html#about-carleton",
-    "href": "talks/3-sry/sry.html#about-carleton",
-    "title": "Stop Repeating Yourself",
-    "section": "About Carleton",
-    "text": "About Carleton\n\nUndergraduate liberal arts college\n2000 students\n20-25 statistics majors per year\n10 sections of intro per year across 3 academic terms\nIntro often taught by visitors, sometimes by mathematicians"
-  },
-  {
-    "objectID": "talks/3-sry/sry.html#stat-1-at-carleton",
-    "href": "talks/3-sry/sry.html#stat-1-at-carleton",
-    "title": "Stop Repeating Yourself",
-    "section": "Stat 1 at Carleton",
-    "text": "Stat 1 at Carleton\n\nTaught out of Lock5\nR is used and supported throughout course\nOnly intro on campus → diverse interests and backgrounds\nMeets 3x/week"
-  },
-  {
-    "objectID": "talks/3-sry/sry.html#rapid-overview-of-a-quarto-book",
-    "href": "talks/3-sry/sry.html#rapid-overview-of-a-quarto-book",
-    "title": "Stop Repeating Yourself",
-    "section": "Rapid Overview of a Quarto Book",
-    "text": "Rapid Overview of a Quarto Book\n\nStart with a Quarto book project in RStudio or Positron\nSeparate .qmd files for each chapter + a landing page (index.qmd)\n_quarto.yml configures the book — edit it to add chapters\nRender just like any Quarto file\nHost on GitHub Pages, your campus website, etc.\n\n\nIf you can write a Quarto document, you can build a book\n\n\nLearn more: https://quarto.org/docs/books/"
-  },
-  {
-    "objectID": "talks/3-sry/sry.html#section-1",
-    "href": "talks/3-sry/sry.html#section-1",
-    "title": "Stop Repeating Yourself",
-    "section": "",
-    "text": "Benefits\n\nAdapted for our Stat 1\n\nVisitors can quickly see what tools we use\nMathematicians can use it to learn R\n\nCan use it during class for activities, or for homework\nCan use GitHub to help track issues and requests from your department/team\nOnly one person needs to maintain\n\n\n\n\nChallenges\n\nWhat happens if someone wants to use a different toolkit?  (e.g., ggformula vs. ggplot2)\nOne person needs to agree to maintain it (during the summer)"
-  },
-  {
-    "objectID": "talks/3-sry/sry.html#carletonstats-r-package",
-    "href": "talks/3-sry/sry.html#carletonstats-r-package",
-    "title": "Stop Repeating Yourself",
-    "section": "CarletonStats R package",
-    "text": "CarletonStats R package\n\nSBI intro taught with R can be overwhelming to students\nLaura Chihara developed {CarletonStats} in 2014 when Stat 1 shifted to SBI\nImplements simulation-based inference via permTest*() and boot*() commands\nNow, there are numerous other ways to reduce the cognitive load\n\nTurn to apps (shiny, StatKey, etc.)\n{mosaic}\n{infer}"
-  },
-  {
-    "objectID": "talks/3-sry/sry.html#rapid-overview-of-an-r-package",
-    "href": "talks/3-sry/sry.html#rapid-overview-of-an-r-package",
-    "title": "Stop Repeating Yourself",
-    "section": "Rapid Overview of an R Package",
-    "text": "Rapid Overview of an R Package\n\nAn R package is just a folder with a specific structure\nTwo ingredients: code + documentation\nR/RStudio tools (like devtools) know how to read that structure\n\n\nmypackage/\n├── DESCRIPTION          &lt;- metadata: name, version, author, dependencies\n├── NAMESPACE            &lt;- what functions are exported to users\n├── R/\n│   ├── clean_data.R     &lt;- your functions live here\n│   └── plot_helper.R\n├── man/\n│   ├── clean_data.Rd    &lt;- help files (auto-generated!)\n│   └── plot_helper.Rd\n├── data/\n│   └── class_survey.rda &lt;- optional: built-in datasets\n└── vignettes/\n    └── intro.Rmd        &lt;- optional: long-form tutorials\n\n\nIf you can organize files into folders and comment your code, you can build a package\n\n\nLearn more: https://r-pkgs.org"
-  },
-  {
-    "objectID": "talks/3-sry/sry.html#why-consider-an-r-package",
-    "href": "talks/3-sry/sry.html#why-consider-an-r-package",
-    "title": "Stop Repeating Yourself",
-    "section": "Why consider an R package?",
-    "text": "Why consider an R package?\n\nYou have a lot of custom R functions for a course\nYou can learn a new skill that will help you teach your students!\nremotes::install_github() or pak::pak() are easier than loading scripts\ninstall.packages() is even easier, but required extra planning to get things on CRAN"
-  },
-  {
-    "objectID": "talks/3-sry/sry.html#section-2",
-    "href": "talks/3-sry/sry.html#section-2",
-    "title": "Stop Repeating Yourself",
-    "section": "",
-    "text": "Benefits\n\nAdapted for our Stat 1, has the features we need to complement the rest of our toolkit\nReadily available on CRAN\nOnly one person needs to maintain\n\n\n\n\nChallenges\n\nOne person needs to agree to maintain it (during the summer)"
-  },
-  {
-    "objectID": "talks/3-sry/sry.html#generating-alt-text",
-    "href": "talks/3-sry/sry.html#generating-alt-text",
-    "title": "Stop Repeating Yourself",
-    "section": "Generating alt text",
-    "text": "Generating alt text\n\nThe DOJ requires all digital content — including password-protected content — to meet WCAG 2.1 AA standards by April 2027 (deadline pushed back from 2026)\nHow can I quickly generate alt text for the lab manual, my websites, slides, etc.?"
-  },
-  {
-    "objectID": "talks/3-sry/sry.html#generating-alt-text-1",
-    "href": "talks/3-sry/sry.html#generating-alt-text-1",
-    "title": "Stop Repeating Yourself",
-    "section": "Generating alt text",
-    "text": "Generating alt text\nMy idea: Use LLM to generate the alt text for my slides, notes, etc."
-  },
-  {
-    "objectID": "talks/3-sry/sry.html#generating-alt-text-2",
-    "href": "talks/3-sry/sry.html#generating-alt-text-2",
-    "title": "Stop Repeating Yourself",
-    "section": "Generating alt text",
-    "text": "Generating alt text\n\nPrompt:\nPlease create alt text for this set of box plots for the number of seconds songs in the top 100 of the billboard charts last (duration).\n\n\nResult:\nThis image features a series of vertical box-and-whisker plots titled “Length of #1 hits by decade,” illustrating the duration of top-charting songs in seconds from the 1950s through the 2020s.\nThe chart shows a clear historical trend where the median song length gradually increased from approximately 150 seconds in the 1950s to a peak of about 250 seconds in the 1990s, followed by a steady decline back toward 200 seconds in the 2020s. The 1970s and 1980s exhibit significant upward outliers, with some tracks reaching between 400 and 500 seconds, while the 2020s include an extreme outlier extending above 600 seconds. Overall, the 1950s have the most compact distribution with the shortest durations, while the 1990s show the highest consistent song lengths with the fewest outliers."
-  },
-  {
-    "objectID": "talks/3-sry/sry.html#alt-text-for-the-lab-manual",
-    "href": "talks/3-sry/sry.html#alt-text-for-the-lab-manual",
-    "title": "Stop Repeating Yourself",
-    "section": "Alt text for the lab manual",
-    "text": "Alt text for the lab manual\n\n\n\nIn January, student worker wrote program to produce alt text for every image in the lab manual using Gemini\nThat worked, but I don’t have the program…\nCan Posit Assistant help me do the same thing?"
-  },
-  {
-    "objectID": "talks/3-sry/sry.html#alt-text-via-posit-assistant",
-    "href": "talks/3-sry/sry.html#alt-text-via-posit-assistant",
-    "title": "Stop Repeating Yourself",
-    "section": "Alt text via Posit Assistant",
-    "text": "Alt text via Posit Assistant\nModel: Claude Sonnet 4.6 (free trial)\n\nPrompt:"
-  },
-  {
-    "objectID": "talks/3-sry/sry.html#alt-text-via-posit-assistant-1",
-    "href": "talks/3-sry/sry.html#alt-text-via-posit-assistant-1",
-    "title": "Stop Repeating Yourself",
-    "section": "Alt text via Posit Assistant",
-    "text": "Alt text via Posit Assistant\n\nScatterplot of average math SAT score (y-axis) against the percent of high school students who took the SAT (x-axis) for 51 U.S. states and D.C. The relationship is negative: states where a smaller share of students take the SAT tend to have higher average math scores."
-  },
-  {
-    "objectID": "talks/3-sry/sry.html#other-hacks-with-llms",
-    "href": "talks/3-sry/sry.html#other-hacks-with-llms",
-    "title": "Stop Repeating Yourself",
-    "section": "Other “hacks” with LLMs",
-    "text": "Other “hacks” with LLMs\n\nConverting tex to typst\nExtracting information from PDFs (better OCR)\nDevising additional quiz questions for standards-based grading\nSimulating data to match examples in journal articles when you only have a table or plot\nSupercharged find and replace (switch from %&gt;% to |&gt; in all resources for a course)\nMaking school-specific quarto slide themes"
-  },
-  {
-    "objectID": "talks/3-sry/sry.html#rapid-overview-of-quarto-live",
-    "href": "talks/3-sry/sry.html#rapid-overview-of-quarto-live",
-    "title": "Stop Repeating Yourself",
-    "section": "Rapid Overview of Quarto Live",
-    "text": "Rapid Overview of Quarto Live\n\nQuarto Live is an extension that lets you embed live, runnable R (or Python) code cells directly into a Quarto reveal.js slide or webpage\nPowered by WebR — R runs entirely in the student’s browser, no server or install required\nStudents can edit code and see results instantly, right on the slide or page\n\n\nThe only syntax change: swap the chunk engine\n\n\nRegular R chunk:\n```{r}\nlm(rating ~ complaints, data = attitude)\n```\n\n\n\nQuarto Live R chunk:\n```{webr}\nlm(rating ~ complaints, data = attitude)\n```\n\n\n\n\nIf you can write a normal Quarto code chunk, you can make it interactive — just change r to webr."
-  },
-  {
-    "objectID": "talks/3-sry/sry.html#scaffolded-example",
-    "href": "talks/3-sry/sry.html#scaffolded-example",
-    "title": "Stop Repeating Yourself",
-    "section": "Scaffolded example",
-    "text": "Scaffolded example\nFill in the blanks to fit an SLR model with rating as the response and complaints as the explanatory variable. Then print the model summary."
-  },
-  {
-    "objectID": "talks/4-lts/demo/demo_template.html",
-    "href": "talks/4-lts/demo/demo_template.html",
-    "title": "Lab 1: Getting Acquainted with R, RStudio and Quarto",
-    "section": "",
-    "text": "In the Console, enter 5 + 2 and press Enter to run the code."
-  },
-  {
-    "objectID": "talks/4-lts/demo/demo_template.html#question-1",
-    "href": "talks/4-lts/demo/demo_template.html#question-1",
-    "title": "Lab 1: Getting Acquainted with R, RStudio and Quarto",
-    "section": "",
-    "text": "In the Console, enter 5 + 2 and press Enter to run the code."
-  },
-  {
-    "objectID": "talks/4-lts/demo/demo_template.html#question-2",
-    "href": "talks/4-lts/demo/demo_template.html#question-2",
-    "title": "Lab 1: Getting Acquainted with R, RStudio and Quarto",
-    "section": "Question 2",
-    "text": "Question 2\nIn the console, type in result &lt;- 5 + 2 and press Enter to run the code.\nThen, type in applesauce &lt;- 10 * 3 in the console and press Enter to run the code.\nThen, write an answer the following questions in your Lab 2 Quarto document:\n\nWhat happens in the RStudio “Environment” pane when you use the assignment operator to create a new object?\nWhat doesn’t happen in the console when you use the assignment operator to create a new object?"
-  },
-  {
-    "objectID": "talks/4-lts/demo/demo_template.html#question-3",
-    "href": "talks/4-lts/demo/demo_template.html#question-3",
-    "title": "Lab 1: Getting Acquainted with R, RStudio and Quarto",
-    "section": "Question 3",
-    "text": "Question 3\nIn your template file, locate the code chunk that looks like this:\n\nresult &lt;- 5 + 2\napplesauce &lt;- 10 * 3\n\nWrite the command result + applesauce on the blank line at the end of the code chunk. Then click the green triangle “play” button in the upper right hand corner of the code chunk to execute the code in the chunk."
-  },
-  {
-    "objectID": "talks/4-lts/demo/demo.html",
-    "href": "talks/4-lts/demo/demo.html",
-    "title": "Lab 1: Getting Acquainted with R, RStudio and Quarto",
-    "section": "",
-    "text": "ImportantLab Goals\n\n\n\nThe purpose of this lab is to introduce you to working with R and with resources and techniques for problem solving while using R.\nAfter completing this lab, you should understand:\n\nThe RStudio interface\nHow to use  as a calculator\nHow to store the results of your calculations as objects in the  environment\nHow to interpret error messages from \nHow to find the built-in help resources in \nIdentify working directories and navigate file paths"
-  },
-  {
-    "objectID": "talks/4-lts/demo/demo.html#r-as-a-calculator",
-    "href": "talks/4-lts/demo/demo.html#r-as-a-calculator",
-    "title": "Lab 1: Getting Acquainted with R, RStudio and Quarto",
-    "section": "R as a calculator",
-    "text": "R as a calculator\nThe first thing you can try to do with R is a familiar one - simply use it like a calculator. It is easy to forget because of all the other things it can do, but R at the lowest level is still just working with numbers."
-  },
-  {
-    "objectID": "talks/4-lts/demo/demo.html#storing-information-in-objects",
-    "href": "talks/4-lts/demo/demo.html#storing-information-in-objects",
-    "title": "Lab 1: Getting Acquainted with R, RStudio and Quarto",
-    "section": "Storing information in objects",
-    "text": "Storing information in objects\nRight now, the outputs of our code (in this case, the number 7) are just being shown to us. That can be helpful, but isn’t really the point of a programming language. We want to be able to save our results and build on them as we go. We can do that by assigning the output of the code we run into an object.\nYou can think of objects as boxes that store things. To create an object, we have to ask R to take the results of some code and assign those results to an object. We can do this using the assignment operator &lt;-, which is often called the arrow. In your code, you write the assignment operator iby typing in the “less than” symbol, followed by a dash."
+    "text": "Speaker\n\nGrayson White is a Visiting Assistant Professor of Statistics at Reed College. His research interests are in small area estimation, hierarchical Bayesian modeling, environmental statistics applied to forestry and natural resources problems, and statistical software development. More specifically, his research focuses on implementing model-based statistical methods for small area estimation of forest attributes, and developing methodologies for formal assessment of those estimators."
   },
   {
     "objectID": "talks/4-lts/lts_talk.html#a-typical-in-class-activity",
@@ -522,7 +452,7 @@
     "href": "talks/4-lts/lts_talk.html#what-does-an-lts-document-look-like",
     "title": "The LTS Document",
     "section": "What Does an LTS Document Look Like?",
-    "text": "What Does an LTS Document Look Like?\n---\ntitle: \"Lab 1: Getting Acquainted with R, RStudio and Quarto\"\neditor: source\nformat: lts-html:\n---\n\n## Creating Objects\n\nYou can think of *objects* as boxes that store things. To create an object, we have to ask R to take the results of some code and *assign* those results to an object. We can do this using the **assignment operator** `&lt;-`, which is often called the arrow. In your code, you write the assignment operator by typing in the \"less than\" symbol, followed by a dash.\n\n::: question\nIn your template file, locate the code chunk that looks like this:\n\n```{r}\n#| echo: fenced\nresult &lt;- 5 + 2\napplesauce &lt;- 10 * 3\n```\n\nWrite the command `result + applesauce` on the blank line at the end of the code chunk. Then click the green triangle \"play\" button in the upper right hand corner of the code chunk to execute the code in the chunk.\n:::\n\n::: solution\n\n```{r}\nresult &lt;- 5 + 2\napplesauce &lt;- 10 * 3\nresult + applesauce\n```\n\nYou should see the number 37 printed out in the console, just as it is shown above.\n:::"
+    "text": "What Does an LTS Document Look Like?\n---\ntitle: \"Lab 1: Getting Acquainted with R, RStudio and Quarto\"\neditor: source\nformat: lts-html:\n---\n\n## Creating Objects\n\nYou can think of *objects* as boxes that store things. To create an object, we have to ask R to take the results of some code and *assign* those results to an object. We can do this using the **assignment operator** `&lt;-`, which is often called the arrow. In your code, you write the assignment operator iby typing in the \"less than\" symbol, followed by a dash.\n\n::: question\nIn the console, type in `result &lt;- 5 + 2` and press &lt;kbd&gt;Enter&lt;/kbd&gt; to run the code.\n\nThen, type in `applesauce &lt;- 10 * 3` in the console and press &lt;kbd&gt;Enter&lt;/kbd&gt; to run the code.\n\nThen, write an answer the following questions in your Lab 1 Quarto document:\n\n- What happens in the RStudio \"Environment\" pane when you use the assignment operator to create a new object?\n- What *doesn't* happen in the console when you use the assignment operator to create a new object?\n:::\n\n::: solution\n- The name of each object is shown, along with its computed value.\n- The computed result is *not* printed out\n:::\n\n::: question\nIn your template file, locate the code chunk that looks like this:\n\n\n::: {.cell}\n\n````{.cell-code}\n```{r}\nresult &lt;- 5 + 2\napplesauce &lt;- 10 * 3\n```\n````\n:::\n\n\nEnter a blank line at the end of this code chunk, and write the command `result + applesauce` on the blank line. Then click the green triangle \"play\" button in the upper right hand corner of the code chunk to execute the code in the chunk. What is the result?\n:::\n\n::: solution\n\n::: {.cell}\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] 37\n```\n\n\n:::\n:::\n\n\nThe output is 37 - the same value you would get if you ran `5 + 2` + `10 * 3` in the console!\n:::"
   },
   {
     "objectID": "talks/4-lts/lts_talk.html#how-does-it-work",
@@ -536,7 +466,35 @@
     "href": "talks/4-lts/lts_talk.html#getting-started-with-lts",
     "title": "The LTS Document",
     "section": "Getting Started with LTS",
-    "text": "Getting Started with LTS\nTo start a new project:\nquarto use template wjhopper/lts\n\n\nWithin an existing project:\nquarto add wjhopper/lts\n\n\nThen manually add\npre-render: _extensions/wjhopper/lts/setup.lua\nto the project’s _quarto.yml configuration file"
+    "text": "Getting Started with LTS\nTo start a new project:\nquarto use template wjhopper/lts\n\n\nWithin an existing project:\nquarto add wjhopper/lts\n\n\nThen manually add the pre-render script to the project’s _quarto.yml configuration file, e.g.,\nproject:\n  type: website\n  pre-render: _extensions/wjhopper/lts/setup.lua"
+  },
+  {
+    "objectID": "talks/4-lts/lts_talk.html#lts-in-action",
+    "href": "talks/4-lts/lts_talk.html#lts-in-action",
+    "title": "The LTS Document",
+    "section": "LTS in Action",
+    "text": "LTS in Action\n\n\nHow It Started\ndemo/\n├── _extensions\n│   └── wjhopper\n│       └── lts\n├── _quarto.yml\n└── lab1.qmd\n\n_quarto.yml\nproject:\n  type: lts\n\n\nHow It’s Going\nquarto render\n\ndemo/\n├── _extensions\n│   └── wjhopper\n│       └── lts\n├── _quarto.yml\n├── lab1.html           &lt;-\n├── lab1.qmd\n├── lab1_solutions.html &lt;-\n├── lab1_solutions.qmd\n├── lab1_template.html\n├── lab1_template.qmd   &lt;-"
+  },
+  {
+    "objectID": "talks/4-lts/lts_talk.html#the-lab-lab1.html",
+    "href": "talks/4-lts/lts_talk.html#the-lab-lab1.html",
+    "title": "The LTS Document",
+    "section": "The Lab: lab1.html",
+    "text": "The Lab: lab1.html"
+  },
+  {
+    "objectID": "talks/4-lts/lts_talk.html#the-template-lab1_template.qmd",
+    "href": "talks/4-lts/lts_talk.html#the-template-lab1_template.qmd",
+    "title": "The LTS Document",
+    "section": "The Template: lab1_template.qmd",
+    "text": "The Template: lab1_template.qmd\n---\ntitle: \"Lab 1: Getting Acquainted with R, RStudio and Quarto\"\nformat: html\n---\n\n## Question 1\n\nIn the Console, enter 5 + 2 and press Enter to run the code.\n\n## Question 2\n\nIn the console, type in result &lt;- 5 + 2 and press Enter to run the code.\n\nThen, type in applesauce &lt;- 10 * 3 in the console and press Enter to run the code.\n\nThen, write an answer the following questions in your Lab 1 Quarto document:\n\n- What happens in the RStudio \"Environment\" pane when you use the assignment operator to create a new object?\n- What doesn't happen in the console when you use the assignment operator to create a new object?\n\n## Question 3\n\nIn your template file, locate the code chunk that looks like this:\n\n\n::: {.cell}\n\n:::\n\n\nEnter a blank line at the end of this code chunk, and write the command result + applesauce on the blank line. Then click the green triangle \"play\" button in the upper right hand corner of the code chunk to execute the code in the chunk. What is the result?"
+  },
+  {
+    "objectID": "talks/4-lts/lts_talk.html#the-solutions-lab1_solutions.qmd",
+    "href": "talks/4-lts/lts_talk.html#the-solutions-lab1_solutions.qmd",
+    "title": "The LTS Document",
+    "section": "The Solutions: lab1_solutions.qmd",
+    "text": "The Solutions: lab1_solutions.qmd"
   },
   {
     "objectID": "talks/4-lts/lts_talk.html#meet-the-moodler-package",
@@ -553,18 +511,25 @@
     "text": "Tell Me Who Are You?\n\n\nFirst, open a browser for authentication\n\ntab &lt;- moodleR::open_moodle(\n  \"https://moodle.smith.edu\",\n  graphical = TRUE\n)\n\n\nAfter authentication, browser switches into “headless” mode\n\n\nVideo"
   },
   {
+    "objectID": "talks/4-lts/lts_talk.html#every-file-needs-a-home",
+    "href": "talks/4-lts/lts_talk.html#every-file-needs-a-home",
+    "title": "The LTS Document",
+    "section": "Every File Needs a Home",
+    "text": "Every File Needs a Home\nNavigate to the course using it’s ID, and create a new section\n\n\n\ntab$course &lt;- 57135 # ID number from course page URL\nsection_info &lt;- create_section(\n  tab,\n  section_name = \"Lab 1\"\n)"
+  },
+  {
     "objectID": "talks/4-lts/lts_talk.html#uploading-to-moodle",
     "href": "talks/4-lts/lts_talk.html#uploading-to-moodle",
     "title": "The LTS Document",
     "section": "Uploading to Moodle",
-    "text": "Uploading to Moodle\n\n\nNavigate to the course, and create a new section\n\ntab$course &lt;- 57135 # ID number from course page URL\nsection_info &lt;- create_section(\n  tab,\n  section_name = \"Lab 1\"\n)\n\n\n\n\n\nAdd each file to the page using moodleR::upload_file()\n\nmoodleR::upload_file(tab, section = \"Lab 1\", title = \"Lab 1: Welcome to R\", path = \"lab1.html\")\nmoodleR::upload_file(tab, section = \"Lab 1\", title = \"Lab 1 Template\", path = \"lab1_template.qmd\")\nmoodleR::upload_file(tab, section = \"Lab 1\", title = \"Lab 1 Answer Key\", path = \"lab1_solutions.html\",\n                     visible = FALSE # Keep solutions hidden until after class\n                     )"
+    "text": "Uploading to Moodle\nAdd each file to the page using moodleR::upload_file()\n\nmoodleR::upload_file(tab, section = \"Lab 1\", title = \"Lab 1: Welcome to R\", path = \"lab1.html\")\nmoodleR::upload_file(tab, section = \"Lab 1\", title = \"Lab 1 Template\", path = \"lab1_template.qmd\")\nmoodleR::upload_file(tab, section = \"Lab 1\", title = \"Lab 1 Answer Key\", path = \"lab1_solutions.html\",\n                     visible = FALSE # Keep solutions hidden until after class\n                     )"
   },
   {
     "objectID": "talks/4-lts/lts_talk.html#moodler-spotlight-creating-and-populating-groups",
     "href": "talks/4-lts/lts_talk.html#moodler-spotlight-creating-and-populating-groups",
     "title": "The LTS Document",
     "section": "MoodleR Spotlight: Creating and Populating Groups",
-    "text": "MoodleR Spotlight: Creating and Populating Groups\nYou have a group project coming up, and want teams to submit their work on Moodle\n\ngroups &lt;- googlesheets4::read_sheet(\"197hRqQ-Ul3w2IhTDb8iJd8ip6IK4BPB0PT9otJSLPLw\")\nprint(groups)\n\n# A tibble: 15 × 3\n   group_name    name          email_address   \n   &lt;chr&gt;         &lt;chr&gt;         &lt;chr&gt;           \n 1 The Shamoners Rose Lia      rlia@smith.edu  \n 2 The Shamoners Art I. Cuno   acuno@smith.edu \n 3 The Shamoners Drag A. Pult  dpult@smith.edu \n 4 Slow Starters Reg I. Gigas  rgigas@smith.edu\n 5 Slow Starters Drake O. Vish dvish@smith.edu \n 6 Slow Starters Don D. Ozo    ddozo@smith.edu \n 7 Dream World   Sam U. Rott   srott@smith.edu \n 8 Dream World   Rogg N. Rola  rrola@smith.edu \n 9 Dream World   Krook O. Dile kdile@smith.edu \n10 DRA           Drag A. Pult  dpult@smith.edu \n11 DRA           Rose Lia      rlia@smith.edu  \n12 DRA           Art I. Cuno   acuno@smith.edu \n13 Banworthy     Chan D. Lure  clure@smith.edu \n14 Banworthy     Zam A. Zenta  zzenta@smith.edu\n15 Banworthy     Drake O. Vish dvish@smith.edu"
+    "text": "MoodleR Spotlight: Creating and Populating Groups\nYou have a group project coming up, and want team to submit their work on Moodle\n\ngroups &lt;- googlesheets4::read_sheet(\"197hRqQ-Ul3w2IhTDb8iJd8ip6IK4BPB0PT9otJSLPLw\")\nprint(groups)\n\n# A tibble: 15 × 3\n   group_name    name          email_address   \n   &lt;chr&gt;         &lt;chr&gt;         &lt;chr&gt;           \n 1 The Shamoners Rose Lia      rlia@smith.edu  \n 2 The Shamoners Art I. Cuno   acuno@smith.edu \n 3 The Shamoners Drag A. Pult  dpult@smith.edu \n 4 Slow Starters Reg I. Gigas  rgigas@smith.edu\n 5 Slow Starters Drake O. Vish dvish@smith.edu \n 6 Slow Starters Don D. Ozo    ddozo@smith.edu \n 7 Dream World   Sam U. Rott   srott@smith.edu \n 8 Dream World   Rogg N. Rola  rrola@smith.edu \n 9 Dream World   Krook O. Dile kdile@smith.edu \n10 DRA           Drag A. Pult  dpult@smith.edu \n11 DRA           Rose Lia      rlia@smith.edu  \n12 DRA           Art I. Cuno   acuno@smith.edu \n13 Banworthy     Chan D. Lure  clure@smith.edu \n14 Banworthy     Zam A. Zenta  zzenta@smith.edu\n15 Banworthy     Drake O. Vish dvish@smith.edu"
   },
   {
     "objectID": "talks/4-lts/lts_talk.html#moodler-spotlight-creating-and-populating-groups-1",
@@ -585,7 +550,7 @@
     "href": "talks/4-lts/lts_talk.html#moodler-spotlight-project-rotation-schedules-1",
     "title": "The LTS Document",
     "section": "MoodleR Spotlight: Project Rotation Schedules",
-    "text": "MoodleR Spotlight: Project Rotation Schedules\n\n\nStep 1: Create the Schedule\n\nschedule &lt;- split(groups, groups$group_name) |&gt;\n  lapply(\\(x) {\n    sds100::create_rotation_table(\n      group_members = x$name,\n      row_names = paste(\"Phase\", 1:4)\n    ) |&gt;\n    sds100::write_rotation_schedule()\n    }\n  )\n\n\n{ifingroup 63501} is a Moodle FilterCodes that restricts visibility to members of a specific group\n\n\n{ifingroup 63501}\n\n&lt;h5 id=\"phase-1\"&gt;Phase 1&lt;/h5&gt;\n  &lt;ul&gt;\n    &lt;li&gt;&lt;strong&gt;Chan D. Lure&lt;/strong&gt; will write the data description for their own data, and send all the neccesary materials to Zam A. Zenta when the data description is fully completed.&lt;/li&gt;\n    &lt;li&gt;&lt;strong&gt;Zam A. Zenta&lt;/strong&gt; will write the data description for their own data, and send all the neccesary materials to Drake O. Vish when the data description is fully completed.&lt;/li&gt;\n    &lt;li&gt;&lt;strong&gt;Drake O. Vish&lt;/strong&gt; will write the data description for their own data, and send all the neccesary materials to Chan D. Lure when the data description is fully completed.&lt;/li&gt;\n  &lt;/ul&gt;\n&lt;h5 id=\"phase-2\"&gt;Phase 2&lt;/h5&gt;\n  &lt;ul&gt;\n    &lt;li&gt;&lt;strong&gt;Zam A. Zenta&lt;/strong&gt; will pick up where Chan D. Lure left off in the prior phase, and summarize Art’s Data. They will send all the neccesary materials to Drake O. Vish when the summaries are fully complete.&lt;/li&gt;\n    &lt;li&gt;&lt;strong&gt;Drake O. Vish&lt;/strong&gt; will pick up where Zam A. Zenta left off in the prior phase, and summarize Drag’s Data. They will send all the neccesary materials to Chan D. Lure when the summaries are fully complete.&lt;/li&gt;\n    &lt;li&gt;&lt;strong&gt;Chan D. Lure&lt;/strong&gt; will pick up where Drake O. Vish left off in the prior phase, and summarize Rose’s Data. They will send all the neccesary materials to Zam A. Zenta when the summaries are fully complete.&lt;/li&gt;\n  &lt;/ul&gt;\n&lt;h5 id=\"phase-3\"&gt;Phase 3&lt;/h5&gt;\n  &lt;ul&gt;\n    &lt;li&gt;&lt;strong&gt;Drake O. Vish&lt;/strong&gt; will pick up where Zam A. Zenta left off in the prior phase, and visualize Art’s Data. They will send all the neccesary materials to Chan D. Lure when the visualizations are fully complete.&lt;/li&gt;\n    &lt;li&gt;&lt;strong&gt;Chan D. Lure&lt;/strong&gt; will pick up where Drake O. Vish left off in the prior phase, and visualize Drag’s Data. They will send all the neccesary materials to Zam A. Zenta when the visualizations are fully complete.&lt;/li&gt;\n    &lt;li&gt;&lt;strong&gt;Zam A. Zenta&lt;/strong&gt; will pick up where Chan D. Lure left off in the prior phase, and visualize Rose’s Data. They will send all the neccesary materials to Drake O. Vish when the visualizations are fully complete.&lt;/li&gt;\n  &lt;/ul&gt;\n&lt;h5 id=\"phase-4\"&gt;Phase 4&lt;/h5&gt;\n  &lt;ul&gt;\n    &lt;li&gt;&lt;strong&gt;Chan D. Lure&lt;/strong&gt; will pick up where Drake O. Vish left off, and describe the ethical impacts of their own data.&lt;/li&gt;\n    &lt;li&gt;&lt;strong&gt;Zam A. Zenta&lt;/strong&gt; will pick up where Chan D. Lure left off, and describe the ethical impacts of their own data.&lt;/li&gt;\n    &lt;li&gt;&lt;strong&gt;Drake O. Vish&lt;/strong&gt; will pick up where Zam A. Zenta left off, and describe the ethical impacts of their own data.&lt;/li&gt;\n  &lt;/ul&gt;\n  \n{\\ifingroup 63501}"
+    "text": "MoodleR Spotlight: Project Rotation Schedules\n\n\nStep 1: Create the Schedule\n\nschedule &lt;- split(groups, groups$group_name) |&gt;\n  lapply(\\(x) {\n    sds100::create_rotation(\n      group_members = x$name,\n      rotations = paste(\"Phase\", 1:4)\n    ) |&gt;\n    sds100::write_rotation_schedule()\n    }\n  )\n\n\n{ifingroup 63501} is a Moodle FilterCodes that restricts visibility to members of a specific group\n\n\n{ifingroup 63501}\n\n&lt;h5 id=\"phase-1\"&gt;Phase 1&lt;/h5&gt;\n  &lt;ul&gt;\n    &lt;li&gt;&lt;strong&gt;Chan D. Lure&lt;/strong&gt; will write the data description for their own data, and send all the neccesary materials to Zam A. Zenta when the data description is fully completed.&lt;/li&gt;\n    &lt;li&gt;&lt;strong&gt;Zam A. Zenta&lt;/strong&gt; will write the data description for their own data, and send all the neccesary materials to Drake O. Vish when the data description is fully completed.&lt;/li&gt;\n    &lt;li&gt;&lt;strong&gt;Drake O. Vish&lt;/strong&gt; will write the data description for their own data, and send all the neccesary materials to Chan D. Lure when the data description is fully completed.&lt;/li&gt;\n  &lt;/ul&gt;\n&lt;h5 id=\"phase-2\"&gt;Phase 2&lt;/h5&gt;\n  &lt;ul&gt;\n    &lt;li&gt;&lt;strong&gt;Zam A. Zenta&lt;/strong&gt; will pick up where Chan D. Lure left off in the prior phase, and summarize Chan’s Data. They will send all the neccesary materials to Drake O. Vish when the summaries are fully complete.&lt;/li&gt;\n    &lt;li&gt;&lt;strong&gt;Drake O. Vish&lt;/strong&gt; will pick up where Zam A. Zenta left off in the prior phase, and summarize Zam’s Data. They will send all the neccesary materials to Chan D. Lure when the summaries are fully complete.&lt;/li&gt;\n    &lt;li&gt;&lt;strong&gt;Chan D. Lure&lt;/strong&gt; will pick up where Drake O. Vish left off in the prior phase, and summarize Drake’s Data. They will send all the neccesary materials to Zam A. Zenta when the summaries are fully complete.&lt;/li&gt;\n  &lt;/ul&gt;\n&lt;h5 id=\"phase-3\"&gt;Phase 3&lt;/h5&gt;\n  &lt;ul&gt;\n    &lt;li&gt;&lt;strong&gt;Drake O. Vish&lt;/strong&gt; will pick up where Zam A. Zenta left off in the prior phase, and visualize Chan’s Data. They will send all the neccesary materials to Chan D. Lure when the visualizations are fully complete.&lt;/li&gt;\n    &lt;li&gt;&lt;strong&gt;Chan D. Lure&lt;/strong&gt; will pick up where Drake O. Vish left off in the prior phase, and visualize Zam’s Data. They will send all the neccesary materials to Zam A. Zenta when the visualizations are fully complete.&lt;/li&gt;\n    &lt;li&gt;&lt;strong&gt;Zam A. Zenta&lt;/strong&gt; will pick up where Chan D. Lure left off in the prior phase, and visualize Drake’s Data. They will send all the neccesary materials to Drake O. Vish when the visualizations are fully complete.&lt;/li&gt;\n  &lt;/ul&gt;\n&lt;h5 id=\"phase-4\"&gt;Phase 4&lt;/h5&gt;\n  &lt;ul&gt;\n    &lt;li&gt;&lt;strong&gt;Chan D. Lure&lt;/strong&gt; will pick up where Drake O. Vish left off, and describe the ethical impacts of their own data.&lt;/li&gt;\n    &lt;li&gt;&lt;strong&gt;Zam A. Zenta&lt;/strong&gt; will pick up where Chan D. Lure left off, and describe the ethical impacts of their own data.&lt;/li&gt;\n    &lt;li&gt;&lt;strong&gt;Drake O. Vish&lt;/strong&gt; will pick up where Zam A. Zenta left off, and describe the ethical impacts of their own data.&lt;/li&gt;\n  &lt;/ul&gt;\n  \n{\\ifingroup 63501}"
   },
   {
     "objectID": "talks/4-lts/lts_talk.html#moodler-spotlight-project-rotation-schedules-2",
@@ -599,6 +564,6 @@
     "href": "talks/4-lts/lts_talk.html#moodler-honorable-mentions",
     "title": "The LTS Document",
     "section": "moodleR Honorable Mentions",
-    "text": "moodleR Honorable Mentions\n\nmoodler::download_quiz_responses()\n\nDownloads quiz responses and file attachments in one batch (similar to how Moodle allows you to download all submissions for an assignment)\n\nmoodleR::get_course_roster()\nmoodleR::export_gradebook()"
+    "text": "moodleR Honorable Mentions\n\nmoodleR::download_quiz_responses()\n\nDownloads quiz responses and file attachments in one batch (similar to how Moodle allows you to download all submissions for an assignment)\n\nmoodleR::get_course_roster()\nmoodleR::export_gradebook()"
   }
 ]
