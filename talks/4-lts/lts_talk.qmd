@@ -270,7 +270,7 @@ demo/
 
 ## Meet the `moodleR` Package!
 
-Let's upload these to our course's Moodle using the `moodleR` package!
+Let's upload these to our course's Moodle using the [`moodleR` package](https://github.com/wjhopper/moodleR)!
 
 ```{r}
 #| echo: true
