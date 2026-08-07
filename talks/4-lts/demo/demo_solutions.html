@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Mine Çetinkaya-Rundel">
 
-<title>Looking back and looking beyond</title>
+<title>Lab 1: Getting Acquainted with R, RStudio and Quarto</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -30,27 +29,27 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-189549ecd294ed9837df383a4b42e31c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-8a591ff59271d21f6a5d1e80b3747fb5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-189549ecd294ed9837df383a4b42e31c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-189549ecd294ed9837df383a4b42e31c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark-8a591ff59271d21f6a5d1e80b3747fb5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../site_libs/bootstrap/bootstrap-189549ecd294ed9837df383a4b42e31c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -251,7 +250,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
     <img src="https://ww2.amstat.org/meetings/jsm/2026/images/logo.png" alt="" class="navbar-logo light-content">
     <img src="https://ww2.amstat.org/meetings/jsm/2026/images/logo.png" alt="" class="navbar-logo dark-content">
     </a>
@@ -263,7 +262,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html"> 
+    <a class="nav-link" href="../../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
 </ul>
@@ -284,10 +283,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#slides" id="toc-slides" class="nav-link active" data-scroll-target="#slides">Slides</a></li>
-  <li><a href="#speaker" id="toc-speaker" class="nav-link" data-scroll-target="#speaker">Speaker</a></li>
+  <li><a href="#question-1" id="toc-question-1" class="nav-link active" data-scroll-target="#question-1">Question 1</a></li>
+  <li><a href="#question-2" id="toc-question-2" class="nav-link" data-scroll-target="#question-2">Question 2</a></li>
+  <li><a href="#question-3" id="toc-question-3" class="nav-link" data-scroll-target="#question-3">Question 3</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/mine-cetinkaya-rundel/quarto-world-of-possibilities-jsm24/edit/main/talks/5-discussion/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/mine-cetinkaya-rundel/quarto-world-of-possibilities-jsm24/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/mine-cetinkaya-rundel/quarto-world-of-possibilities-jsm24/edit/main/talks/4-lts/demo/demo_solutions.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/mine-cetinkaya-rundel/quarto-world-of-possibilities-jsm24/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -295,20 +295,13 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Looking back and looking beyond</h1>
-<p class="subtitle lead">Discussion</p>
+<h1 class="title">Lab 1: Getting Acquainted with R, RStudio and Quarto</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Mine Çetinkaya-Rundel </p>
-          </div>
-  </div>
     
   
     
@@ -319,19 +312,33 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="slides" class="level2">
-<h2 class="anchored" data-anchor-id="slides">Slides</h2>
-<iframe class="slide-deck" src="../../talks/5-discussion/discussion.html" height="420" width="747" style="border: 1px solid #2e3846;"></iframe>
-<p><a href="https://beanumber.github.io/quarto-life-hacks-jsm26/talks/5-discussion/discussion.qmd">Source code for slides</a></p>
-<p><a href="https://beanumber.github.io/quarto-life-hacks-jsm26/talks/5-discussion/discussion.html">Full screen slides</a></p>
+<section id="question-1" class="level2 question">
+<h2 class="anchored" data-anchor-id="question-1">Question 1</h2>
+<p>You should see the following output in your console:</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 7</code></pre>
+</div>
+</div>
 </section>
-<section id="speaker" class="level2">
-<h2 class="anchored" data-anchor-id="speaker">Speaker</h2>
-<p><img src="mine.png" class="img-fluid" style="float: right; padding-left: 10px;" alt="Photo of Mine Çetinkaya-Rundel" width="200"></p>
-<p><a href="https://mine-cr.com/">Mine Çetinkaya-Rundel</a> is a Professor of the Practice and Associate Director of Undergraduate Studies in the Department of Statistical Science as well as the Director of First-Year Experience in Trinity College of Arts &amp; Sciences at Duke University. She is also Senior Developer Advocate at Posit. Mine is a leading voice in modern statistics and data science education. Her work focuses on integrating reproducible computing, open-source tools, and real-world data into the statistics curriculum, transforming how students engage with data and statistical thinking. She is a co-author of <a href="https://r4ds.hadley.nz/">R for Data Science</a>, the creator and maintainer of <a href="https://datasciencebox.org/">Data Science in a Box</a>, and she teaches popular <a href="https://www.coursera.org/specializations/statistics">data analysis</a> and <a href="https://www.coursera.org/learn/data-visualization-transformation-r">data science</a> with R courses on Coursera.. She is also a core contributor to the OpenIntro project and an advocate for open educational resources and statistical computing in R. A Fellow of the American Statistical Association and an Elected Member of the International Statistical Institute, she has received numerous honors, including the ASA’s Waller Education Award and the Robert V. Hogg Award for Excellence in Teaching Introductory Statistics. She currently serves as Vice President of the International Association for Statistical Education (IASE) and as co-chair of the ASA’s DataFest Steering Committee. Through her teaching, writing, and advocacy, Dr.&nbsp;ÇetinkayaRundel has advanced accessible, computation-rich, and reproducible data science education worldwide.</p>
+<section id="question-2" class="level2 question">
+<h2 class="anchored" data-anchor-id="question-2">Question 2</h2>
+<ul>
+<li>The name of each object is shown, along with its computed value.</li>
+<li>The computed result is <em>not</em> printed out</li>
+</ul>
+</section>
+<section id="question-3" class="level2 question">
+<h2 class="anchored" data-anchor-id="question-3">Question 3</h2>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 37</code></pre>
+</div>
+</div>
+<p>The output is 37 - the same value you would get if you ran <code>5 + 2</code> + <code>10 * 3</code> in the console!</p>
+</section>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -752,4 +759,4 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/mine-cetinkaya-rundel/quarto-world-of-possibilities-jsm24/edit/main/talks/5-discussion/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/mine-cetinkaya-rundel/quarto-world-of-possibilities-jsm24/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/mine-cetinkaya-rundel/quarto-world-of-possibilities-jsm24/edit/main/talks/4-lts/demo/demo_solutions.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/mine-cetinkaya-rundel/quarto-world-of-possibilities-jsm24/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
